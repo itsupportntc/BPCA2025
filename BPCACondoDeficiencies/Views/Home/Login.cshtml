@@ -1,0 +1,130 @@
+﻿@{
+
+    Layout = null;
+    ViewData["Title"] = "Condo Deficiencies - Login";
+}
+
+@using (Html.BeginForm("DoLogin", "Home", FormMethod.Post))
+
+{
+    <link href="~/css/structure/infragistics.css" rel="stylesheet" />
+    <link href="~/css/themes/bootstrap3/superhero/infragistics.theme.css" rel="stylesheet" />
+    <script src="~/js/modernizr-custom.js"></script>
+    <script src="~/js/jquery.js"></script>
+    <script src="~/js/jquery-ui.js"></script>
+    <script src="~/js/infragistics.core.js"></script>
+    <script src="~/js/infragistics.lob.js"></script>
+    <script src="~/js/infragistics.dv.js"></script>
+    <script src="~/js/i18n/infragistics-en.js"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link href="~/css/structure/infragistics.css" rel="stylesheet" />
+    <link href="~/css/themes/jquery-ui.theme.css" rel="stylesheet" />
+    @Html.ValidationSummary()
+    <style>
+        #content {
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        #content_inner {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        #app_name_header {
+            text-align: center;
+        }
+
+        .table {
+            display: table;
+            align-content: center;
+        }
+
+        .row {
+            display: table-row;
+        }
+
+        .cell {
+            font-family: Tahoma;
+            display: table-cell;
+            width: 200px;
+        }
+    </style>
+    <script>
+        $(document).ready
+        var commonWidth = 200;
+            (function () {
+                $("#agencyCode").focus();
+
+            });
+        $(function () {
+            $("#agencyCode").igTextEditor({
+                width: commonWidth,
+                nullText: "Enter your agency code..."
+            });
+            $("#userName").igTextEditor({
+                width: commonWidth,
+                nullText: "Enter your user name..."
+            });
+            $("#pwd").igTextEditor({
+                width: commonWidth,
+                nullText: "Enter your password...",
+                textMode: "password"
+
+            });
+        });
+    </script>
+    <div class="table" id="content">
+        <div class="row">
+            <div class="cell">
+                <img id="bpcalogo" src="~/images/bpcalogo.jpg" alt="Sample Photo" width="807" height="200" />
+            </div>
+        </div>
+        <div class="row" id="spacer" style="height:50px; "></div>
+        <div class="row">
+            <div class="cell" id="app_name_header">
+                <label style="font-size:x-large; align-content:center;"><b>CONDOMINIUM DEFICIENCY TRACKING SYSTEM</b></label>
+            </div>
+        </div>
+        <div class="row" id="spacer" style="height:50px; "></div>
+    </div>
+    <div id="content_inner">
+        <div class="row">
+            <div class="cell">
+                <label style="text-align: left; width: 150px; vertical-align: top;" >Agency: </label>
+            </div>
+            <div class="cell" style="text-align: left; width: 150px; vertical-align: top;">
+                @Html.TextBox("agencyCode", "", new { @class = "form-control", required = "required" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell">
+                <label style="text-align: left; width: 150px; vertical-align: top;">User Name: </label>
+            </div>
+            <div class="cell" style="text-align: left; width: 150px; vertical-align: top;">
+                @Html.TextBox("userName", "", new { @class = "form-control", required = "required" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell">
+                <label style="text-align: left; width: 150px; vertical-align: top;">Password: </label>
+            </div>
+            <div class="cell" style="text-align: left; width: 150px; vertical-align: top;">
+                @Html.Password("pwd", "", new { @class = "form-control", required = "required" })
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="cell" style="text-align: left; width: 150px; vertical-align: top;">
+                <a href="Home/UserPasswordManagement?dent=D3f&ti=pol">Forgot password?</a>
+            </div>
+            <div class="cell" align="right" style="text-align: right; width: 150px; vertical-align: top;">
+                <button id="buttonLogin" type="submit" class="btn btn-default">
+                    <span class="glyphicon glyphicon-log-in"></span> Login
+                </button>
+                <!--<input id="bottonLogin" type="submit" value="Login" />-->
+            </div>
+        </div>
+    </div>
+
+}

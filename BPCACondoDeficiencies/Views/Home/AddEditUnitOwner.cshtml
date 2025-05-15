@@ -1,0 +1,674 @@
+﻿@using BPCACondoDeficiencies;
+@model UnitOwnerModel
+@{
+    ViewData["Title"] = "Add/Edit Unit Owner";
+}
+
+<!DOCTYPE html>
+
+<script type="text/javascript">
+    var og = '00000000-0000-0000-0000-000000000000';
+    
+    $(document).ready
+        (function () {
+            checkSession();
+
+            if ("@Model.OwnerGuid" != "00000000-0000-0000-0000-000000000000") {
+                og = "@Model.OwnerGuid";
+                
+            }
+
+            loadBuildings();
+            $('#subOwnerRequired').hide();
+        });
+
+    function loadBuildings() {
+        $.ajax(
+            {
+                type: 'GET',
+                url: '/Home/GetBuildingList',
+                cache: false,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: loadBuildingSuccess,
+                error: loadBuildingsError()
+            });
+    }
+
+    function loadBuildingsError() {
+
+
+    }
+
+    function loadBuildingSuccess(data) {
+        $("#comboBuildings").igCombo({
+            width: "270px",
+            textKey: "Name",
+            valueKey: "BuildingGuid",
+            dataSource: data,
+            dataSourceType: "json",
+            filteringType: "local",
+            autoComplete: true,
+            placeHolder: "Select a building...",
+            dropDownOrientation: "bottom"
+        });
+        $(function () {
+            $("#titleName").igTextEditor({
+                width: 260,
+                readOnly: false,
+                required: true,
+                valdation: true,
+                editorOptions: {
+                    validatorOptions:
+                    {
+                        required: {
+                            errorMessage: "You must enter a title name to continue."
+                        }
+                    }
+                }
+            });
+        });
+        $("#comboBuildings").on("igcomboselectionchanged", function (evt, ui) {
+            var bg = $("#comboBuildings").igCombo("value");
+            loadBuildingSelection(bg, true);
+        });
+
+        $("#comboUnits").igCombo();
+        $('#unitOwnerForm').igValidator({
+            onsubmit: true,
+            successMessage: "",
+            fields: [
+                {
+                    required: true,
+                    selector: "#titleName",
+                    onblur: true,
+                    errorMessage: "Unit owner must have a title name.",
+                    notificationOptions: {
+                        mode: "popover"
+                    }
+                },
+                {
+                    required: true,
+                    selector: "#comboBuildings",
+                    onblur: true,
+                    errorMessage: "You must select a building.",
+                    notificationOptions: {
+                        mode: "popover"
+                    }
+                },
+                {
+                    required: true,
+                    selector: "#comboUnits",
+                    onblur: true,
+                    errorMessage: "You must select a unit.",
+                    notificationOptions: {
+                        mode: "popover"
+                    }
+                }
+            ]
+        });
+
+        if ("@Model.OwnerGuid" !== "00000000-0000-0000-0000-000000000000") {
+            $("#titleName").igTextEditor("value", "@Model.TitleName");
+            if ("@Model.BuildingGuid" !== "00000000-0000-0000-0000-000000000000") {
+                $("#comboBuildings").igCombo("value", "@Model.BuildingGuid");
+                var bg = $("#comboBuildings").igCombo("value");
+                loadBuildingSelection(bg, true);
+            }
+        }
+
+        getSubOwners();
+    }
+
+    function loadBuildingSelection(bg, async) {
+        $.ajax(
+            {
+                type: 'GET',
+                async: async,
+                url: '/Home/GetBuildingHeaderData',
+                data: { buildingGuid: bg },
+                dataType: "json",
+                success: function (response) {
+                    $.ajax(
+                        {
+                            type: 'GET',
+                            async: true,
+                            url: '/Home/GetUnitList',
+                            data: { buildingGuid: bg },
+                            dataType: "json",
+                            success: function (response) {
+                                getUnitList(response);
+                            },
+                            error: loadBuildingsError()
+                        });
+                },
+                error: loadBuildingsError()
+            });
+    }
+
+    function getUnitList(data) {
+        $("#comboUnits").igCombo({
+            width: "270px",
+            textKey: "unitcode",
+            valueKey: "unitguid",
+            dataSource: jQuery.parseJSON(data),
+            dataSourceType: "json",
+            filteringType: "local",
+            autoComplete: true,
+            placeHolder: "Select a unit...",
+            dropDownOrientation: "bottom"
+        });
+        if ("@Model.UnitGuid" != "00000000-0000-0000-0000-000000000000") {
+            $("#comboUnits").igCombo("value", "@Model.UnitGuid");
+        }
+    }
+
+    function getSubOwners() {
+
+        $.ajax(
+            {
+                type: 'GET',
+                url: '/Home/GetSubOwners',
+                cache: false,
+                data: { ownerGuid: og },
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: getSubOwnersSuccess,
+                error: getSubOwnersFailure
+            });
+    }
+
+    function getSubOwnersFailure() {
+        // do nothing at this time
+    }
+
+    function getSubOwnersSuccess(data) {
+        $("#gridSubOwners").igGrid({
+            autoGenerateColumns: false,
+            renderCheckboxes: true,
+            primaryKey: "SubOwnerGuid",
+            caption: "Sub-Owners",
+            columns:
+                [
+                    { headerText: "SubOwnerGuid", key: "SubOwnerGuid", dataType: "string", width: "0%" },
+                    { headerText: "ownerGuid", key: "OwnerGuid", dataType: "string", width: "0%" },
+                    { headerText: "First Name", key: "FirstName", dataType: "string", width: "25%" },
+                    { headerText: "Last Name", key: "LastName", dataType: "string", width: "20%" },
+                    { headerText: "Address 1", key: "Address1", dataType: "string", width: "50%" },
+                    { headerText: "Address 2", key: "Address2", dataType: "string", width: "20%" },
+                    { headerText: "City", key: "City", dataType: "string", width: "20%" },
+                    { headerText: "State", key: "State", dataType: "string", width: "20%" },
+                    { headerText: "Zip Code", key: "ZipCode", dataType: "string", width: "20%" },
+                    { headerText: "Zip Plus", key: "ZipPlus", dataType: "string", width: "20%" },
+                    { headerText: "Phone 1", key: "Phone1", dataType: "string", width: "20%" },
+                    { headerText: "Phone 2", key: "Phone2", dataType: "string", width: "20%" },
+                    { headerText: "Fax", key: "Fax", dataType: "string", width: "20%" },
+                    { headerText: "Email", key: "EmailAddress", dataType: "string", width: "20%" }
+                ],
+            dataSource: jQuery.parseJSON(data),
+            autofitLastColumn: true,
+            dataSourceType: "json",
+            responseDataKey: "results",
+            width: "100%",
+            tabIndex: 1,
+            features: [
+                {
+                    name: "Updating",
+                    locale: {
+                        addRowLabel: "Add new sub-owner...",
+                        rowEditDialogCaptionLabel: "Add/Edit Sub-Owner"
+                    },
+                    enableAddRow: true,
+                    enableUpdateRow: true,
+                    enableDeleteRow: false,
+                    startEditTriggers: "click",
+                    editMode: "dialog",
+                    columnSettings: [
+                        {
+                            columnKey: "SubOwnerGuid",
+                            editorType: "text",
+                            readOnly: true,
+                            defaultValue: -1,
+                            hidden: true
+                        },
+                        {
+                            columnKey: "OwnerGuid",
+                            editorType: "text",
+                            readOnly: true,
+                            hidden: true
+                        },
+                        {
+                            columnKey: "FirstName",
+                            editorType: "text",
+                            readOnly: false,
+                            hidden: false,
+                            required: true,
+                            valdation: true,
+                            editorOptions: {
+                                validatorOptions:
+                                {
+                                    required: {
+                                        errorMessage: "You must enter a first name to continue."
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            columnKey: "LastName",
+                            editorType: "text",
+                            readOnly: false,
+                            hidden: false,
+                            required: true,
+                            valdation: true,
+                            editorOptions: {
+                                validatorOptions:
+                                {
+                                    required: {
+                                        errorMessage: "You must enter a last name to continue."
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            columnKey: "Address1",
+                            editorType: "text",
+                            readOnly: false,
+                            hidden: false,
+                            required: false
+                        },
+                        {
+                            columnKey: "Address1",
+                            editorType: "text",
+                            readOnly: false,
+                            hidden: false,
+                            required: false
+                        },
+                        {
+                            columnKey: "City",
+                            editorType: "text",
+                            readOnly: false,
+                            hidden: false,
+                            required: true,
+                            valdation: true,
+                            editorOptions: {
+                                validatorOptions:
+                                {
+                                    required: {
+                                        errorMessage: "You must enter a city to continue."
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            columnKey: "State",
+                            editorType: "text",
+                            readOnly: false,
+                            hidden: false,
+                            required: true,
+                            valdation: true,
+                            editorOptions: {
+                                validatorOptions:
+                                {
+                                    required: {
+                                        errorMessage: "You must enter a state to continue."
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            columnKey: "ZipCode",
+                            editorType: "text",
+                            readOnly: false,
+                            hidden: false,
+                            required: true,
+                            validation: true,
+                            editorOptions: {
+                                validatorOptions: {
+                                    required: {
+                                        errorMessage: "You must enter a zip code to continue."
+                                    },
+                                    pattern: {
+                                        expression: /^[0-9]+$/,
+                                        errorMessage: "Zip code should be numeric."
+                                    },
+                                    onblur: true,
+                                    onchange: true
+                                },
+                            },
+                        },
+                        {
+                            columnKey: "ZipPlus",
+                            editorType: "text",
+                            readOnly: false,
+                            hidden: false,
+                            required: false,
+                            editorOptions: {
+                                validatorOptions: {
+                                    pattern: {
+                                        expression: /^[0-9]+$/,
+                                        errorMessage: "Zip plus should be numeric."
+                                    },
+                                    onblur: true,
+                                    onchange: true
+                                },
+                            },
+                        },
+                        {
+                            columnKey: "Phone1",
+                            editorType: "text",
+                            readOnly: false,
+                            hidden: false,
+                            required: false
+                        },
+                        {
+                            columnKey: "Phone2",
+                            editorType: "text",
+                            readOnly: false,
+                            hidden: false,
+                            required: false
+                        },
+                        {
+                            columnKey: "Fax",
+                            editorType: "text",
+                            readOnly: false,
+                            hidden: false,
+                            required: false
+                        },
+                        {
+                            columnKey: "EmailAddress",
+                            editorType: "text",
+                            readOnly: false,
+                            hidden: false,
+                            required: false
+                        }
+                    ],
+
+                    rowEditDialogOptions: {
+                        captionLabel: "Add new sub-owner...",
+                        width: 700,
+                        height: 600,
+                        dialogTemplateSelector: "#dialogTemplate",
+                        editorsTemplateSelector: "#editorsTemplate",
+                        containment: "ui",
+                        animationDuration: 400
+                    }
+
+                },
+                {
+                    name: 'Hiding',
+                    columnSettings:
+                        [
+                            {
+                                columnKey: 'SubOwnerGuid',
+                                allowHiding: false,
+                                hidden: true
+                            },
+                            {
+                                columnKey: 'OwnerGuid',
+                                allowHiding: false,
+                                hidden: true
+                            },
+                            {
+                                columnKey: 'FirstName',
+                                allowHiding: false,
+                                hidden: false
+                            },
+                            {
+                                columnKey: 'LastName',
+                                allowHiding: false,
+                                hidden: false
+                            },
+                            {
+                                columnKey: 'Address1',
+                                allowHiding: false,
+                                hidden: false
+                            },
+                            {
+                                columnKey: 'Address2',
+                                allowHiding: false,
+                                hidden: false
+                            },
+                            {
+                                columnKey: 'City',
+                                allowHiding: false,
+                                hidden: false
+                            },
+                            {
+                                columnKey: 'State',
+                                allowHiding: false,
+                                hidden: false
+                            },
+                            {
+                                columnKey: 'ZipCode',
+                                allowHiding: false,
+                                hidden: false
+                            },
+                            {
+                                columnKey: 'ZipPlus',
+                                allowHiding: false,
+                                hidden: false
+                            },
+                            {
+                                columnKey: 'Phone1',
+                                allowHiding: false,
+                                hidden: false
+                            },
+                            {
+                                columnKey: 'Phone2',
+                                allowHiding: false,
+                                hidden: false
+                            },
+                            {
+                                columnKey: 'Fax',
+                                allowHiding: false,
+                                hidden: false
+                            },
+                            {
+                                columnKey: 'EmailAddress',
+                                allowHiding: false,
+                                hidden: false
+                            }
+
+                        ]
+                }
+            ]
+        });
+    }
+
+    function saveUnitOwner() {
+        if ($('#gridSubOwners').igGrid('option', 'dataSource').length == 0 && $('#gridSubOwners').igGrid('rows').length == 0) {
+            $('#subOwnerRequired').show();
+            return;
+        }
+        else {
+            $('#subOwnerRequired').hide();
+            var bg = '00000000-0000-0000-0000-000000000000';
+            var ug = '00000000-0000-0000-0000-000000000000';
+            var tn = '';
+
+            tn = $("#titleName").igTextEditor("value");
+            bg = $("#comboBuildings").igCombo("value");
+            ug = $("#comboUnits").igCombo("value");
+
+            $.ajax(
+                {
+                    async: false,
+                    type: 'GET',
+                    url: '/Home/SaveUnitOwner',
+                    cache: false,
+                    data: { ownerGuid: og, titleName: tn, buildingGuid: bg, unitGuid: ug },
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (response) {
+                        response = jQuery.parseJSON(response);
+                        if (saveSubOwners(response[0].ownerGuid)) {
+                            og = '00000000-0000-0000-0000-000000000000';
+                            window.location.href = location.protocol + '//' + location.host + location.pathname;
+                        }
+                    },
+                    error: function (jqXHR, exception) {
+                        alert(jqXHR);
+                        alert(exception);
+                        return false;
+                    }
+                });
+        }
+    }
+
+    function saveSubOwners(og) {
+        var so = '00000000-0000-0000-0000-000000000000';
+        var fn = '';
+        var ln = '';
+        var a1 = '';
+        var a2 = '';
+        var cy = '';
+        var st = '';
+        var zc = '';
+        var zp = '';
+        var p1 = '';
+        var p2 = '';
+        var fx = '';
+        var ea = '';
+
+        var $grid = $("#gridSubOwners");
+        var rows = $grid.igGrid("allRows");
+        var rowId;
+
+        $.each(rows, function (index, row) {
+            rowId = $(row).attr("data-id");
+            so = $grid.igGrid("getCellValue", rowId, "SubOwnerGuid");
+            fn = $grid.igGrid("getCellValue", rowId, "FirstName");
+            ln = $grid.igGrid("getCellValue", rowId, "LastName");
+            a1 = $grid.igGrid("getCellValue", rowId, "Address1");
+            a2 = $grid.igGrid("getCellValue", rowId, "Address2");
+            cy = $grid.igGrid("getCellValue", rowId, "City");
+            st = $grid.igGrid("getCellValue", rowId, "State");
+            zc = $grid.igGrid("getCellValue", rowId, "ZipCode");
+            zp = $grid.igGrid("getCellValue", rowId, "ZipPlus");
+            p1 = $grid.igGrid("getCellValue", rowId, "Phone1");
+            p2 = $grid.igGrid("getCellValue", rowId, "Phone2");
+            fx = $grid.igGrid("getCellValue", rowId, "Fax");
+            ea = $grid.igGrid("getCellValue", rowId, "EmailAddress");
+
+            $.post('/Home/SaveUnitSubOwner', {
+                subOwnerGuid: so, ownerGuid: og, firstName: fn, lastName: ln, address1: a1, address2: a2, city: cy,
+                state: st, zipCode: zc, zipPlus: zp, phone1: p1, phone2: p2, fax: fx, emailAddress: ea
+            })
+                .done(function () { })
+                .fail(function (xhr, status, error) {
+                    console.log(xhr);
+                    console.log(status);
+                    console.log(error);
+                    return false;
+                });
+        });
+            //.fail(function () {
+            //    console.log("error");
+            //});
+        
+             
+
+            //$.ajax(
+            //    {
+            //        async: false,
+            //        type: 'POST',
+            //        url: '/Home/SaveUnitSubOwner',
+            //        cache: false,
+            //        data: {
+            //            subOwnerGuid: so, ownerGuid: og, firstName: fn, lastName: ln, address1: a1, address2: a2, city: cy,
+            //            state: st, zipCode: zc, zipPlus: zp, phone1: p1, phone2: p2, fax: fx, emailAddress: ea
+            //        },
+            //        dataType: "json",
+            //        contentType: 'application/json; charset=UTF-8',
+            //        success: function () {
+            //        },
+            //        error: function (jqXHR, exception) {
+            //            console.log(jqXHR);
+            //            console.log(exception);
+            //            //$.ajax(
+            //            //    {
+            //            //        async: false,
+            //            //        type: 'POST',
+            //            //        url: '/Home/EmailError',
+            //            //        cache: false,
+            //            //        contentType: "application/json; charset=utf-8"
+            //            //    });
+            //            return false;
+            //        }
+            //    });
+
+        //});
+        return true;
+
+    }
+
+</script>
+
+<script id="dialogTemplate" type="text/html">
+    <div style="float: left; width: 100%">
+        <strong>${Name}</strong><br />
+        <table style="width: 100%;">
+            <colgroup>
+                <col style="width: 30%;" />
+                <col style="width: 200%;" />
+            </colgroup>
+            <tbody data-render-tmpl="true"></tbody>
+        </table>
+    </div>
+</script>
+
+<script id="editorsTemplate" type="text/html">
+    <tr>
+        <td style="color: black;">${headerText}</td>
+        <td>
+            <input data-editor-for-${key}="true" style="color: black; width: 1000px;" />
+        </td>
+    </tr>
+</script>
+
+<meta name="viewport" content="width=device-width" />
+<title>UnitOwners</title>
+<form id="unitOwnerForm" action="" method="post">
+    <table style="width: 100%">
+        <tr><td><h4>Title Name:</h4></td>
+        <td rowspan="3"> <table>
+              <tr><td></td></tr>
+              </table></td></tr>
+        <tr>
+            <td>
+                <input id="titleName" style="color: black;">
+            </td>
+        </tr>
+        
+        <tr><td><h4>Building:</h4></td></tr>
+        <tr>
+            <td>
+                <div id="comboBuildings"></div>
+            </td>
+        </tr>
+        <tr><td><h4>Unit:</h4></td></tr>
+        <tr>
+            <td>
+                <div id="comboUnits"></div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <div id="subOwnerRequired" style="color: red; align-content: center;"><img src="~/images/delete.png" /><b>You must specify at least one sub-owner to continue.</b></div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <div id="gridSubOwners"></div>
+            </td>
+        </tr>
+        <tr style="padding-top: 10px">
+            <td colspan="3" align="right" style="padding-top: 10px">
+                <button id="buttonLogin" type="button" class="btn btn-default" onclick="saveUnitOwner()">
+                    <span class="glyphicon glyphicon-save"></span> Save Unit Owner
+                </button>
+            </td>
+        </tr>
+    </table>
+</form>
+

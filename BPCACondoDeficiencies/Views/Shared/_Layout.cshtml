@@ -1,0 +1,1236 @@
+﻿@using Microsoft.AspNetCore.Mvc;
+
+<!DOCTYPE html>
+<style>
+    .dropdown-menu .divider {
+        height: 1px;
+        margin: 3px 0;
+        overflow: hidden;
+        background-color: lightsteelblue;
+    }
+</style>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BPCACondoDeficiencies</title>
+    <script src="~/js/modernizr-custom.js"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/js/jquery-ui.js"></script>
+    <script src="~/js/infragistics.core.js"></script>
+    <script src="~/js/infragistics.lob.js"></script>
+    <script src="~/js/infragistics.dv.js"></script>
+    <script src="~/js/infragistics.loader.js"></script>
+    <script src="~/js/spin.js"></script>
+    <!-- <link href="https://cdn-na.infragistics.com/igniteui/2018.1/latest/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" type="text/css" /> -->
+    <link href="https://cdn-na.infragistics.com/igniteui/2018.1/latest/css/structure/infragistics.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="~/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" /> -->
+    <link href="~/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+            asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+            asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+            crossorigin="anonymous"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+    </script>
+    <environment include="Development">
+        <link href="~/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+
+    </environment>
+    <environment include="Production">
+        <link href="~/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+
+    </environment>
+    <environment exclude="Development">
+        <!--<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" /> -->
+    </environment>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: slategray; color: #000 !important">
+        <div class="container" id="mainMenu">
+            <div class="navbar-header pull-left">
+                <a style="color: #000 !important" asp-controller="Home" asp-action="Home" class="navbar-header pull-left">
+                    <img src="~/images/BPCA_Transparent.png" width="30%" height="30%" />
+                </a>
+                <!--<a style="color: #000 !important" asp-area="" asp-controller="Home" asp-action="Home" class="navbar-brand"><b>Deficiency Management System</b></a>-->
+            </div>
+            <div class="navbar-header" style="background-color: slategray; color: black !important">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+
+            <div class="navbar-collapse collapse" style="background-color: slategray; color: #000 !important;">
+                <ul class="nav navbar-nav" style="color:#000;">
+                    <li><a href="Home" style="color: #000 !important"><span class="glyphicon glyphicon-home"></span></a></li>
+                    <!--<li><a asp-area="" asp-controller="Home" asp-action="Home">Home</a></li>-->
+                    <li><a href="BuildingListing" style="color: #000 !important">Building Management</a></li>
+                    <li>
+                        <a style="background-color: slategray !important; color: #000 !important" class="dropdown-toggle"
+                           data-toggle="dropdown" role="button" aria-expanded="false">Unit Management &#9660;</a>
+                        <ul class="dropdown-menu" style=" background-color: slategray !important;">
+                            <li><a href="AddEditUnit" style="color: #000 !important;  background-color: slategray !important"><img src="~/images/add.png" /> Add New Unit</a></li>
+                            <!--<li><a style="color: #000 !important">Find Unit</a></li>-->
+                            <!-- NEED A SEPERATOR HERE OR NESTED DROP DOWN-->
+                            @*<li role="separator" class="divider" style=" background-color: lightsteelblue !important;"></li>*@
+                            <li><a href="AddEditUnitOwner" style="color: #000 !important; background-color: slategray !important;"><img src="~/images/user_add.png" /> Add/Edit Unit Owner</a></li>
+                            <li><a href="SearchUnitOwner" style="color: #000 !important; background-color: slategray !important"><img src="~/images/magnifier.png" /> Search Unit Owner</a></li>
+                            @*<li role="separator" class="divider" style=" background-color: lightsteelblue !important;"></li>*@
+                            <li><a href="UnitInquiry" style="color: #000 !important; background-color: slategray !important"><img src="~/images/magnifier.png" /> Unit Inquiry</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="AddEditInvoice" style="color: #000 !important">Add/Edit Invoice</a></li>
+                    <!-- <li><a href="#" style="color: #000 !important">Add/edit Works</a></li> -->
+                    <li>
+                        <a style="background-color: slategray !important; color: #000 !important;" class="dropdown-toggle"
+                           data-toggle="dropdown" role="button" aria-expanded="false">Reporting &#9660;</a>
+                        <ul class="dropdown-menu" style=" background-color: slategray !important;">
+                            <li>
+                                <a href="#" onclick="PrintInvoice('Battery Park City Authority Invoice'); return false;" style="color: #000 !important; background-color: slategray !important;">
+                                    <img src="~/images/page_edit.png" /> Battery Park City Authority Invoice
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="PrintDeficiencyReportOld('Deficiency Report'); return false;" style="color: #000 !important; background-color: slategray !important;">
+                                    <img src="~/images/money.png" /> Deficiency Report
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="PrintDeficiencyReport('Deficiency Report'); return false;" style="color: #000 !important; background-color: slategray !important;">
+                                    <img src="~/images/money.png" /> Deficiency Report (BPCA Only)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="PrintBuildingSummary('Building Summary Report'); return false;" style="color: #000 !important; background-color: slategray !important;">
+                                    <img src="~/images/building.png" /> Building Summary Report
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="PrintBuildingSummaryVersionReport('Building Summary Report With Units'); return false;" style="color: #000 !important; background-color: slategray !important;">
+                                    <img src="~/images/building.png" /> Building Summary Report With Units
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="PrintDefaultCertificate('Default Certificate'); return false;" style="color: #000 !important; background-color: slategray !important;">
+                                    <img src="~/images/report_picture.png" /> Default Certificate
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="PrintUnitListing('Building Unit Listing'); return false;" style="color: #000 !important; background-color: slategray !important;">
+                                    <img src="~/images/text_list_bullets.png" /> Building Unit Listing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="PrintConsolidatedRentDetailByFicalYear('Consolidated Deficiencies Summary Section I - Rent Detail By Fiscal Year'); return false;" style="color: #000 !important; background-color: slategray !important;">
+                                    <img src="~/images/chart_curve.png" /> Consolidated Deficiencies Summary Section I - Rent Detail By Fiscal Year (BPCA Only)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="PrintConsolidatedRentDataByFicalYear('Consolidated Deficiencies Summary Section I - Rent Detail By Fiscal Year'); return false;" style="color: #000 !important; background-color: slategray !important;">
+                                    <img src="~/images/chart_curve.png" /> Consolidated Deficiencies Summary Section I - Rent Detail By Fiscal Year (BPCA Only Without Group)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="PrintConsolidatedRentDetail('Consolidated Deficiencies Summary Section I - Rent Detail'); return false;" style="color: #000 !important; background-color: slategray !important;">
+                                    <img src="~/images/chart_curve.png" /> Consolidated Deficiencies Summary Section I- Rent Detail (BPCA Only)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="PrintConsolidatedAgingDetail('Consolidated Deficiencies Summary Section II - Aging Detail'); return false;" style="color: #000 !important; background-color: slategray !important;">
+                                    <img src="~/images/chart_curve.png" /> Consolidated Deficiencies Summary Section II - Aging Detail
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="PrintConsolidatedAgingDetail3('Consolidated Deficiencies Summary Section III - Aging Detail'); return false;" style="color: #000 !important; background-color: slategray !important;">
+                                    <img src="~/images/chart_curve.png" /> Consolidated Deficiencies Summary Section III - Aging Detail
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="PrintPayBackSummaryByFicalYear('Payback Summary By Fiscal Year FY 2022'); return false;" style="color: #000 !important; background-color: slategray !important;">
+                                    <img src="~/images/chart_bar.png" />Payback Summary By Fiscal Year FY 2022
+                                </a>
+                            </li>
+                            @*Nazeema*@
+                            <li>
+                                <a href="#" onclick="PrintPayBackSummaryByFicalYear2023('Payback Summary By Fiscal Year FY 2023'); return false;" style="color: #000 !important; background-color: slategray !important;">
+                                    <img src="~/images/chart_bar.png" />Payback Summary By Fiscal Year FY 2023
+
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="PrintPayBackSummaryByFicalYear2024('Payback Summary By Fiscal Year FY 2024'); return false;" style="color: #000 !important; background-color: slategray !important;">
+                                    <img src="~/images/chart_bar.png" />Payback Summary By Fiscal Year FY 2024
+
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="PrintPayBackSummaryByFicalYear2025('Payback Summary By Fiscal Year FY 2025'); return false;" style="color: #000 !important; background-color: slategray !important;">
+                                    <img src="~/images/chart_bar.png" />Payback Summary By Fiscal Year FY 2025
+
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="PrintDeficiencyReportRollbackBreakDown('Deficiency Report- Rollback BreakDown'); return false;" style="color: #000 !important; background-color: slategray !important;">
+                                    <img src="~/images/building.png" /> Deficiency Report- Rollback BreakDown
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a style="background-color: slategray !important; color: #000 !important" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Administrative Options  &#9660;</a>
+                        <ul class="dropdown-menu" style=" background-color: slategray !important;">
+                            <li><a style="color: #000 !important; background-color: slategray !important;" href="UserManagement"><img src="~/images/user_edit.png" /> User Management</a></li>
+                            <li><a style="color: #000 !important; background-color: slategray !important;" href="UserPasswordManagement"><img src="~/images/user_edit.png" /> User PWD Management</a></li>
+                            <li><a style="color: #000 !important; background-color: slategray !important;" href="AddEditAgency"><img src="~/images/key.png" /> Agency Management</a></li>
+                            <li><a style="color: #000 !important; background-color: slategray !important;" href="AddEditSuspendedDefaults"><img src="~/images/plugin_delete.png" /> Unit Suspended Defaults</a></li>
+                            <li><a style="color: #000 !important; background-color: slategray !important;" href="WorksheetHistory"><img src="~/images/calendar.png" /> Default Worksheet History</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a style="color: #000 !important" href="Logout">Logout</a>
+                    </li>
+                    <!--
+                        <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Login">Login</a></li>
+                    -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="table" id="content" style="padding-top: 75px;width: 100%"></div>
+    <div class="container body-content" ab>
+        @RenderBody()
+        <footer class="navbar-fixed-bottom" style="background-color: slategray; color: black">
+            <p>&copy; 2018 - Battery Park City Authority - Condo Deficiencies</p>
+        </footer>
+    </div>
+    <script type="text/javascript">
+        //var reportPath = "http://reports.condodeficiencies.com/ReportViewer?";
+        var reportPath = "https://localhost:44300/ReportViewer?";
+        //var reportPath = "http://12.221.95.100:8033/ReportViewer?";
+        var invoiceGuid = '00000000-0000-0000-0000-000000000000';
+        var agencyCode;
+        //var isAdminUser;
+
+        $(document).ready
+            (function () {
+
+
+            });
+
+        function isAdminUser() {
+
+        }
+
+        function SetupDialog() {
+            $("#dateTimePrintDate").igDatePicker({
+                width: "270px",
+                dateInputFormat: "date",
+                regional: "en-US",
+                required: true,
+                nullText: "Please select an invoice date...",
+                datepickerOptions: {
+                    showWeek: false,
+                    numberOfMonths: [1, 2]
+                }
+            });
+            $("#dateTimePrintDate").igDatePicker("value", null);
+
+            $("#comboPrintBuildings").on("igcomboselectionchanged", function (evt, ui) {
+                var bg = $("#comboPrintBuildings").igCombo("value");
+                var objDate = new Date($("#dateTimePrintDate").igDatePicker("value"));
+                var idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+            });
+
+            $("#checkIncludeSuspended").igCheckboxEditor({
+                inputName: "includeSuspended",
+                checked: false
+            });
+
+            $("#checkToExcel").igCheckboxEditor({
+                inputName: "toExcel",
+                checked: false
+            });
+        }
+
+        function SetupDialogComponents(showDate, showBuildings, showSuspended, showExcel) {
+            if (showDate) {
+                $('#dateTimePrintDate').show();
+                $('#reportDateLabel').show();
+            }
+            else {
+                $('#dateTimePrintDate').hide();
+                $('#reportDateLabel').hide();
+            }
+
+            if (showBuildings) {
+                $('#comboPrintBuildings').show();
+                $('#reportBuildingLabel').show();
+            }
+            else {
+                $('#comboPrintBuildings').hide();
+                $('#reportBuildingLabel').hide();
+            }
+
+            if (showSuspended) {
+                $('#reportIncludeSuspendedLabel').show();
+                $('#checkIncludeSuspended').show();
+            }
+            else {
+                $('#reportIncludeSuspendedLabel').hide();
+                $('#checkIncludeSuspended').hide();
+            }
+
+            if (showExcel) {
+                $('#reportExportToExcel').show();
+                $('#checkToExcel').show();
+            }
+            else {
+                $('#reportExportToExcel').hide();
+                $('#checkToExcel').hide();
+            }
+        }
+
+        function PrintDeficiencyReport(title) {
+            checkAdmin();
+            $("#dialog-alert").dialog({
+                title: title,
+                resizable: false,
+                height: 250,
+                width: 450,
+                show: { effect: 'drop', direction: "up" },
+                modal: true,
+                draggable: false,
+                open: function (event, ui) {
+                    SetupDialogComponents(true, true, false, true);
+                    printLoadBuildings();
+                    SetupDialog();
+                    $(".ui-dialog-titlebar-close").hide();
+                },
+                buttons: {
+                    "OK": function () {
+                        DoPrintDeficiencyReport();
+                        $(this).dialog("close");
+                    },
+                    "Cancel": function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+        }
+        function PrintDeficiencyReportOld(title) {
+            $("#dialog-alert").dialog({
+                title: title,
+                resizable: false,
+                height: 250,
+                width: 450,
+                show: { effect: 'drop', direction: "up" },
+                modal: true,
+                draggable: false,
+                open: function (event, ui) {
+                    SetupDialogComponents(true, true, false, true);
+                    printLoadBuildings();
+                    SetupDialog();
+                    $(".ui-dialog-titlebar-close").hide();
+                },
+                buttons: {
+                    "OK": function () {
+                        DoPrintDeficiencyReportOld();
+                        $(this).dialog("close");
+                    },
+                    "Cancel": function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+        }
+        function PrintBuildingSummary(title) {
+            $("#dialog-alert").dialog({
+                title: title,
+                resizable: false,
+                height: 250,
+                width: 450,
+                show: { effect: 'drop', direction: "up" },
+                modal: true,
+                draggable: false,
+                open: function (event, ui) {
+                    SetupDialogComponents(true, true, true, true);
+                    printLoadBuildings();
+                    SetupDialog();
+                    $(".ui-dialog-titlebar-close").hide();
+                },
+                buttons: {
+                    "OK": function () {
+                        DoPrintBuildingSummary();
+                        $(this).dialog("close");
+                    },
+                    "Cancel": function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+        }
+
+
+        function PrintBuildingSummaryVersionReport(title) {
+            $("#dialog-alert").dialog({
+                title: title,
+                resizable: false,
+                height: 250,
+                width: 450,
+                show: { effect: 'drop', direction: "up" },
+                modal: true,
+                draggable: false,
+                open: function (event, ui) {
+                    SetupDialogComponents(true, true, true, true);
+                    printLoadBuildingsforSummaryVersion();
+                    SetupDialog();
+                    $(".ui-dialog-titlebar-close").hide();
+                },
+                buttons: {
+                    "OK": function () {
+                        // DoPrintBuildingSummary();
+                        DoPrintBuildingSummaryVersion();
+                        $(this).dialog("close");
+                    },
+                    "Cancel": function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+        }
+        function PrintDeficiencyReportRollbackBreakDown(title) {
+            $("#dialog-alert").dialog({
+                title: title,
+                resizable: false,
+                height: 250,
+                width: 450,
+                show: { effect: 'drop', direction: "up" },
+                modal: true,
+                draggable: false,
+                open: function (event, ui) {
+                    SetupDialogComponents(true, true, false, false);
+                    printLoadBuildings();
+                    SetupDialog();
+                    $(".ui-dialog-titlebar-close").hide();
+                },
+                buttons: {
+                    "OK": function () {
+                        DoPrintrollbackBreakdown();
+                        $(this).dialog("close");
+                    },
+                    "Cancel": function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+        }
+        function PrintConsolidatedRentDetail(title) {
+            checkAdmin();
+            $("#dialog-alert").dialog({
+                title: title,
+                resizable: false,
+                height: 250,
+                width: 450,
+                show: { effect: 'drop', direction: "up" },
+                modal: true,
+                draggable: false,
+                open: function (event, ui) {
+                    SetupDialogComponents(true, false, false, true);
+                    SetupDialog();
+                    $(".ui-dialog-titlebar-close").hide();
+                },
+                buttons: {
+                    "OK": function () {
+                        DoPrintConsolidatedRentDetail();
+                        $(this).dialog("close");
+                    },
+                    "Cancel": function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+        }
+
+        function PrintPayBackSummaryByFicalYear(title) {
+            checkAdmin();
+            $("#dialog-alert").dialog({
+                title: title,
+                resizable: false,
+                height: 250,
+                width: 450,
+                show: { effect: 'drop', direction: "up" },
+                modal: true,
+                draggable: false,
+                open: function (event, ui) {
+                    SetupDialogComponents(true, false, false, true);
+                    SetupDialog();
+                    $(".ui-dialog-titlebar-close").hide();
+                },
+                buttons: {
+                    "OK": function () {
+                        DoPrintPaybackSummaryByFiscalYear();
+                        $(this).dialog("close");
+                    },
+                    "Cancel": function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+        }
+
+        /*  Nazeema 2023*/
+        function PrintPayBackSummaryByFicalYear2023(title) {
+            checkAdmin();
+            $("#dialog-alert").dialog({
+                title: title,
+                resizable: false,
+                height: 250,
+                width: 450,
+                show: { effect: 'drop', direction: "up" },
+                modal: true,
+                draggable: false,
+                open: function (event, ui) {
+                    SetupDialogComponents(true, false, false, true);
+                    SetupDialog();
+                    $(".ui-dialog-titlebar-close").hide();
+                },
+                buttons: {
+                    "OK": function () {
+                        DoPrintPaybackSummaryByFiscalYear2023();
+                        $(this).dialog("close");
+                    },
+                    "Cancel": function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+        }
+
+
+        function PrintPayBackSummaryByFicalYear2024(title) {
+            checkAdmin();
+            $("#dialog-alert").dialog({
+                title: title,
+                resizable: false,
+                height: 250,
+                width: 450,
+                show: { effect: 'drop', direction: "up" },
+                modal: true,
+                draggable: false,
+                open: function (event, ui) {
+                    SetupDialogComponents(true, false, false, true);
+                    SetupDialog();
+                    $(".ui-dialog-titlebar-close").hide();
+                },
+                buttons: {
+                    "OK": function () {
+                        DoPrintPaybackSummaryByFiscalYear2024();
+                        $(this).dialog("close");
+                    },
+                    "Cancel": function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+        }
+
+        function PrintPayBackSummaryByFicalYear2025(title) {
+            checkAdmin();
+            $("#dialog-alert").dialog({
+                title: title,
+                resizable: false,
+                height: 250,
+                width: 450,
+                show: { effect: 'drop', direction: "up" },
+                modal: true,
+                draggable: false,
+                open: function (event, ui) {
+                    SetupDialogComponents(true, false, false, true);
+                    SetupDialog();
+                    $(".ui-dialog-titlebar-close").hide();
+                },
+                buttons: {
+                    "OK": function () {
+                        DoPrintPaybackSummaryByFiscalYear2025();
+                        $(this).dialog("close");
+                    },
+                    "Cancel": function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+        }
+
+
+        function PrintConsolidatedRentDataByFicalYear(title) {
+            checkAdmin();
+            $("#dialog-alert").dialog({
+                title: title,
+                resizable: false,
+                height: 250,
+                width: 450,
+                show: { effect: 'drop', direction: "up" },
+                modal: true,
+                draggable: false,
+                open: function (event, ui) {
+                    SetupDialogComponents(true, false, false, true);
+                    SetupDialog();
+                    $(".ui-dialog-titlebar-close").hide();
+                },
+                buttons: {
+                    "OK": function () {
+                        DoPrintConsolidatedRentDataByFiscalYear();
+                        $(this).dialog("close");
+                    },
+                    "Cancel": function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+        }
+
+        function DoPrintConsolidatedRentDataByFiscalYear() {
+            var objDate = new Date($("#dateTimePrintDate").igDatePicker("value"));
+            var idt;
+            if (objDate.getDate() !== "1") {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+                $("#dateTimePrintDate").igDatePicker("value", idt);
+            }
+            else {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+            }
+
+            if (idt === null) { return; }
+            var exc = $("#checkToExcel").igCheckboxEditor("option", "checked");
+            var url = reportPath + 'rt=cdrdfsData&dt=' + idt + '&exc=' + exc;
+            window.open(url, '_blank');
+        }
+
+        function PrintConsolidatedRentDetailByFicalYear(title) {
+            checkAdmin();
+            $("#dialog-alert").dialog({
+                title: title,
+                resizable: false,
+                height: 250,
+                width: 450,
+                show: { effect: 'drop', direction: "up" },
+                modal: true,
+                draggable: false,
+                open: function (event, ui) {
+                    SetupDialogComponents(true, false, false, true);
+                    SetupDialog();
+                    $(".ui-dialog-titlebar-close").hide();
+                },
+                buttons: {
+                    "OK": function () {
+                        DoPrintConsolidatedRentDetailByFiscalYear();
+                        $(this).dialog("close");
+                    },
+                    "Cancel": function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+        }
+
+        function PrintConsolidatedAgingDetail(title) {
+            checkAdmin();
+            $("#dialog-alert").dialog({
+                title: title,
+                resizable: false,
+                height: 250,
+                width: 450,
+                show: { effect: 'drop', direction: "up" },
+                modal: true,
+                draggable: false,
+                open: function (event, ui) {
+                    SetupDialogComponents(true, false, false, true);
+                    SetupDialog();
+                    $(".ui-dialog-titlebar-close").hide();
+                },
+                buttons: {
+                    "OK": function () {
+                        DoPrintConsolidatedAgingDetail();
+                        $(this).dialog("close");
+                    },
+                    "Cancel": function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+        }
+
+
+        function PrintConsolidatedAgingDetail3(title) {
+            checkAdmin();
+            $("#dialog-alert").dialog({
+                title: title,
+                resizable: false,
+                height: 250,
+                width: 505,
+                show: { effect: 'drop', direction: "up" },
+                modal: true,
+                draggable: false,
+                open: function (event, ui) {
+                    SetupDialogComponents(true, false, false, true);
+                    SetupDialog();
+                    $(".ui-dialog-titlebar-close").hide();
+                },
+                buttons: {
+                    "OK": function () {
+                        DoPrintConsolidatedAgingDetail3();
+                        $(this).dialog("close");
+                    },
+                    "Cancel": function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+        }
+        function PrintUnitListing(title) {
+            $("#dialog-alert").dialog({
+                title: title,
+                resizable: false,
+                height: 250,
+                width: 450,
+                show: { effect: 'drop', direction: "up" },
+                modal: true,
+                draggable: false,
+                open: function (event, ui) {
+                    SetupDialogComponents(false, true, false, false);
+                    printLoadBuildings();
+                    SetupDialog();
+                    $(".ui-dialog-titlebar-close").hide();
+                },
+                buttons: {
+                    "OK": function () {
+                        DoPrintUnitListing();
+                        $(this).dialog("close");
+                    },
+                    "Cancel": function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+        }
+
+        function PrintInvoice(title) {
+            $("#dialog-alert").dialog({
+                title: title,
+                resizable: false,
+                height: 250,
+                width: 450,
+                show: { effect: 'drop', direction: "up" },
+                modal: true,
+                draggable: false,
+                open: function (event, ui) {
+                    SetupDialogComponents(true, true, false, false);
+                    printLoadBuildings();
+                    SetupDialog();
+                    $(".ui-dialog-titlebar-close").hide();
+                },
+                buttons: {
+                    "OK": function () {
+                        DoPrintInvoice();
+                        $(this).dialog("close");
+                    },
+                    "Cancel": function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+
+        }
+
+        function PrintDefaultCertificate(title) {
+            $("#dialog-alert").dialog({
+                title: title,
+                resizable: false,
+                height: 250,
+                width: 450,
+                show: { effect: 'drop', direction: "up" },
+                modal: true,
+                draggable: false,
+                open: function (event, ui) {
+                    SetupDialogComponents(true, true, false, false);
+                    printLoadBuildings();
+                    SetupDialog();
+                    $(".ui-dialog-titlebar-close").hide();
+                },
+                buttons: {
+                    "OK": function () {
+                        DoPrintDefaultCertificate();
+                        $(this).dialog("close");
+                    },
+                    "Cancel": function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+
+        }
+
+
+        function printLoadBuildingsforSummaryVersion() {
+            $.ajax(
+                {
+                    type: 'GET',
+                    url: '/Home/GetBuildingListforSummaryVersion',
+                    cache: false,
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: printInvoiceLoadBuildingsSuccess,
+                    error: function (jqXHR, exception) {
+                        console.log(jqXHR);
+                        console.log(exception);
+                    }
+                });
+        }
+        function printLoadBuildings() {
+            $.ajax(
+                {
+                    type: 'GET',
+                    url: '/Home/GetBuildingList',
+                    cache: false,
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: printInvoiceLoadBuildingsSuccess,
+                    error: function (jqXHR, exception) {
+                        console.log(jqXHR);
+                        console.log(exception);
+                    }
+                });
+        }
+
+        function printInvoiceLoadBuildingsSuccess(data) {
+
+            $("#comboPrintBuildings").igCombo({
+                width: "270px",
+                textKey: "Name",
+                valueKey: "BuildingGuid",
+                dataSource: data,
+                dataSourceType: "json",
+                filteringType: "local",
+                autoComplete: true,
+                placeHolder: "Select a building...",
+                dropDownOrientation: "bottom",
+
+            });
+
+            $("#comboPrintBuildings").on("igcomboselectionchanged", function (evt, ui) {
+                var bg = $("#comboPrintBuildings").igCombo("value");
+                var objDate = new Date($("#dateTimePrintDate").igDatePicker("value"));
+                var idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+            });
+
+            $(function () {
+                $("#dateTimePrintDate").igDatePicker({
+                    width: "270px",
+                    dateInputFormat: "date",
+                    regional: "en-US",
+                    required: true,
+                    nullText: "Please select an invoice date...",
+                    datepickerOptions: {
+                        showWeek: false,
+                        numberOfMonths: [1, 2],
+                        minDate: new Date(2023, 9, 1)
+                    }
+                });
+                $("#dateTimePrintDate").igDatePicker("value", null);
+                $("#dateTimePrintDate").on("igdatepickervaluechanged", function (evt, ui) {
+                    var objDate = new Date($("#dateTimePrintDate").igDatePicker("value"));
+                    var idt;
+                    if (objDate.getDate() !== "1") {
+                        idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+                        $("#dateTimePrintDate").igDatePicker("value", idt);
+                    }
+                    else {
+                        idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+                    }
+                });
+            });
+
+
+        }
+
+        function DoPrintDeficiencyReport() {
+            var objDate = new Date($("#dateTimePrintDate").igDatePicker("value"));
+            var idt;
+            if (objDate.getDate() !== "1") {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+                $("#dateTimePrintDate").igDatePicker("value", idt);
+            }
+            else {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+            }
+
+            var bg = $("#comboPrintBuildings").igCombo("value");
+            var exc = $("#checkToExcel").igCheckboxEditor("option", "checked");
+            if (bg !== null) {
+                var url = reportPath + 'rt=df&bg=' + bg + '&dt=' + idt + '&exc=' + exc + '&isold=false';
+                window.open(url, '_blank');
+            }
+        }
+        function DoPrintDeficiencyReportOld() {
+            var objDate = new Date($("#dateTimePrintDate").igDatePicker("value"));
+            var idt;
+            if (objDate.getDate() !== "1") {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+                $("#dateTimePrintDate").igDatePicker("value", idt);
+            }
+            else {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+            }
+
+            var bg = $("#comboPrintBuildings").igCombo("value");
+            var exc = $("#checkToExcel").igCheckboxEditor("option", "checked");
+            if (bg !== null) {
+                var url = reportPath + 'rt=df&bg=' + bg + '&dt=' + idt + '&exc=' + exc + '&isold=true';
+                window.open(url, '_blank');
+            }
+        }
+        function DoPrintBuildingSummary() {
+            var objDate = new Date($("#dateTimePrintDate").igDatePicker("value"));
+            var idt;
+            if (objDate.getDate() !== "1") {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+                $("#dateTimePrintDate").igDatePicker("value", idt);
+            }
+            else {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+            }
+
+            var bg = $("#comboPrintBuildings").igCombo("value");
+            var exc = $("#checkToExcel").igCheckboxEditor("option", "checked");
+            var shsu = $("#checkIncludeSuspended").igCheckboxEditor("option", "checked");
+            var bgname = $("#comboPrintBuildings").igCombo("text");
+
+            console.log(exc);
+            if (bg !== null) {
+                if (exc == "0") {
+                    var url = reportPath + 'rt=bs&bg=' + bg + '&dt=' + idt + '&exc=' + exc + '&shsu=' + shsu;
+                    window.open(url, '_blank');
+                }
+                else if (exc == "1") {
+                    document.getElementById('buildingGuid').value = bg;
+                    document.getElementById('invoiceDate').value = idt;
+                    document.getElementById('shsu').value = shsu;
+                    document.getElementById('buildingGuidname').value = bgname;
+                    setTimeout(function () {
+                        $('#downloadForm').submit();
+                    }, 1000);
+                }
+            }
+        }
+        function DoPrintBuildingSummaryVersion() {
+            var objDate = new Date($("#dateTimePrintDate").igDatePicker("value"));
+            var idt;
+            if (objDate.getDate() !== "1") {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+                $("#dateTimePrintDate").igDatePicker("value", idt);
+            }
+            else {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+            }
+
+            var bg = $("#comboPrintBuildings").igCombo("value");
+            var exc = $("#checkToExcel").igCheckboxEditor("option", "checked");
+            var shsu = $("#checkIncludeSuspended").igCheckboxEditor("option", "checked");
+
+            console.log(exc);
+            console.log(bg);
+            if (bg.length > 0) {
+                var url = reportPath + 'rt=bsv&bg=' + bg + '&dt=' + idt + '&exc=' + exc + '&shsu=' + shsu;
+                window.open(url, '_blank');
+            }
+
+        }
+        function DoPrintrollbackBreakdown() {
+            var objDate = new Date($("#dateTimePrintDate").igDatePicker("value"));
+            var idt;
+            if (objDate.getDate() !== "1") {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+                $("#dateTimePrintDate").igDatePicker("value", idt);
+            }
+            else {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+            }
+
+            var bg = $("#comboPrintBuildings").igCombo("value");
+
+            if (bg.length > 0) {
+                var url = reportPath + 'rt=dcr&bg=' + bg + '&dt=' + idt;
+                window.open(url, '_blank');
+            }
+
+        }
+        function DoPrintInvoice() {
+            var objDate = new Date($("#dateTimePrintDate").igDatePicker("value"));
+            var idt;
+            if (objDate.getDate() !== "1") {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+                $("#dateTimePrintDate").igDatePicker("value", idt);
+            }
+            else {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+            }
+
+            var bg = $("#comboPrintBuildings").igCombo("value");
+            if (bg !== null) {
+
+                $.ajax(
+                    {
+                        type: 'GET',
+                        async: true,
+                        url: '/Home/InvoiceExists',
+                        data: { buildingGuid: bg, invoiceDate: idt },
+                        dataType: "json",
+                        success: function (response) {
+                            if (response.invoiceGuid !== '00000000-0000-0000-0000-000000000000') {
+                                var url = reportPath + 'rt=i&ig=' + response.invoiceGuid;
+                                window.open(url, '_blank');
+                            }
+                        },
+                        error: function (jqXHR, exception) {
+                            console.log(jqXHR);
+                            console.log(exception);
+                        }
+                    });
+            }
+        }
+
+        function DoPrintDefaultCertificate() {
+            var objDate = new Date($("#dateTimePrintDate").igDatePicker("value"));
+            var idt;
+            if (objDate.getDate() !== "1") {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+                $("#dateTimePrintDate").igDatePicker("value", idt);
+            }
+            else {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+            }
+
+            var bg = $("#comboPrintBuildings").igCombo("value");
+            if (bg !== null) {
+                var url = reportPath + 'rt=dc&bg=' + bg + '&dt=' + idt;
+                window.open(url, '_blank');
+            }
+        }
+
+        function DoPrintUnitListing() {
+            var bg = $("#comboPrintBuildings").igCombo("value");
+
+            if (bg === null) { return; }
+            if (bg === '00000000-0000-0000-0000-000000000000') { return; }
+
+            var url = reportPath + 'rt=ul&bg=' + bg;
+            window.open(url, '_blank');
+        }
+
+        function DoPrintConsolidatedRentDetail() {
+            var objDate = new Date($("#dateTimePrintDate").igDatePicker("value"));
+            var idt;
+            if (objDate.getDate() !== "1") {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+                $("#dateTimePrintDate").igDatePicker("value", idt);
+            }
+            else {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+            }
+
+            if (idt === null) { return; }
+            var exc = $("#checkToExcel").igCheckboxEditor("option", "checked");
+            var url = reportPath + 'rt=cdrd&dt=' + idt + '&exc=' + exc;
+            window.open(url, '_blank');
+        }
+
+
+        function DoPrintPaybackSummaryByFiscalYear() {
+            var objDate = new Date($("#dateTimePrintDate").igDatePicker("value"));
+            var idt;
+            if (objDate.getDate() !== "1") {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+                $("#dateTimePrintDate").igDatePicker("value", idt);
+            }
+            else {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+            }
+
+            if (idt === null) { return; }
+            //enabled ny nazeema
+            var exc = $("#checkToExcel").igCheckboxEditor("option", "checked");
+            var url = reportPath + 'rt=pfsl&dt=' + idt + '&exc=' + exc;
+            window.open(url, '_blank');
+        }
+        /*  Nazeema*/
+        function DoPrintPaybackSummaryByFiscalYear2023() {
+            var objDate = new Date($("#dateTimePrintDate").igDatePicker("value"));
+            var idt;
+            if (objDate.getDate() !== "1") {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+                $("#dateTimePrintDate").igDatePicker("value", idt);
+            }
+            else {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+            }
+
+            if (idt === null) { return; }
+            //enabled ny nazeema
+            var exc = $("#checkToExcel").igCheckboxEditor("option", "checked");
+            var url = reportPath + 'rt=pfsl2023&dt=' + idt + '&exc=' + exc;
+            window.open(url, '_blank');
+        }
+        function DoPrintPaybackSummaryByFiscalYear2024() {
+            var objDate = new Date($("#dateTimePrintDate").igDatePicker("value"));
+            var idt;
+            if (objDate.getDate() !== "1") {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+                $("#dateTimePrintDate").igDatePicker("value", idt);
+            }
+            else {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+            }
+
+            if (idt === null) { return; }
+            //enabled ny nazeema
+            var exc = $("#checkToExcel").igCheckboxEditor("option", "checked");
+            var url = reportPath + 'rt=pfsl2024&dt=' + idt + '&exc=' + exc;
+            window.open(url, '_blank');
+        }
+        function DoPrintPaybackSummaryByFiscalYear2025() {
+            var objDate = new Date($("#dateTimePrintDate").igDatePicker("value"));
+            var idt;
+            if (objDate.getDate() !== "1") {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+                $("#dateTimePrintDate").igDatePicker("value", idt);
+            }
+            else {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+            }
+
+            if (idt === null) { return; }
+            //enabled ny nazeema
+            var exc = $("#checkToExcel").igCheckboxEditor("option", "checked");
+            var url = reportPath + 'rt=pfsl2025&dt=' + idt + '&exc=' + exc;
+            window.open(url, '_blank');
+        }
+        function DoPrintConsolidatedRentDetailByFiscalYear() {
+            var objDate = new Date($("#dateTimePrintDate").igDatePicker("value"));
+            var idt;
+            if (objDate.getDate() !== "1") {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+                $("#dateTimePrintDate").igDatePicker("value", idt);
+            }
+            else {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+            }
+
+            if (idt === null) { return; }
+            var exc = $("#checkToExcel").igCheckboxEditor("option", "checked");
+            var url = reportPath + 'rt=cdrdfs&dt=' + idt + '&exc=' + exc;
+            window.open(url, '_blank');
+        }
+
+        function DoPrintConsolidatedAgingDetail() {
+            var objDate = new Date($("#dateTimePrintDate").igDatePicker("value"));
+            var idt;
+            if (objDate.getDate() !== "1") {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+                $("#dateTimePrintDate").igDatePicker("value", idt);
+            }
+            else {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+            }
+
+            if (idt === null) { return; }
+            var exc = $("#checkToExcel").igCheckboxEditor("option", "checked");
+            var url = reportPath + 'rt=cdad&dt=' + idt + '&exc=' + exc;
+            window.open(url, '_blank');
+        }
+
+        function DoPrintConsolidatedAgingDetail3() {
+            var objDate = new Date($("#dateTimePrintDate").igDatePicker("value"));
+            var idt;
+            if (objDate.getDate() !== "1") {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+                $("#dateTimePrintDate").igDatePicker("value", idt);
+            }
+            else {
+                idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+            }
+
+            if (idt === null) { return; }
+            var exc = $("#checkToExcel").igCheckboxEditor("option", "checked");
+            var url = reportPath + 'rt=cdad3&dt=' + idt + '&exc=' + exc;
+            window.open(url, '_blank');
+        }
+
+        function checkSession() {
+            $.get("/Home/CheckSession", null, function (data) {
+                if (data == 0) {
+                    window.location.href = 'Login';
+                }
+            });
+        }
+        function checkAdmin() {
+            $.get("/Home/CheckAdmin", null, function (data) {
+                if (data != 'RED' && data != 'AUTH') {
+                    window.location.href = 'AccessDenied';
+                }
+            });
+        }
+
+    </script>
+    <form id="downloadForm" action="/Home/ExportToExcelReport" method="post" style="display:none;">
+        <input type="text" id="buildingGuid" name="buildingGuid" />
+        <input type="text" id="buildingGuidname" name="buildingGuidname" />
+        <input type="text" id="invoiceDate" name="invoiceDate" />
+        <input type="text" id="shsu" name="shsu" />
+    </form>
+    <div id="dialog-alert" style="display: none">
+        <p>
+            <table>
+                <tr>
+                    <td width="200px"><div id="reportBuildingLabel">Building:</div></td>
+                    <td><div id="comboPrintBuildings"></div></td>
+                </tr>
+
+                <tr>
+                    <td width="200px"><div id="reportDateLabel">Invoice Date:</div></td>
+                    <td><div id="dateTimePrintDate"></div></td>
+                </tr>
+
+                <tr>
+                    <td width="200px"><div id="reportIncludeSuspendedLabel">Show Suspended:</div></td>
+                    <td><div id="checkIncludeSuspended"></div></td>
+                </tr>
+
+                <tr>
+                    <td width="200px"><div id="reportExportToExcel">Export To Excel:</div></td>
+                    <td><div id="checkToExcel"></div></td>
+                </tr>
+            </table>
+        </p>
+    </div>
+    @RenderSection("Scripts", required: false)
+</body>
+
+</html>

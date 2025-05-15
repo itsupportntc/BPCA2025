@@ -1,0 +1,20 @@
+C:\Users\wreye\Documents\Redsoft\BPCA\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.2\win-x86\appsettings.Development.json
+C:\Users\wreye\Documents\Redsoft\BPCA\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.2\win-x86\bundleconfig.json
+C:\Users\wreye\Documents\Redsoft\BPCA\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.2\win-x86\Connected Services\TestSvcRef\ConnectedService.json
+C:\Users\wreye\Documents\Redsoft\BPCA\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.2\win-x86\BPCACondoDeficiencies.exe
+C:\Users\wreye\Documents\Redsoft\BPCA\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.2\win-x86\web.config
+C:\Users\wreye\Documents\Redsoft\BPCA\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.2\win-x86\appsettings.json
+C:\Users\wreye\Documents\Redsoft\BPCA\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.2\win-x86\BPCACondoDeficiencies.deps.json
+C:\Users\wreye\Documents\Redsoft\BPCA\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.2\win-x86\BPCACondoDeficiencies.runtimeconfig.json
+C:\Users\wreye\Documents\Redsoft\BPCA\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.2\win-x86\BPCACondoDeficiencies.runtimeconfig.dev.json
+C:\Users\wreye\Documents\Redsoft\BPCA\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.2\win-x86\BPCACondoDeficiencies.dll
+C:\Users\wreye\Documents\Redsoft\BPCA\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.2\win-x86\BPCACondoDeficiencies.pdb
+C:\Users\wreye\Documents\Redsoft\BPCA\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.2\win-x86\Infragistics.Web.Mvc.dll
+C:\Users\wreye\Documents\Redsoft\BPCA\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.2\win-x86\Infragistics.Web.Mvc.xml
+C:\Users\wreye\Documents\Redsoft\BPCA\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.2\win-x86\BPCACondoDeficiencies.AssemblyInfoInputs.cache
+C:\Users\wreye\Documents\Redsoft\BPCA\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.2\win-x86\BPCACondoDeficiencies.AssemblyInfo.cs
+C:\Users\wreye\Documents\Redsoft\BPCA\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.2\win-x86\BPCACondoDeficiencies.csproj.CoreCompileInputs.cache
+C:\Users\wreye\Documents\Redsoft\BPCA\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.2\win-x86\BPCACondoDeficiencies.csproj.CopyComplete
+C:\Users\wreye\Documents\Redsoft\BPCA\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.2\win-x86\BPCACondoDeficiencies.dll
+C:\Users\wreye\Documents\Redsoft\BPCA\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.2\win-x86\BPCACondoDeficiencies.pdb
+C:\Users\wreye\Documents\Redsoft\BPCA\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.2\win-x86\BPCACondoDeficiencies.genruntimeconfig.cache

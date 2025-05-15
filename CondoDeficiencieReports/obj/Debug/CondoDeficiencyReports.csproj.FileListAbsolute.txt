@@ -1,0 +1,1046 @@
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\CondoDeficiencyReports.dll.config
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\CondoDeficiencyReports.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\CondoDeficiencyReports.pdb
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\csc.exe
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\csc.exe.config
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\csc.rsp
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\csi.exe
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\csi.exe.config
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\csi.rsp
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.AppContext.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Collections.Immutable.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Console.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.IO.Compression.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.IO.FileSystem.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.IO.Pipes.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Reflection.Metadata.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.AccessControl.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.Claims.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.ValueTuple.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Xml.XPath.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\vbc.exe
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\vbc.exe.config
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\vbc.rsp
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\VBCSCompiler.exe
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\VBCSCompiler.exe.config
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Antlr3.Runtime.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\AspNet.ScriptManager.bootstrap.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\AspNet.ScriptManager.jQuery.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.ScriptManager.WebForms.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.Web.Infrastructure.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Newtonsoft.Json.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\System.Web.Optimization.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\WebGrease.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\System.Web.Optimization.xml
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Newtonsoft.Json.xml
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Antlr3.Runtime.pdb
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csprojAssemblyReference.cache
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAInvoice.resources
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAInvoiceAdjustments.resources
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAInvoiceCredits.resources
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAnvoiceAllocatedAdjustments.resources
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BuildingSummary.resources
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BuildingSummaryReport_Summary.resources
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.ConsolidatedDeficienciesSummary_RentDetail.resources
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.ConsolidatedDeficiencies_Aging.resources
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DefaultCertificate.resources
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DefaultCertificateBreakdown.resources
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport.resources
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_Cover.resources
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_Paybacks.resources
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSubReport.resources
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSummary.resources
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PilotAdjDetails.resources
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_RollbackDetailSummary.resources
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_RollbackSubReport.resources
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.UnitListingReport.resources
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csproj.GenerateResource.cache
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.dll.licenses
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csproj.CoreCompileInputs.cache
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csproj.CopyComplete
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.pdb
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Rdf.v12.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Image.v12.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Html.v12.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Xaml.v12.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Image.Unsafe.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\CondoDeficiencyReports.dll.config
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\CondoDeficiencyReports.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\CondoDeficiencyReports.pdb
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\csc.exe
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\csc.exe.config
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\csc.rsp
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\csi.exe
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\csi.exe.config
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\csi.rsp
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.AppContext.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Collections.Immutable.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Console.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.IO.Compression.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.IO.FileSystem.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.IO.Pipes.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Reflection.Metadata.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.AccessControl.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.Claims.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.ValueTuple.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Xml.XPath.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\vbc.exe
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\vbc.exe.config
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\vbc.rsp
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\VBCSCompiler.exe
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\VBCSCompiler.exe.config
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Antlr3.Runtime.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\AspNet.ScriptManager.jQuery.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.ArsClient.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Chart.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Design.Win.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Diagnostics.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Document.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Document.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Excel.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Pdf.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Extensibility.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Viewer.Win.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Web.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.Owin.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.Owin.Security.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.Web.Infrastructure.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Newtonsoft.Json.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Owin.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\System.Web.Optimization.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\WebGrease.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Rdf.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\DocumentFormat.OpenXml.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Image.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Html.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Xaml.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Image.Unsafe.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.ArsClient.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Chart.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Design.Win.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Diagnostics.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Document.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Document.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Excel.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Pdf.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Extensibility.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Viewer.Win.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Web.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.Owin.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.Owin.Security.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\System.Web.Optimization.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Newtonsoft.Json.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Antlr3.Runtime.pdb
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Rdf.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Image.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Html.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Xaml.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Image.Unsafe.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Chart.v12.resources.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Design.Win.v12.resources.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Document.v12.resources.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Export.Excel.v12.resources.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Export.Pdf.v12.resources.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Extensibility.v12.resources.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.v12.resources.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Viewer.Win.v12.resources.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Web.v12.resources.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Export.Image.v12.resources.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Export.Html.v12.resources.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csprojAssemblyReference.cache
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAInvoice.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAInvoiceAdjustments.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAInvoiceCredits.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAnvoiceAllocatedAdjustments.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BuildingSummary_Version1.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BuildingSummary.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BuildingSummaryReport_Summary.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.ConsolidatedDeficienciesSummary_RentDetailByFicalYear.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.ConsolidatedDeficienciesSummary_RentDetail.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.ConsolidatedDeficiencies_AgingByYear.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.ConsolidatedDeficiencies_Aging.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DefaultCertificate.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DefaultCertificateBreakdown.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_Cover.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_CoverOld.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_Paybacks.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSubReport.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSummary.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSummaryForFiscalYear2023.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSummaryForFiscalYear.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PilotAdjDetails.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_RollbackDetailSummary.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_RollbackSubReport.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.UnitListingReport.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSummaryNew.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csproj.GenerateResource.cache
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.dll.licenses
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csproj.CoreCompileInputs.cache
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csproj.CopyComplete
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.pdb
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\CondoDeficiencyReports.dll.config
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\CondoDeficiencyReports.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\CondoDeficiencyReports.pdb
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\csc.exe
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\csc.exe.config
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\csc.rsp
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\csi.exe
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\csi.exe.config
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\csi.rsp
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.AppContext.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Collections.Immutable.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Console.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.IO.Compression.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.IO.FileSystem.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.IO.Pipes.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Reflection.Metadata.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.AccessControl.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.Claims.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.ValueTuple.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Xml.XPath.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\vbc.exe
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\vbc.exe.config
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\vbc.rsp
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\VBCSCompiler.exe
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\VBCSCompiler.exe.config
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Antlr3.Runtime.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\AspNet.ScriptManager.jQuery.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.ArsClient.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Chart.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Design.Win.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Diagnostics.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Document.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Document.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Excel.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Pdf.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Extensibility.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Viewer.Win.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Web.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.Owin.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.Owin.Security.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.Web.Infrastructure.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Newtonsoft.Json.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Owin.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\System.Web.Optimization.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\WebGrease.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Rdf.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\DocumentFormat.OpenXml.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Image.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Html.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Xaml.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Image.Unsafe.v12.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.ArsClient.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Chart.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Design.Win.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Diagnostics.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Document.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Document.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Excel.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Pdf.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Extensibility.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Viewer.Win.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Web.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.Owin.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.Owin.Security.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\System.Web.Optimization.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Newtonsoft.Json.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Antlr3.Runtime.pdb
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Rdf.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Image.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Html.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Xaml.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Image.Unsafe.v12.xml
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Chart.v12.resources.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Design.Win.v12.resources.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Document.v12.resources.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Export.Excel.v12.resources.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Export.Pdf.v12.resources.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Extensibility.v12.resources.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.v12.resources.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Viewer.Win.v12.resources.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Web.v12.resources.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Export.Image.v12.resources.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Export.Html.v12.resources.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAInvoice.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAInvoiceAdjustments.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAInvoiceCredits.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAnvoiceAllocatedAdjustments.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BuildingSummary_Version1.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BuildingSummary.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BuildingSummaryReport_Summary.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.ConsolidatedDeficienciesSummary_RentDetailByFicalYear.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.ConsolidatedDeficienciesSummary_RentDetail.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.ConsolidatedDeficiencies_AgingByYear.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.ConsolidatedDeficiencies_Aging.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DefaultCertificate.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DefaultCertificateBreakdown.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_Cover.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_CoverOld.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_Paybacks.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSubReport.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSummary.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSummaryForFiscalYear2023.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSummaryForFiscalYear.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PilotAdjDetails.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_RollbackDetailSummary.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_RollbackSubReport.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.UnitListingReport.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSummaryNew.resources
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csproj.GenerateResource.cache
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.dll.licenses
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csproj.CoreCompileInputs.cache
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csproj.CopyComplete
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.pdb
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCA-Latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csprojAssemblyReference.cache
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\CondoDeficiencyReports.dll.config
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\CondoDeficiencyReports.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\CondoDeficiencyReports.pdb
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\csc.exe
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\csc.exe.config
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\csc.rsp
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\csi.exe
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\csi.exe.config
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\csi.rsp
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.AppContext.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Collections.Immutable.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Console.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.IO.Compression.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.IO.FileSystem.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.IO.Pipes.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Reflection.Metadata.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.AccessControl.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.Claims.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.ValueTuple.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Xml.XPath.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\vbc.exe
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\vbc.exe.config
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\vbc.rsp
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\VBCSCompiler.exe
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\roslyn\VBCSCompiler.exe.config
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Antlr3.Runtime.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\AspNet.ScriptManager.jQuery.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.ArsClient.v12.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Chart.v12.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Design.Win.v12.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Diagnostics.v12.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Document.v12.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Document.v12.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Excel.v12.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Pdf.v12.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Extensibility.v12.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.v12.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Viewer.Win.v12.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Web.v12.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.Owin.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.Owin.Security.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.Web.Infrastructure.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Newtonsoft.Json.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Owin.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\System.Web.Optimization.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\WebGrease.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Rdf.v12.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\DocumentFormat.OpenXml.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Image.v12.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Html.v12.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Xaml.v12.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Image.Unsafe.v12.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.ArsClient.v12.xml
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Chart.v12.xml
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Design.Win.v12.xml
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Diagnostics.v12.xml
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Document.v12.xml
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Document.v12.xml
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Excel.v12.xml
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Pdf.v12.xml
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Extensibility.v12.xml
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.v12.xml
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Viewer.Win.v12.xml
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Web.v12.xml
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.Owin.xml
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.Owin.Security.xml
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\System.Web.Optimization.xml
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Newtonsoft.Json.xml
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Antlr3.Runtime.pdb
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Rdf.v12.xml
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Image.v12.xml
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Html.v12.xml
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Xaml.v12.xml
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Image.Unsafe.v12.xml
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Chart.v12.resources.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Design.Win.v12.resources.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Document.v12.resources.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Export.Excel.v12.resources.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Export.Pdf.v12.resources.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Extensibility.v12.resources.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.v12.resources.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Viewer.Win.v12.resources.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Web.v12.resources.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Export.Image.v12.resources.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Export.Html.v12.resources.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csproj.AssemblyReference.cache
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAInvoice.resources
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAInvoiceAdjustments.resources
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAInvoiceCredits.resources
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAnvoiceAllocatedAdjustments.resources
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BuildingSummary_Version1.resources
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BuildingSummary.resources
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BuildingSummaryReport_Summary.resources
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.ConsolidatedDeficienciesSummary_RentDetailByFicalYear.resources
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.ConsolidatedDeficienciesSummary_RentDetail.resources
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.ConsolidatedDeficiencies_AgingByYear.resources
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.ConsolidatedDeficiencies_Aging.resources
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DefaultCertificate.resources
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DefaultCertificateBreakdown.resources
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport.resources
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_Cover.resources
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_CoverOld.resources
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_Paybacks.resources
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSubReport.resources
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSummary.resources
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSummaryForFiscalYear2023.resources
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSummaryForFiscalYear.resources
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PilotAdjDetails.resources
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_RollbackDetailSummary.resources
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_RollbackSubReport.resources
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.UnitListingReport.resources
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSummaryNew.resources
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csproj.GenerateResource.cache
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.dll.licenses
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csproj.CoreCompileInputs.cache
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csproj.CopyComplete
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.pdb
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\CondoDeficiencyReports.dll.config
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\CondoDeficiencyReports.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\CondoDeficiencyReports.pdb
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\csc.exe
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\csc.exe.config
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\csc.rsp
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\csi.exe
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\csi.exe.config
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\csi.rsp
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.AppContext.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Collections.Immutable.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Console.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.IO.Compression.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.IO.FileSystem.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.IO.Pipes.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Reflection.Metadata.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Security.AccessControl.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Security.Claims.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.ValueTuple.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Xml.XPath.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\vbc.exe
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\vbc.exe.config
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\vbc.rsp
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\VBCSCompiler.exe
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\roslyn\VBCSCompiler.exe.config
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\Antlr3.Runtime.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\AspNet.ScriptManager.jQuery.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.ArsClient.v12.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Chart.v12.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Design.Win.v12.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Diagnostics.v12.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Document.v12.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Document.v12.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Excel.v12.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Pdf.v12.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Extensibility.v12.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.v12.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Viewer.Win.v12.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Web.v12.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\Microsoft.Owin.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\Microsoft.Owin.Security.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\Microsoft.Web.Infrastructure.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\Newtonsoft.Json.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\Owin.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\System.Web.Optimization.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\WebGrease.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Rdf.v12.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\DocumentFormat.OpenXml.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Image.v12.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Html.v12.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Xaml.v12.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Image.Unsafe.v12.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.ArsClient.v12.xml
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Chart.v12.xml
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Design.Win.v12.xml
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Diagnostics.v12.xml
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Document.v12.xml
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Document.v12.xml
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Excel.v12.xml
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Pdf.v12.xml
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Extensibility.v12.xml
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.v12.xml
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Viewer.Win.v12.xml
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Web.v12.xml
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\Microsoft.Owin.xml
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\Microsoft.Owin.Security.xml
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\System.Web.Optimization.xml
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\Newtonsoft.Json.xml
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\Antlr3.Runtime.pdb
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Rdf.v12.xml
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Image.v12.xml
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Html.v12.xml
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Xaml.v12.xml
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Image.Unsafe.v12.xml
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Chart.v12.resources.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Design.Win.v12.resources.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Document.v12.resources.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Export.Excel.v12.resources.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Export.Pdf.v12.resources.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Extensibility.v12.resources.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.v12.resources.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Viewer.Win.v12.resources.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Web.v12.resources.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Export.Image.v12.resources.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Export.Html.v12.resources.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csprojAssemblyReference.cache
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAInvoice.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAInvoiceAdjustments.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAInvoiceCredits.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAnvoiceAllocatedAdjustments.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BuildingSummary_Version1.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BuildingSummary.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BuildingSummaryReport_Summary.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.ConsolidatedDeficienciesSummary_RentDetailByFicalYear.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.ConsolidatedDeficienciesSummary_RentDetail.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.ConsolidatedDeficiencies_AgingByYear.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.ConsolidatedDeficiencies_Aging.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DefaultCertificate.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DefaultCertificateBreakdown.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_RollbackDefaults.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_RollbackDetailBreakdown.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_RollbackDetailDefaults.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyRollbackBreakDown.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_Cover.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_CoverOld.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_Paybacks.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSubReport.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSummary.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSummaryForFiscalYear2023.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSummaryForFiscalYear.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PilotAdjDetails.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_RollbackDetailSummary.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_RollbackSubReport.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.UnitListingReport.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSummaryNew.resources
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csproj.GenerateResource.cache
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.dll.licenses
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csproj.CoreCompileInputs.cache
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csproj.CopyComplete
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.dll
+C:\Bpca\BPCA latest\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.pdb
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\CondoDeficiencyReports.dll.config
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\CondoDeficiencyReports.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\CondoDeficiencyReports.pdb
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\csc.exe
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\csc.exe.config
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\csc.rsp
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\csi.exe
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\csi.exe.config
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\csi.rsp
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.AppContext.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Collections.Immutable.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Console.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.IO.Compression.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.IO.FileSystem.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.IO.Pipes.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Reflection.Metadata.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Security.AccessControl.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Security.Claims.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.ValueTuple.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Xml.XPath.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\vbc.exe
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\vbc.exe.config
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\vbc.rsp
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\VBCSCompiler.exe
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\roslyn\VBCSCompiler.exe.config
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\Antlr3.Runtime.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\AspNet.ScriptManager.jQuery.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.ArsClient.v12.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Chart.v12.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Design.Win.v12.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Diagnostics.v12.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Document.v12.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Document.v12.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Excel.v12.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Pdf.v12.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Extensibility.v12.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.v12.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Viewer.Win.v12.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Web.v12.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\Microsoft.Owin.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\Microsoft.Owin.Security.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\Microsoft.Web.Infrastructure.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\Newtonsoft.Json.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\Owin.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\System.Web.Optimization.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\WebGrease.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Rdf.v12.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\DocumentFormat.OpenXml.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Image.v12.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Html.v12.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Xaml.v12.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Image.Unsafe.v12.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.ArsClient.v12.xml
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Chart.v12.xml
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Design.Win.v12.xml
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Diagnostics.v12.xml
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Document.v12.xml
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Document.v12.xml
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Excel.v12.xml
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Pdf.v12.xml
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Extensibility.v12.xml
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.v12.xml
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Viewer.Win.v12.xml
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Web.v12.xml
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\Microsoft.Owin.xml
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\Microsoft.Owin.Security.xml
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\System.Web.Optimization.xml
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\Newtonsoft.Json.xml
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\Antlr3.Runtime.pdb
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Rdf.v12.xml
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Image.v12.xml
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Html.v12.xml
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Xaml.v12.xml
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Image.Unsafe.v12.xml
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Chart.v12.resources.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Design.Win.v12.resources.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Document.v12.resources.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Export.Excel.v12.resources.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Export.Pdf.v12.resources.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Extensibility.v12.resources.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.v12.resources.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Viewer.Win.v12.resources.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Web.v12.resources.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Export.Image.v12.resources.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Export.Html.v12.resources.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAInvoice.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAInvoiceAdjustments.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAInvoiceCredits.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAnvoiceAllocatedAdjustments.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BuildingSummary_Version1.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BuildingSummary.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BuildingSummaryReport_Summary.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.ConsolidatedDeficienciesSummary_RentDetailByFicalYear.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.ConsolidatedDeficienciesSummary_RentDetail.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.ConsolidatedDeficiencies_AgingByYear.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.ConsolidatedDeficiencies_Aging.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DefaultCertificate.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DefaultCertificateBreakdown.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_RollbackDetailBreakdown.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_RollbackDetailDefaults.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_Cover.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_CoverOld.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_Paybacks.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSubReport.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSummary.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSummaryForFiscalYear2023.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSummaryForFiscalYear.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PilotAdjDetails.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_RollbackDetailSummary.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_RollbackSubReport.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.UnitListingReport.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSummaryNew.resources
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csproj.GenerateResource.cache
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.dll.licenses
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csproj.CoreCompileInputs.cache
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csproj.CopyComplete
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.pdb
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csprojAssemblyReference.cache
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\CondoDeficiencyReports.dll.config
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\CondoDeficiencyReports.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\CondoDeficiencyReports.pdb
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\csc.exe
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\csc.exe.config
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\csc.rsp
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\csi.exe
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\csi.exe.config
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\csi.rsp
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\System.AppContext.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\System.Console.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\System.IO.Compression.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\System.IO.Pipes.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\System.Security.Claims.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\System.ValueTuple.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\System.Xml.XPath.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\vbc.exe
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\vbc.exe.config
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\vbc.rsp
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\VBCSCompiler.exe
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\Antlr3.Runtime.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.ArsClient.v12.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Chart.v12.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Design.Win.v12.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Diagnostics.v12.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Document.v12.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Document.v12.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Excel.v12.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Pdf.v12.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Extensibility.v12.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.v12.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Viewer.Win.v12.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Web.v12.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\Microsoft.Owin.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\Microsoft.Owin.Security.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\Newtonsoft.Json.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\Owin.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\System.Web.Optimization.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\WebGrease.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Rdf.v12.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\DocumentFormat.OpenXml.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Image.v12.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Html.v12.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Xaml.v12.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Image.Unsafe.v12.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.ArsClient.v12.xml
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Chart.v12.xml
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Design.Win.v12.xml
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Diagnostics.v12.xml
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Document.v12.xml
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Document.v12.xml
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Excel.v12.xml
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Pdf.v12.xml
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Extensibility.v12.xml
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.v12.xml
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Viewer.Win.v12.xml
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Web.v12.xml
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\Microsoft.Owin.xml
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\Microsoft.Owin.Security.xml
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\System.Web.Optimization.xml
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\Newtonsoft.Json.xml
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\Antlr3.Runtime.pdb
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Rdf.v12.xml
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Image.v12.xml
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Html.v12.xml
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Xaml.v12.xml
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\GrapeCity.ActiveReports.Export.Image.Unsafe.v12.xml
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Chart.v12.resources.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Design.Win.v12.resources.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Document.v12.resources.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Export.Excel.v12.resources.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Export.Pdf.v12.resources.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Extensibility.v12.resources.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.v12.resources.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Viewer.Win.v12.resources.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Web.v12.resources.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Export.Image.v12.resources.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\bin\zh-CN\GrapeCity.ActiveReports.Export.Html.v12.resources.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csprojAssemblyReference.cache
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAInvoice.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAInvoiceAdjustments.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAInvoiceCredits.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BPCAnvoiceAllocatedAdjustments.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BuildingSummary_Version1.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BuildingSummary.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BuildingSummaryReport_Summary.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.ConsolidatedDeficienciesSummary_RentDetailByFicalYear.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.ConsolidatedDeficienciesSummary_RentDetail.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.ConsolidatedDeficiencies_AgingByYear.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.ConsolidatedDeficiencies_Aging.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DefaultCertificate.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DefaultCertificateBreakdown.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_RollbackDetailBreakdown.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_RollbackDetailDefaults.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_Cover.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_CoverOld.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_Paybacks.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSubReport.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSummary.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSummaryForFiscalYear2023.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSummaryForFiscalYear.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PilotAdjDetails.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_RollbackDetailSummary.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_RollbackSubReport.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.UnitListingReport.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSummaryNew.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csproj.GenerateResource.cache
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.dll.licenses
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csproj.CoreCompileInputs.cache
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.csproj.CopyComplete
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.dll
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.pdb
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSummaryForFiscalYear2025.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.DeficiencyReport_PaybackSummaryForFiscalYear2024.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BuildingSummaryReport_Summaryxl.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.BuildingSummaryxl.resources
+C:\Users\USER\Downloads\BPCAGit2024-main\BPCAGit2024-main\CondoDeficiencieReports\obj\Debug\CondoDeficiencyReports.ConsolidatedDeficienciesSummary_RentDetailByFicalYearWithoutGrouping.resources

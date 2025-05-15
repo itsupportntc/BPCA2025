@@ -1,0 +1,254 @@
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\appsettings.Development.json
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\bundleconfig.json
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\Connected Services\TestSvcRef\ConnectedService.json
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\web.config
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\appsettings.json
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.deps.json
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.runtimeconfig.json
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.runtimeconfig.dev.json
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.pdb
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.Views.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.Views.pdb
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.csprojAssemblyReference.cache
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.AssemblyInfoInputs.cache
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.AssemblyInfo.cs
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.csproj.CoreCompileInputs.cache
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.RazorAssemblyInfo.cache
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.RazorAssemblyInfo.cs
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.TagHelpers.input.cache
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.TagHelpers.output.cache
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.RazorCoreGenerate.cache
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AccessDenied.cshtml.g.cs
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditAgency.cshtml.g.cs
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditInvoice.cshtml.g.cs
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditSuspendedDefaults.cshtml.g.cs
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditUnit.cshtml.g.cs
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditUnitOwner.cshtml.g.cs
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditWorksheet.cshtml.g.cs
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\BuildingListing.cshtml.g.cs
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\Home.cshtml.g.cs
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\Login.cshtml.g.cs
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\Reports.cshtml.g.cs
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\SearchUnitOwner.cshtml.g.cs
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\UnitInquiry.cshtml.g.cs
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\UserManagement.cshtml.g.cs
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\UserPasswordManagement.cshtml.g.cs
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\WorksheetHistory.cshtml.g.cs
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.RazorTargetAssemblyInfo.cache
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.RazorTargetAssemblyInfo.cs
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.Views.pdb
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.dll
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.pdb
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.genruntimeconfig.cache
+D:\Battery\Trial\Battery\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.csproj.CopyComplete
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\web.config
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\appsettings.json
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.deps.json
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.runtimeconfig.json
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.runtimeconfig.dev.json
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.pdb
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.Views.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.Views.pdb
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.AssemblyInfoInputs.cache
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.AssemblyInfo.cs
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.csproj.CoreCompileInputs.cache
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.RazorAssemblyInfo.cache
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.RazorAssemblyInfo.cs
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.TagHelpers.input.cache
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.TagHelpers.output.cache
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.RazorCoreGenerate.cache
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.RazorTargetAssemblyInfo.cache
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.RazorTargetAssemblyInfo.cs
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.Views.pdb
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.dll
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.pdb
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.csproj.CopyComplete
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.csprojAssemblyReference.cache
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AccessDenied.g.cshtml.cs
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditAgency.g.cshtml.cs
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditInvoice.g.cshtml.cs
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditSuspendedDefaults.g.cshtml.cs
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditUnit.g.cshtml.cs
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditUnitOwner.g.cshtml.cs
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditWorksheet.g.cshtml.cs
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\BuildingListing.g.cshtml.cs
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\Home.g.cshtml.cs
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\Login.g.cshtml.cs
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\Reports.g.cshtml.cs
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\SearchUnitOwner.g.cshtml.cs
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\UnitInquiry.g.cshtml.cs
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\UserManagement.g.cshtml.cs
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\UserPasswordManagement.g.cshtml.cs
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\WorksheetHistory.g.cshtml.cs
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Bpca\Visual studio code\BPCACondoDeficiencies\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.pdb
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\web.config
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\appsettings.json
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.deps.json
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.runtimeconfig.json
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.runtimeconfig.dev.json
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.pdb
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.Views.dll
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.Views.pdb
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.AssemblyInfoInputs.cache
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.AssemblyInfo.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.csproj.CoreCompileInputs.cache
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.RazorAssemblyInfo.cache
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.RazorAssemblyInfo.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.TagHelpers.input.cache
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.TagHelpers.output.cache
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.RazorCoreGenerate.cache
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.RazorTargetAssemblyInfo.cache
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.RazorTargetAssemblyInfo.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.Views.pdb
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.csproj.CopyComplete
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\appsettings.Development.json
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\bundleconfig.json
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\Connected Services\TestSvcRef\ConnectedService.json
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.GeneratedMSBuildEditorConfig.editorconfig
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AccessDenied.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditAgency.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditInvoice.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditSuspendedDefaults.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditUnit.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditUnitOwner.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditWorksheet.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\BuildingListing.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\Home.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\Login.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\Reports.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\SearchUnitOwner.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\UnitInquiry.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\UserManagement.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\UserPasswordManagement.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\WorksheetHistory.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.genruntimeconfig.cache
+C:\Bpca\BPCA latest\BPCACondoDeficiencies\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.csproj.AssemblyReference.cache
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\appsettings.Development.json
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\bundleconfig.json
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\Connected Services\TestSvcRef\ConnectedService.json
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\web.config
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\appsettings.json
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.deps.json
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.runtimeconfig.json
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.runtimeconfig.dev.json
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.dll
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.pdb
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.Views.dll
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.Views.pdb
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.csproj.AssemblyReference.cache
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.GeneratedMSBuildEditorConfig.editorconfig
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.AssemblyInfoInputs.cache
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.AssemblyInfo.cs
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.csproj.CoreCompileInputs.cache
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.RazorAssemblyInfo.cache
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.RazorAssemblyInfo.cs
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.TagHelpers.input.cache
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.TagHelpers.output.cache
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.RazorCoreGenerate.cache
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AccessDenied.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditAgency.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditInvoice.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditSuspendedDefaults.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditUnit.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditUnitOwner.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditWorksheet.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\BuildingListing.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\Home.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\Login.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\Reports.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\SearchUnitOwner.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\UnitInquiry.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\UserManagement.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\UserPasswordManagement.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\WorksheetHistory.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.RazorTargetAssemblyInfo.cache
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.RazorTargetAssemblyInfo.cs
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.Views.pdb
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.dll
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.pdb
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.genruntimeconfig.cache
+C:\Bpca\BPCA latest\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.csproj.CopyComplete
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\web.config
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\appsettings.json
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.deps.json
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.runtimeconfig.json
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.runtimeconfig.dev.json
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.pdb
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.Views.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\bin\Release\netcoreapp2.1\BPCACondoDeficiencies.Views.pdb
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.csprojAssemblyReference.cache
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.csproj.CoreCompileInputs.cache
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.RazorAssemblyInfo.cache
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.RazorAssemblyInfo.cs
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.AssemblyInfoInputs.cache
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.AssemblyInfo.cs
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.TagHelpers.input.cache
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.TagHelpers.output.cache
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.RazorCoreGenerate.cache
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AccessDenied.g.cshtml.cs
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditAgency.g.cshtml.cs
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditInvoice.g.cshtml.cs
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditSuspendedDefaults.g.cshtml.cs
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditUnit.g.cshtml.cs
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditUnitOwner.g.cshtml.cs
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\AddEditWorksheet.g.cshtml.cs
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\BuildingListing.g.cshtml.cs
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\Home.g.cshtml.cs
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\Login.g.cshtml.cs
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\Reports.g.cshtml.cs
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\SearchUnitOwner.g.cshtml.cs
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\UnitInquiry.g.cshtml.cs
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\UserManagement.g.cshtml.cs
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\UserPasswordManagement.g.cshtml.cs
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Home\WorksheetHistory.g.cshtml.cs
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.RazorTargetAssemblyInfo.cache
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.RazorTargetAssemblyInfo.cs
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.Views.pdb
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.dll
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.pdb
+C:\Bpca\BPCA latest\Latest BPCA-02112023\Latest-rollback\BPCAGit\BPCACondoDeficiencies\obj\Release\netcoreapp2.1\BPCACondoDeficiencies.csproj.CopyComplete

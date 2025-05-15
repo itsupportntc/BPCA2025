@@ -1,0 +1,144 @@
+﻿@{
+    ViewData["Title"] = "Search Unit Owner";
+}
+<script type="text/javascript">
+    $(document).ready
+        (function () {
+            checkSession();
+            loadSearchBy();
+        });
+
+    function loadSearchBy() {
+
+        var data = [
+            { "SearchType": "T", "TypeDisplay": "Title Name" },
+            { "SearchType": "F", "TypeDisplay": "First Name" },
+            { "SearchType": "L", "TypeDisplay": "Last Name" }
+        ];
+
+        $("#comboSearchBy").igCombo({
+            width: "270px",
+            textKey: "TypeDisplay",
+            valueKey: "SearchType",
+            dataSource: data,
+            dataSourceType: "json",
+            filteringType: "local",
+            autoComplete: true,
+            placeHolder: "Select a search type..."
+        });
+        $(function () {
+            $("#searchValue").igTextEditor({
+                width: 260,
+                readOnly: false,
+                required: true,
+                valdation: true,
+                editorOptions: {
+                    validatorOptions:
+                        {
+                            required: {
+                                errorMessage: "You must specify a value to search for."
+                            }
+                        }
+                }
+            });
+        });
+    }
+
+    function doSearch() {
+        var sf = '';
+        var st = '';
+
+        sf = $("#searchValue").igTextEditor("value");
+        st = $("#comboSearchBy").igCombo("value");
+
+        $.ajax({
+            async: true,
+            type: "GET",
+            url: '/Home/FindUnitOwner',
+            data: { searchType: st, searchFor: sf },
+            cache: false,
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            responseDataKey: "response",
+            success: function (response) {
+                searchSuccess(response);
+            },
+            error: function (jqXHR, exception) {
+                console.log(jqXHR);
+                console.log(exception);
+            }
+        });
+
+    }
+
+    function searchSuccess(data) {
+        $("#gridResults").igGrid({
+            autoGenerateColumns: false,
+            renderCheckboxes: true,
+            primaryKey: "ownerGuid",
+            caption: "Results...",
+            columns:
+                [
+                    { headerText: "SubOwneownerGuidrGuid", key: "ownerGuid", dataType: "string", width: "0%" },
+                    { headerText: "agencyGuid", key: "agencyGuid", dataType: "string", width: "0%" },
+                    { headerText: "Title Name", key: "titleName", dataType: "string", width: "30%" },
+                    { headerText: "Building", key: "name", dataType: "string", width: "30%" },
+                    { headerText: "Unit Code", key: "unitCode", dataType: "string", width: "30%" },
+                    { headerText: "buildingGuid", key: "buildingGuid", dataType: "string", width: "0%" },
+                    { headerText: "unitGuid", key: "unitGuid", dataType: "string", width: "0%" },
+                    {
+                        headerText: "", key: "Action", dataType: "string", width: "20%",
+                        template: "<a href='/Home/AddEditUnitOwner?og=${ownerGuid}'>${Action}</a>"
+                    }
+                ],
+            dataSource: jQuery.parseJSON(data),
+            autofitLastColumn: true,
+            dataSourceType: "json",
+            responseDataKey: "results",
+            width: "100%",
+            tabIndex: 1,
+            features: [
+                { name: "Paging", pageSize: 5 },
+                {
+                    name: "Filtering",
+                    mode: "advanced"
+                }, {
+                    name: "Sorting"
+                },
+            ]
+        });
+    }
+</script>
+<style type="text/css">
+    #gridResults tr td {
+        white-space: nowrap;
+    }
+</style>
+<meta name="viewport" content="width=device-width" />
+<title>Search Unit Owner</title>
+<table style="width: 100%">
+    <tr><td><h4>Search By:</h4></td></tr>
+    <tr>
+        <td>
+            <div id="comboSearchBy"></div>
+        </td>
+    </tr>
+    <tr><td><h4>Search Value:</h4></td></tr>
+    <tr>
+        <td>
+            <input id="searchValue" style="color: black;">
+        </td>
+    </tr>
+    <tr style="padding-top: 10px">
+        <td colspan="2" align="left" style="padding-top: 10px">
+            <button id="buttonLogin" type="button" class="btn btn-default" onclick="doSearch()">
+                <span class="glyphicon glyphicon-search"></span> Search
+            </button>
+        </td>
+    </tr>
+    <tr style="padding-top: 10px">
+        <td colspan="2" align="left" style="padding-top: 10px">
+            <div id="gridResults"></div>
+        </td>
+    </tr>
+</table>

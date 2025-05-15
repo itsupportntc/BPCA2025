@@ -1,0 +1,630 @@
+﻿@using Infragistics.Web.Mvc;
+@using Microsoft.AspNetCore.Mvc;
+
+@{
+    ViewData["Title"] = "Home";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Home</title>
+    <style type="text/css">
+        #OpenWorksheetGrid tr td {
+            white-space: nowrap;
+        }
+        #gridSubmittedWorksheets tr td {
+            white-space: nowrap;
+        }
+        th.ui-iggrid-header[id$=View] {
+            text-align: center !important;
+        }
+        th.ui-iggrid-header[id$=Approve] {
+            text-align: center !important;
+        }
+        th.ui-iggrid-header[id$=Reject] {
+            text-align: center !important;
+        }
+    </style>
+
+    <script>
+        var agencyCode;
+        var isAdminUser;
+
+        $(document).ready
+            (function () {
+                checkSession();
+                loadUserSettings();
+            });
+
+        function loadUserSettings() {
+            $.ajax(
+                {
+                    async: true,
+                    type: 'GET',
+                    url: '/Home/GetUserAgencyCode',
+                    contentType: "text/html",
+                    cache: false,
+                    success: function (data) {
+                        agencyCode = data;
+                        
+                        if (agencyCode.toString() === "RED" || agencyCode.toString() === "AUTH") {
+                            getSubmittedWorksheets();
+                            loadMessages(true);
+                        }
+                        else {
+                            loadMessages(false);
+                        }
+                    },
+                    error: function (jqXHR, exception) {
+                        console.log(jqXHR);
+                        console.log(exception);
+                        return false;
+                    }
+                }
+            );
+        }
+
+        function loadMessages(isAdmin) {
+            $.ajax(
+                {
+                    async: true,
+                    type: 'GET',
+                    url: '/Home/GetBPCAMessages',
+                    cache: false,
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        getMessageSuccessCallBack(data, isAdmin);
+                    },
+                    error: getMessageErrorCallBack()
+                }
+            );
+
+        }
+
+        function getMessageSuccessCallBack(data, isAdmin) {
+            var currentDate = new Date().toLocaleString();
+            if (isAdmin) {
+                $("#MessageGrid").igGrid({
+
+                    autoGenerateColumns: false,
+                    renderCheckboxes: true,
+                    primaryKey: "MessageId",
+                    caption: "BPCA Messages",
+                    columns:
+                        [
+                            { headerText: "Message Id", key: "MessageId", dataType: "number", width: "0%" },
+                            { headerText: "Date", key: "MessageDate", dataType: "date", width: "20%" },
+                            { headerText: "Message", key: "MessageText", dataType: "string", width: "60%" },
+                            { headerText: "User", key: "User", dataType: "string", width: "20%" },
+                            { headerText: "Expiration Date", key: "MessageExpiration", dataType: "date", width: "0%" }
+                        ],
+                    dataSource: data,
+                    dataSourceType: "json",
+                    responseDataKey: "results",
+                    height: "500",
+                    width: "498",
+                    tabIndex: 1,
+                    features: [
+                        {
+                            name: "Selection",
+                            mode: "row",
+                            multipleSelection: false
+                        },
+                        {
+                            name: "Updating",
+                            locale: {
+                                addRowLabel: "Add new message..."
+                            },
+                            enableAddRow: true,
+                            enableUpdateRow: true,
+                            enableDeleteRow: true,
+                            startEditTriggers: "click",
+                            editMode: "dialog",
+                            columnSettings: [
+                                {
+                                    columnKey: "MessageId",
+                                    editorType: "text",
+                                    readOnly: true,
+                                    defaultValue: -1
+                                },
+                                {
+                                    columnKey: "MessageDate",
+                                    editorType: "datepicker",
+                                    readOnly: true,
+                                    defaultValue: currentDate
+                                },
+                                {
+                                    columnKey: "User",
+                                    editorType: "text",
+                                    readOnly: true,
+                                    defaultValue: document.getElementById("currentUserName").value
+                                },
+                                {
+                                    columnKey: "MessageText",
+                                    editorType: "text",
+                                    readOnly: false,
+                                    required: true,
+                                    validation: true,
+                                    editorOptions: {
+                                        height: 100,
+                                        width: 400,
+                                        textMode: "multiline"
+                                    }
+                                },
+                                {
+                                    columnKey: "MessageExpiration",
+                                    editorType: "datepicker",
+                                    required: true,
+                                    validation: true,
+                                    defaultValue: currentDate
+                                }
+                            ],
+                            rowEditDialogOptions: {
+                                captionLabel: "Add/Edit Messsage",
+                                width: 700,
+                                height: 500,
+                                dialogTemplateSelector: "#dialogTemplate",
+                                editorsTemplateSelector: "#editorsTemplate",
+                                containment: "ui",
+                                animationDuration: 400
+                            }
+                        },
+                        {
+                            name: 'Hiding',
+                            columnSettings:
+                                [
+                                    {
+                                        columnKey: 'MessageId',
+                                        allowHiding: false,
+                                        hidden: true
+                                    },
+                                    {
+                                        columnKey: 'MessageText',
+                                        allowHiding: false,
+                                        hidden: false
+                                    },
+                                    {
+                                        columnKey: 'MessageDate',
+                                        allowHiding: false,
+                                        hidden: false
+                                    },
+                                    {
+                                        columnKey: 'User',
+                                        allowHiding: false,
+                                        hidden: false
+                                    },
+                                    {
+                                        columnKey: 'MessageExpiration',
+                                        allowHiding: false,
+                                        hidden: false
+                                    }
+                                ]
+                        }
+                    ]
+                });
+            }
+            else {
+                $("#MessageGrid").igGrid({
+                      autoGenerateColumns: false,
+                    renderCheckboxes: true,
+                    primaryKey: "MessageId",
+                    caption: "BPCA Messages",
+                    columns:
+                        [
+                            { headerText: "Message Id", key: "MessageId", dataType: "number", width: "0%" },
+                            { headerText: "Date", key: "MessageDate", dataType: "date", width: "20%" },
+                            { headerText: "Message", key: "MessageText", dataType: "string", width: "60%" },
+                            { headerText: "User", key: "User", dataType: "string", width: "20%" },
+                            { headerText: "Expiration Date", key: "MessageExpiration", dataType: "date", width: "0%" }
+                        ],
+                    dataSource: data,
+                    dataSourceType: "json",
+                    responseDataKey: "results",
+                    height: "500",
+                    width: "498",
+                    tabIndex: 1,
+                    features: [
+                        {
+                            name: "Selection",
+                            mode: "row",
+                            multipleSelection: false
+                        },
+                        {
+                            name: 'Hiding',
+                            columnSettings:
+                                [
+                                    {
+                                        columnKey: 'MessageId',
+                                        allowHiding: false,
+                                        hidden: true
+                                    },
+                                    {
+                                        columnKey: 'MessageText',
+                                        allowHiding: false,
+                                        hidden: false
+                                    },
+                                    {
+                                        columnKey: 'MessageDate',
+                                        allowHiding: false,
+                                        hidden: false
+                                    },
+                                    {
+                                        columnKey: 'User',
+                                        allowHiding: false,
+                                        hidden: false
+                                    },
+                                    {
+                                        columnKey: 'MessageExpiration',
+                                        allowHiding: false,
+                                        hidden: false
+                                    }
+                                ]
+                        }
+                    ]
+                });
+            }
+
+            $("#MessageGrid").on("iggridupdatingrowadded", function (evt, ui) {
+                if (ui.rowAdding == false) { return; }
+
+                var mi = -1;
+                var md = ui.values["MessageDate"].toLocaleString().substring(0, 10).replace(",", "").trim();
+                var mt = ui.values["MessageText"];
+                var me = ui.values["MessageExpiration"].toLocaleString().substring(0, 10).replace(",", "").trim();
+                $.ajax(
+                    {
+                        type: 'POST',
+                        url: '/Home/SaveBPCAMessage',
+                        data: { messageId: mi, messageDate: md, messageText: mt, messageExpiration: me },
+                        dataType: "json",
+                        success: function (response) {
+                            loadUserSettings();
+                        },
+                        error: function (jqXHR, exception) {
+                            console.log(jqXHR);
+                            console.log(exception);
+                        }
+                    });
+            });
+        $("#MessageGrid").on("iggridupdatingeditrowending", function (evt, ui) {
+                if (ui.update == false) { return; }
+
+                var mi = ui.values["MessageId"];
+                var md = ui.values["MessageDate"].toLocaleString().substring(0, 10).replace(",", "").trim();
+                var mt = ui.values["MessageText"];
+                var me = ui.values["MessageExpiration"].toLocaleString().substring(0, 10).replace(",", "").trim();
+                $.ajax(
+                    {
+                        type: 'POST',
+                        url: '/Home/SaveBPCAMessage',
+                        data: { messageId: mi, messageDate: md, messageText: mt, messageExpiration: me },
+                        dataType: "json",
+                        success: function (response) {
+                            loadUserSettings();
+                        },
+                        error: function (jqXHR, exception) {
+                            console.log(jqXHR);
+                            console.log(exception);
+                        }
+                    });
+            });
+            setMessageGridProperties();
+            getOpenWorksheets();
+        }
+
+        function getMessageErrorCallBack() {
+            //alert('fail');
+        }
+
+        function setMessageGridProperties() {
+
+        }
+
+        function GetSessionVariable(key) {
+            $.ajax(
+                {
+                    async: false,
+                    type: 'GET',
+                    url: '/Home/GetSessionVariable',
+                    data: { variableName: key },
+                    contentType: "text/html",
+                    cache: false,
+                    success: function (data) {
+                        userGuid = data;
+                        return data;
+                    },
+                    error: function (jqXHR, textStatus, error) {
+                        console.log(error);
+                    }
+                }
+            );
+
+        }
+
+        function getSessionVariableError(jqXHR, textStatus, error) {
+            console.log(error);
+        }
+
+        function getOpenWorksheets() {
+            $.ajax(
+                {
+                    type: 'GET',
+                    url: '/Home/GetOpenWorksheets',
+                    cache: false,
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: getOpenWorksheetsSuccess,
+                    error: function (jqXHR, exception) {
+                        console.log(jqXHR);
+                        console.log(exception);
+                    }
+                }
+            );
+
+        }
+
+        function getOpenWorksheetsSuccess(data) {
+            $("#OpenWorksheetGrid").igGrid({
+
+                autoGenerateColumns: false,
+                renderCheckboxes: true,
+                primaryKey: "InvoiceGuid",
+                caption: "Open Worksheets",
+                virtualization: true,
+                features: [
+                    {
+                        name: "Sorting",
+                        type: "local",
+                        mode: "single",
+                        persist: false
+                    },
+                    {
+                        name: 'Hiding',
+                        columnSettings:
+                            [
+                                {
+                                    columnKey: 'InvoiceGuid',
+                                    allowHiding: false,
+                                    hidden: true
+                                },
+                                {
+                                    columnKey: 'WorksheetId',
+                                    allowHiding: false,
+                                    hidden: true
+                                },
+                                {
+                                    columnKey: 'BuildingGuid',
+                                    allowHiding: false,
+                                    hidden: true
+                                },
+                                {
+                                    columnKey: 'CreatedBy',
+                                    allowHiding: false,
+                                    hidden: true
+                                },
+                                {
+                                    columnKey: 'Created',
+                                    allowHiding: false,
+                                    hidden: true
+                                },
+                                {
+                                    columnKey: 'Action',
+                                    allowHiding: false,
+                                    hidden: false
+                                },
+                                {
+                                    columnKey: 'LastUpdatedBy',
+                                    allowHiding: false,
+                                    hidden: true
+                                },
+                                {
+                                    columnKey: 'LastUpdated',
+                                    allowHiding: false,
+                                    hidden: true
+                                },
+                                {
+                                    columnKey: 'Comments',
+                                    allowHiding: false,
+                                    hidden: true
+                                },
+                                {
+                                    columnKey: 'SiteId',
+                                    allowHiding: false,
+                                    hidden: true
+                                },
+                                {
+                                    columnKey: 'BuildingName',
+                                    allowHiding: false,
+                                    hidden: false
+                                },
+                                {
+                                    columnKey: 'InvoiceDate',
+                                    allowHiding: false,
+                                    hidden: false
+                                }
+                            ]
+                    }],
+                columns:
+                    [
+                        { headerText: "InvoiceGuid", key: "InvoiceGuid", dataType: "string", width: "0%" },
+                        { headerText: "Invoice Date", key: "InvoiceDate", dataType: "date", width: "20%" },
+                        { headerText: "WorksheetId", key: "WorksheetId", dataType: "number", width: "0%" },
+                        { headerText: "BuildingGuid", key: "BuildingGuid", dataType: "string", width: "0%" },
+                        { headerText: "Building", key: "BuildingName", dataType: "string", width: "45%" },
+                        { headerText: "Created By", key: "CreatedBy", dataType: "string", width: "0%" },
+                        { headerText: "Date Created", key: "Created", dataType: "date", width: "0%" },
+                        { headerText: "Updated By", key: "LastUpdatedBy", dataType: "string", width: "0%" },
+                        { headerText: "Update Date", key: "LastUpdated", dataType: "date", width: "0%" },
+                        { headerText: "Comments", key: "Comments", dataType: "string", width: "0%" },
+                        {
+                            headerText: "Action", key: "Action", dataType: "string", width: "20%",
+                            template: "<a href='/Home/AddEditWorksheet?inv=${InvoiceGuid}'>${Action}</a>"
+                        },
+                        { headerText: "SiteId", key: "SiteId", dataType: "string", width: "0%" }
+                    ],
+                enableAddRow: false,
+                enableUpdateRow: false,
+                enableDeleteRow: false,
+                dataSource: data,
+                dataSourceType: "json",
+                responseDataKey: "results",
+                height: "500",
+                width: "495",
+                tabIndex: 1,
+
+            });
+        }
+
+        function getSubmittedWorksheets() {
+            $.ajax(
+                {
+                    type: 'GET',
+                    url: '/Home/GetSubmittedWorksheets',
+                    cache: false,
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        $("#gridSubmittedWorksheets").igGrid({
+                            autoGenerateColumns: false,
+                            renderCheckboxes: true,
+                            primaryKey: "WorksheetId",
+                            caption: "Submitted Worksheets",
+                            columns:
+                                [
+                                    { headerText: "worksheetId", key: "WorksheetId", dataType: "string", width: "0%" },
+                                    { headerText: "BuildingGuid", key: "BuildingGuid", dataType: "date", width: "0%" },
+                                    { headerText: "InvoiceGUID", key: "InvoiceGUID", dataType: "string", width: "0%" },
+                                    { headerText: "Building", key: "BuildingName", dataType: "string", width: "20%" },
+                                    { headerText: "Agency", key: "AgencyName", dataType: "string", width: "20%" },
+                                    { headerText: "Invoice Date", key: "InvoiceDate", dataType: "date", width: "12%" },
+                                    { headerText: "Submission Date", key: "SubmissionDate", dataType: "date", width: "15%" },
+                                    {
+                                        headerText: "", key: "View", dataType: "string", width: "12%", headerCssClass: "headerCss", columnCssClass: "colCss",
+                                        template: "<image src='/images/magnifier.png' style='margin: 0px 5px'/><a onclick='viewInvoice(\"${InvoiceGUID}\", \"${BuildingGuid}\", \"${InvoiceDate}\")' href='#'>View</a>"
+                                    },
+                                    {
+                                        headerText: "", key: "Approve", dataType: "string", width: "12%", headerCssClass: "headerCss", columnCssClass: "colCss",
+                                        template: "<image src='/images/accept.png' style='margin: 0px 5px'/><a href='/Home/ApproveWorksheet?worksheetId=${WorksheetId}'>Approve</a>"
+                                    },
+                                    {
+                                        headerText: "", key: "Reject", dataType: "string", width: "12%", headerCssClass: "headerCss", columnCssClass: "colCss",
+                                        template: "<image src='/images/delete.png' style='margin: 0px 5px'/><a href='/Home/RejectWorksheet?worksheetId=${WorksheetId}'>Reject</a>"
+                                    }
+                                ],
+                            enableAddRow: false,
+                            enableUpdateRow: false,
+                            enableDeleteRow: false,
+                            dataSource: data,
+                            dataSourceType: "json",
+                            responseDataKey: "results",
+                            height: "500",
+                            width: "1000",
+                            tabIndex: 1,
+
+                        });
+                    },
+                    error: function (jqXHR, exception) {
+                        console.log(jqXHR);
+                        console.log(exception);
+                    }
+                }
+            );
+
+        }
+
+        function viewInvoice(invoiceGuid, bg, idt) {
+            //   show invoice
+            //var url = reportPath + 'rt=i&ig=' + invoiceGuid;
+            //window.open(url, '_blank');
+
+            //  show deficiency report
+            var objDate = new Date(idt);
+            idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+            url = reportPath + 'rt=df&bg=' + bg + '&dt=' + idt;
+            window.open(url, '_blank');
+        }
+
+        
+        function approveWorksheet(worksheetId) {
+            $.ajax(
+                {
+                    type: 'POST',
+                    async: true,
+                    url: '/Home/ApproveWorksheet',
+                    data: { worksheetId: worksheetId },
+                    dataType: "json",
+                    success: function () {
+                        //var bg = $("#comboBuildings").igCombo("value");
+                        //loadBuildingSelection(bg);
+                        location.reload();
+                    },
+                    error: function (jqXHR, exception) {
+                        console.log(jqXHR);
+                        console.log(exception);
+                    }
+                });
+        }
+    </script>
+
+    <script id="dialogTemplate" type="text/html">
+        <div style="float: left; width: 100%">
+            <strong>${Name}</strong><br />
+            <table style="width: 700px;">
+                <colgroup>
+                    <col style="width: 30%;" />
+                    <col style="width: 200%;" />
+                </colgroup>
+                <tbody data-render-tmpl="true"></tbody>
+            </table>
+        </div>
+    </script>
+
+    <script id="editorsTemplate" type="text/html">
+        <tr>
+            <td style="color: black;">${headerText}</td>
+            <td><input data-editor-for-${key}="true" style="color: black; width: 1000px;" /></td>
+        </tr>
+    </script>
+
+</head>
+<body>
+
+    <table width="1024" border="0">
+        <tr>
+            <td colspan="2" width="1000">
+                @{
+                    byte[] byteVal;
+
+                    bool x = Context.Session.TryGetValue("UserDisplayName", out byteVal);
+                    @if (x)
+                    {
+                        string userDisplayName = System.Text.Encoding.ASCII.GetString(byteVal);
+                        <div style="font-family: Tahoma;font-size: larger"><b> Welcome @userDisplayName </b></div>
+                        <input id="currentUserName" type="hidden" value='@userDisplayName' />
+                    }
+                }
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" width="500">
+                <table id="MessageGrid"></table>
+            <td>
+            <td colspan="1" width="500" align="right">
+                <table id="OpenWorksheetGrid"></table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding-top: 3px">
+                <div id="submittedWorksheets" width="100%">
+                    <table id="gridSubmittedWorksheets"></table>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+</body>
+</html>

@@ -1,0 +1,1288 @@
+﻿
+@{
+    ViewData["Title"] = "Add/Edit Invoice";
+}
+
+
+<script type="text/javascript">
+
+    var creditTypes;
+    var invoiceComponents;
+    var invoiceApproved;
+    var alertMessage = "";
+    var invoiceGuid = '00000000-0000-0000-0000-000000000000';
+    var crFin = false;
+    var adFin = false;
+    var goP = {
+        saveCompleteInternal: false,
+        completeListener: function (val) { },
+        set saveComplete(val) {
+            this.aInternal = val;
+            this.aListener(val);
+        },
+        get saveComplete() {
+            return this.aInternal;
+        },
+        registerListener: function (listener) {
+            this.aListener = listener;
+        }
+    };
+    goP.registerListener(function (val) {
+        showSaveSuccess();
+    });
+
+    $(document).ready
+        (function () {
+            checkSession();
+            checkAdmin();
+            $('#invoiceOptions').hide();
+            $('#approvedMessage').hide();
+            $('#saveButton').show();
+            $('#submitButton').show();
+            loadInvoiceCreditTypes();
+            loadInvoiceComponents();
+            loadBuildings();
+        });
+
+    function getInvoiceApproved(ig) {
+        $.ajax({
+            type: "GET",
+            url: '/Home/GetInvoiceApproved',
+            data: { invoiceGuid: ig },
+            cache: false,
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+                data = jQuery.parseJSON(data);
+                invoiceApproved = data[0].Approved;
+
+                if (invoiceApproved) {
+                    $('#approvedMessage').show();
+                    $('#invoiceOptions').show();
+                    $('#saveButton').hide();
+                    $('#submitButton').hide();
+                }
+                else {
+                    $('#approvedMessage').hide();
+                    $('#invoiceOptions').hide();
+                    $('#saveButton').show();
+                    $('#submitButton').show();
+                }
+            },
+            error: function (jqXHR, exception) {
+                console.log(jqXHR);
+                console.log(exception);
+            }
+        });
+    }
+
+    function loadInvoiceCreditTypes() {
+        $.ajax({
+            type: "GET",
+            url: '/Home/GetInvoiceCreditTypes',
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+                creditTypes = jQuery.parseJSON(data);
+            },
+            error: function (jqXHR, exception) {
+                console.log(jqXHR);
+                console.log(exception);
+            }
+        });
+    }
+
+    function loadInvoiceComponents() {
+        $.ajax({
+            type: "GET",
+            url: '/Home/GetInvoiceComponentsList',
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+                invoiceComponents = jQuery.parseJSON(data);
+            },
+            error: function (jqXHR, exception) {
+                console.log(jqXHR);
+                console.log(exception);
+            }
+        });
+    }
+
+    function loadBuildings() {
+        $.ajax(
+            {
+                type: 'GET',
+                url: '/Home/GetBuildingList',
+                cache: false,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: loadBuildingsSuccess,
+                error: function (jqXHR, exception) {
+
+                    console.log(jqXHR);
+                    console.log(exception);
+                }
+            });
+    }
+
+    function loadBuildingsSuccess(data) {
+        $("#comboBuildings").igCombo({
+            width: "270px",
+            textKey: "Name",
+            valueKey: "BuildingGuid",
+            dataSource: data,
+            dataSourceType: "json",
+            filteringType: "local",
+            autoComplete: true,
+            placeHolder: "Select a building...",
+            dropDownOrientation: "bottom"
+        });
+        $("#comboBuildings").on("igcomboselectionchanged", function (evt, ui) {
+            var bg = $("#comboBuildings").igCombo("value");
+            var objDate = $("#dateTimeInvoiceDate").igDatePicker("value");
+            var idt = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+            loadBuildingSelection(bg, idt);
+        });
+        $(function () {
+            $("#dateTimeInvoiceDate").igDatePicker({
+                width: "270px",
+                dateInputFormat: "date",
+                regional: "en-US",
+                required: true,
+                nullText: "Please select an invoice date...",
+                datepickerOptions: {
+                    showWeek: false,
+                    numberOfMonths: [1, 2]
+                }
+            });
+        });
+        $("#dateTimeInvoiceDate").on("igdatepickervaluechanged", function (evt, ui) {
+            var objDate = $("#dateTimeInvoiceDate").igDatePicker("value");
+            var idt;
+            if (objDate.getDate() !== "1") {
+                idt = (objDate.getMonth() + 1) + "/1/" + objDate.getFullYear();
+                $("#dateTimeInvoiceDate").igDatePicker("value", idt);
+            }
+            else {
+                idt = (objDate.getMonth() + 1) + "/1/" + objDate.getFullYear();
+            }
+
+            var bg = $("#comboBuildings").igCombo("value");
+            if (bg !== null) {
+                loadBuildingSelection(bg, idt);
+            }
+        });
+        $(function () {
+            $("#textBaseRent").igCurrencyEditor({
+                width: "270px",
+                required: true,
+                nullText: "Please specify the base rent amount...",
+                maxDecimals: 2,
+                valueChanged: function (evt) {
+                    calcInvoiceGrandTotal();
+                }
+            });
+        });
+        $(function () {
+            $("#textCivic").igCurrencyEditor({
+                width: "270px",
+                required: true,
+                nullText: "Please specify the civic facility amount...",
+                maxDecimals: 2,
+                valueChanged: function (evt) {
+                    calcInvoiceGrandTotal();
+                }
+            });
+        });
+        $(function () {
+            $("#textSupplemental").igCurrencyEditor({
+                width: "270px",
+                required: true,
+                nullText: "Please specify the supplemental amount...",
+                maxDecimals: 2,
+                valueChanged: function (evt) {
+                    calcInvoiceGrandTotal();
+                }
+            });
+        });
+        $(function () {
+            $("#textPILOT").igCurrencyEditor({
+                width: "270px",
+                required: true,
+                nullText: "Please specify the PILOT amount...",
+                maxDecimals: 2, 
+                valueChanged: function (evt) {
+                    calcInvoiceGrandTotal();
+                }
+            });
+        });
+        $(function () {
+            $("#textInvoiceTotal").igCurrencyEditor({
+                width: "270px",
+                required: true,
+                readOnly: true,
+                maxDecimals: 2,
+                value: 0
+            });
+        });
+        $(function () {
+            $("#textTotal").igCurrencyEditor({
+                width: "270px",
+                readOnly: true,
+                maxDecimals: 2,
+                value: 0
+            });
+        });
+        $(function () {
+            $("#textBaseRent").igCurrencyEditor("value", 0);
+            $("#textCivic").igCurrencyEditor("value", 0);
+            $("#textSupplemental").igCurrencyEditor("value", 0);
+            $("#textPILOT").igCurrencyEditor("value", 0);
+            $("#textInvoiceTotal").igCurrencyEditor("value", 0);
+            $("#textTotal").igCurrencyEditor("value", 0);
+        });
+        $(function () {
+            loadInvoiceCredits(null);
+            loadInvoiceRollbacks(null);
+        });
+    }
+
+    function loadBuildingSelection(bg, idt) {
+        $.ajax(
+        {
+            type: 'GET',
+            async: true,
+            url: '/Home/InvoiceExists',
+            data: { buildingGuid: bg, invoiceDate: idt },
+            dataType: "json",
+            success: function (response) {
+                if (response.invoiceGuid !== '00000000-0000-0000-0000-000000000000') {
+                    invoiceGuid = response.invoiceGuid;
+                    var url = reportPath + 'rt=i&ig=' + response.invoiceGuid;
+                    document.getElementById('printInvoiceLink').setAttribute("href", url);
+
+                    $.ajax(
+                        {
+                            type: 'GET',
+                            async: true,
+                            url: '/Home/GetInvoiceHeader',
+                            data: { invoiceGuid: response.invoiceGuid },
+                            dataType: "json",
+                            success: function (response) {
+                                response = jQuery.parseJSON(response);
+                                $("#textBaseRent").igCurrencyEditor("value", response[0].BaseRent);
+                                $("#textCivic").igCurrencyEditor("value", response[0].CivicFacility);
+                                $("#textSupplemental").igCurrencyEditor("value", response[0].Supplemental);
+                                $("#textPILOT").igCurrencyEditor("value", response[0].Pilot);
+                                $("#textInvoiceTotal").igCurrencyEditor("value", response[0].InvoiceTotal);
+                                loadInvoiceCredits(response[0].invoiceGuid);
+                                getInvoiceApproved(response[0].invoiceGuid);
+                            },
+                            error: function (jqXHR, exception) {
+                                console.log(jqXHR);
+                                console.log(exception);
+                            }
+                        });
+                }
+                else {
+                    $("#textBaseRent").igCurrencyEditor("value", 0);
+                    $("#textCivic").igCurrencyEditor("value", 0);
+                    $("#textSupplemental").igCurrencyEditor("value", 0);
+                    $("#textPILOT").igCurrencyEditor("value", 0);
+                    $("#textInvoiceTotal").igCurrencyEditor("value", 0);
+                    $("#textTotal").igCurrencyEditor("value", 0);
+                    loadInvoiceCredits('00000000-0000-0000-0000-000000000000');
+                    getInvoiceApproved('00000000-0000-0000-0000-000000000000');
+                    invoiceGuid = '00000000-0000-0000-0000-000000000000';
+                }
+            },
+            error: function (jqXHR, exception) {
+
+                console.log(jqXHR);
+                console.log(exception);
+            }
+        });
+    }
+
+    function loadInvoiceCredits(ig) {
+        $.ajax(
+        {
+            type: 'GET',
+            url: '/Home/GetInvoiceCredits',
+            data: { invoiceGuid: ig },
+            cache: false,
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+                $("#gridCreditAdjustments").igGrid({
+                    renderCheckboxes: true,
+                    primaryKey: "RowId",
+                    autoGenerateColumns: false,
+                    columns:
+                        [
+                            { headerText: "rowId", key: "RowId", dataType: "number", width: "0%" },
+                            { headerText: "InvoiceGuid", key: "InvoiceGuid", dataType: "string", width: "0%" },
+                            { headerText: "Credit", key: "CreditId", dataType: "number", width: "0%" },
+                            { headerText: "Description", key: "UserDescription", dataType: "string", width: "60%" },
+                            { headerText: "Date From", key: "UserDateFrom", dataType: "date", width: "0%" },
+                            { headerText: "Date To", key: "UserDateTo", dataType: "date", width: "0%" },
+                            { headerText: "Amount", key: "Amount", dataType: "number", width: "10%", format: "currency" },
+                            {
+                                headerText: "",
+                                key: "Delete",
+                                unbound: true,
+                                template: "<input type='image' src='/images/delete.png' onclick='deleteInvoiceCredit(${rowId})' />",
+                                width: "5%",
+                                columnCssClass: "deleteAlign" 
+                            }
+                        ],
+                    dataSource: data,
+                    autoCommit: true,
+                    autofitLastColumn: true,
+                    dataSourceType: "json",
+                    responseDataKey: "results",
+                    width: "100%",
+                    tabIndex: 1,
+                    features: [
+                        {
+                            name: "Updating",
+                            locale: {
+                                addRowLabel: "Add invoice credit...",
+                                rowEditDialogCaptionLabel: "Add Invoice Credit"
+                            },
+                            enableAddRow: true,
+                            enableUpdateRow: true,
+                            enableDeleteRow: false,
+                            startEditTriggers: "dblclick",
+                            editMode: "dialog",
+                            columnSettings: [
+                                {
+                                    columnKey: "CreditId",
+                                    required: true,
+                                    editorType: "combo",
+                                    editorOptions: {
+                                        mode: "dropdown",
+                                        dataSource: creditTypes,
+                                        textKey: "CreditDesc",
+                                        valueKey: "CreditId",
+                                        dropDownOnReadOnly: true,
+                                        dropDownWidth: 300
+                                    }
+                                },
+                                {
+                                    columnKey: "UserDescription",
+                                    editorType: "text",
+                                    readOnly: false,
+                                    required: true,
+                                    validation: true,
+                                    editorOptions: {
+                                        height: 100,
+                                        width: 300,
+                                        textMode: "multiline",
+                                        textWrapping: "wrap"
+                                    }
+                                },
+                                {
+                                    columnKey: "UserDateFrom",
+                                    editorType: "datepicker",
+                                    readOnly: false,
+                                    required: false,
+                                    validation: false
+                                },
+                                {
+                                    columnKey: "UserDateTo",
+                                    editorType: "datepicker",
+                                    readOnly: false,
+                                    required: false,
+                                    validation: false
+                                },
+                                {
+                                    columnKey: "Delete",
+                                    readOnly: true
+                                }],
+                            rowEditDialogOptions: {
+                                captionLabel: "Add Invoice Credit",
+                                width: 450,
+                                height: 450,
+                                dialogTemplateSelector: "#creditDialogTemplate",
+                                editorsTemplateSelector: "#creditEditorsTemplate",
+                                containment: "ui",
+                                animationDuration: 400,
+                                showReadonlyEditors: false
+                            },
+                            rowEditDialogAfterClose: function (evt, ui) {
+                                calcInvoiceGrandTotal();
+                            },
+                        },
+                        {
+                            name: 'Hiding',
+                            columnSettings:
+                                [
+                                    {
+                                        columnKey: 'RowId',
+                                        allowHiding: false,
+                                        hidden: true
+                                    },
+                                    {
+                                        columnKey: 'InvoiceGuid',
+                                        allowHiding: false,
+                                        hidden: true
+                                    },
+                                    {
+                                        columnKey: 'CreditId',
+                                        allowHiding: false,
+                                        hidden: false
+                                    },
+                                    {
+                                        columnKey: 'UserDescription',
+                                        allowHiding: false,
+                                        hidden: false
+                                    },
+                                    {
+                                        columnKey: 'UserDateFrom',
+                                        allowHiding: false,
+                                        hidden: false
+                                    },
+                                    {
+                                        columnKey: 'UserDateTo',
+                                        allowHiding: false,
+                                        hidden: false
+                                    },
+                                    {
+                                        columnKey: 'Amount',
+                                        allowHiding: false,
+                                        hidden: false
+                                    },
+                                    {
+                                        columnKey: 'Delete',
+                                        allowHiding: false,
+                                        hidden: false
+                                    }
+                                ]
+                        }
+                    ],
+
+                });
+                loadInvoiceRollbacks(ig);
+            },
+            error: function (jqXHR, exception) {
+                console.log(jqXHR);
+                console.log(exception);
+            }
+        });
+    }
+
+    function loadInvoiceRollbacks(ig) {
+        $.ajax(
+        {
+            type: 'GET',
+            url: '/Home/GetInvoiceRollbacks',
+            data: { invoiceGuid: ig },
+            cache: false,
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+                $("#gridAllocatedAdjustments").igGrid({
+                    renderCheckboxes: true,
+                    primaryKey: "rollbackId",
+                    autoGenerateColumns: false,
+                    columns:
+                        [
+                            { headerText: "rollbackId", key: "rollbackId", dataType: "string", width: "0%" },
+                            { headerText: "invoiceGuid", key: "invoiceGuid", dataType: "string", width: "0%" },
+                            { headerText: "Rollback Type", key: "invoiceComponentId", dataType: "string", width: "0%" },
+                            { headerText: "Rollback For", key: "invoiceRollbackFor", dataType: "string", width: "40%" },
+                            { headerText: "Date From", key: "dateFrom", dataType: "date", width: "15%" },
+                            { headerText: "Date To", key: "dateTo", dataType: "date", width: "15%" },
+                            { headerText: "Rollback Amount", key: "rollbackAmount", dataType: "number", width: "20%", format: "currency" },
+                            { headerText: "Adj. Amount", key: "adjustmentAmount", dataType: "number", width: "20%", format: "currency" },
+                            {
+                                headerText: "",
+                                key: "Delete",
+                                unbound: true,
+                                template: "<input type='image' src='/images/delete.png' onclick='deleteAllocatedAdjustment(${rollbackId})' />",
+                                width: "5%",
+                                columnCssClass: "deleteAlign" 
+                            }
+                        ],
+                    dataSource: data,
+                    autoCommit: true,
+                    autofitLastColumn: true,
+                    dataSourceType: "json",
+                    responseDataKey: "results",
+                    width: "100%",
+                    tabIndex: 1,
+                    features: [
+                        {
+                            name: "Updating",
+                            locale: {
+                                addRowLabel: "Add allocated adjustment...",
+                                rowEditDialogCaptionLabel: "Add Allocated Adjustment"
+                            },
+                            enableAddRow: true,
+                            enableUpdateRow: true,
+                            enableDeleteRow: false,
+                            editRowEnding: function (evt, ui) {
+                                if (ui.values["dateFrom"] == null || ui.values["dateTo"] == null) { return; }
+
+                                var cid = ui.values["invoiceComponentId"];
+                                ui.values["invoiceRollbackFor"] = invoiceComponents.find(x => x.invoiceComponentId === cid).ComponentName;
+                                var objDate;
+                                objDate = ui.values["dateFrom"];
+                                var df = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+                                objDate = ui.values["dateTo"];
+                                var dt = objDate.getMonth() + 1 + "/" + objDate.getDay() + "/" + objDate.getFullYear();
+                                var a = ui.values["rollbackAmount"];
+                                objDate = $("#dateTimeInvoiceDate").igDatePicker("value");
+                                var cd = objDate.getMonth() + 1 + "/1/" + objDate.getFullYear();
+                                var bg = $("#comboBuildings").igCombo("value");
+                                var adjType;
+                                if (cid == 1) { adjType = 'B'; }
+                                if (cid == 2) { adjType = 'C'; }
+                                if (cid == 3) { adjType = 'P'; }
+                                if (cid == 4) { adjType = 'S'; }
+                                $.ajax(
+                                {
+                                    type: 'GET',
+                                    async: false,
+                                    url: '/Home/CalculateAdjustmentDifference',
+                                    data: { adjustType: adjType, dateFrom: df, dateTo: dt, currentDate: cd, buildingGuid: bg, amount: a },
+                                    success: function (adj) {
+                                        ui.values["adjustmentAmount"] = adj;
+                                    },
+                                    error: function (jqXHR, exception) {
+                                        console.log(jqXHR);
+                                        console.log(exception);
+                                    }
+                                });
+                            },
+                            rowEditDialogAfterClose: function (evt, ui) {
+                                calcInvoiceGrandTotal();
+                            },
+                            startEditTriggers: "dblclick",
+                            editMode: "dialog",
+                            columnSettings: [
+                                {
+                                    columnKey: "invoiceComponentId",
+                                    required: true,
+                                    editorType: "combo",
+                                    editorOptions: {
+                                        mode: "dropdown",
+                                        dataSource: invoiceComponents,
+                                        textKey: "ComponentName",
+                                        valueKey: "invoiceComponentId",
+                                        dropDownOnReadOnly: true
+                                    },
+                                    validation: true
+                                },
+                                {
+                                    columnKey: "invoiceRollbackFor",
+                                    readOnly: true
+                                },
+                                {
+                                    columnKey: "dateFrom",
+                                    readOnly: false,
+                                    editorType: "datepicker",
+                                    editorOptions: {
+                                        dateDisplayFormat: "date",
+                                        dataMode: "date"
+                                    }
+                                },
+                                {
+                                    columnKey: "dateTo",
+                                    readOnly: false,
+                                    editorType: "datepicker",
+                                    editorOptions: {
+                                        dateDisplayFormat: "date",
+                                        dataMode: "date"
+                                    }
+                                },
+                                {
+                                    columnKey: "rollbackAmount",
+                                    visible: true,
+                                    readOnly: false,
+                                    required: true,
+                                    editorType: "currency"
+                                },
+                                {
+                                    columnKey: "adjustmentAmount",
+                                    visible: false,
+                                    required: false,
+                                    readOnly: true
+                                },
+                                {
+                                    columnKey: "Delete",
+                                    visible: false,
+                                    readOnly: true
+                                }
+                            ],
+                            rowEditDialogOptions: {
+                                captionLabel: "Add Allocated Adjustment",
+                                width: 450,
+                                height: 450,
+                                dialogTemplateSelector: "#rollbackDialogTemplate",
+                                editorsTemplateSelector: "#rollbackEditorsTemplate",
+                                containment: "ui",
+                                animationDuration: 400,
+                                showReadonlyEditors: false
+                            }
+                        },
+                        {
+                            name: 'Hiding',
+                            columnSettings: [
+                                {
+                                    columnKey: 'rollbackId',
+                                    allowHiding: false,
+                                    hidden: true
+                                },
+                                {
+                                    columnKey: 'invoiceGuid',
+                                    allowHiding: false,
+                                    hidden: true
+                                },
+                                {
+                                    columnKey: 'invoiceComponentId',
+                                    allowHiding: false,
+                                    hidden: false
+                                },
+                                {
+                                    columnKey: 'invoiceRollbackFor',
+                                    allowHiding: false,
+                                    hidden: false
+                                },
+                                {
+                                    columnKey: 'dateFrom',
+                                    allowHiding: false,
+                                    hidden: false
+                                },
+                                {
+                                    columnKey: 'dateTo',
+                                    allowHiding: false,
+                                    hidden: false
+                                },
+                                {
+                                    columnKey: 'rollbackAmount',
+                                    allowHiding: false,
+                                    hidden: false
+                                },
+                                {
+                                    columnKey: 'adjustmentAmount',
+                                    allowHiding: false,
+                                    hidden: false
+                                },
+                                {
+                                    columnKey: 'Delete',
+                                    allowHiding: false,
+                                    hidden: false
+                                }
+                            ]
+                        }
+                    ]
+                });
+                calcInvoiceGrandTotal();
+            },
+            error: function (jqXHR, exception) {
+                console.log(jqXHR);
+                console.log(exception);
+            }
+        });
+    }
+
+    function getAdjustmentDifference(cid, df, dt, cd, bg, a) {
+        $.get("/Home/CalculateAdjustmentDifference",
+            {
+                adjustType: cid, dateFrom: df, dateTo: dt, currentDate: cd, buildingGuid: bg, amount: a
+            }
+            , function (adj) {
+                return adj;
+            });
+    }
+
+    function showErrorAlert(title) {
+        $("#errorMessage").dialog({
+            title: title,
+            resizable: false,
+            height: 250,
+            width: 350,
+            show: { effect: 'drop', direction: "up" },
+            modal: true,
+            draggable: false,
+            open: function (event, ui) {
+                $(".ui-dialog-titlebar-close").hide();
+            },
+            buttons: {
+                "OK": function () {
+                    $(this).dialog("close");
+
+                }
+            }
+        });
+
+    }
+
+    function showSaveSuccess() {
+        $("#savedDialog").dialog({
+            title: 'Invoice Saved!',
+            resizable: false,
+            height: 300,
+            width: 350,
+            show: { effect: 'drop', direction: "up" },
+            modal: true,
+            draggable: false,
+            open: function (event, ui) {
+                $(".ui-dialog-titlebar-close").hide();
+            },
+            buttons: {
+                "Yes": function () {
+                    $(this).dialog("close");
+                    printSavedInvoice(invoiceGuid);
+                    location.reload();
+                },
+                "No": function () {
+                    $(this).dialog("close");
+                    location.reload();
+                }
+            }
+        });
+
+    }
+
+    function deleteInvoiceCredit(rowId) {
+        if (invoiceApproved) {
+            document.getElementById('alertMessage').innerHTML = 'You cannot delete this credit because a worksheet has been approved against this invoice!';
+            showErrorAlert('Cannot Delete Credit!');
+            return;
+        }
+        $.ajax(
+        {
+            async: true,
+            type: 'POST',
+            url: '/Home/DeleteInvoiceCredit',
+            data: { rowId: rowId},
+            cache: false,
+            success: function (data) {
+                loadInvoiceCredits(invoiceGuid);
+                CalcInvoiceGrandTotal();
+            }
+        });
+    }
+
+    function deleteAllocatedAdjustment(rollbackId) {
+        if (invoiceApproved) {
+            document.getElementById('alertMessage').innerHTML = 'You cannot delete this allocated adjustment because a worksheet has been approved against this invoice!';
+            showErrorAlert('Cannot Delete Allocated Adjustment!');
+            return;
+        }
+        $.ajax(
+        {
+            async: true,
+            type: 'POST',
+            url: '/Home/DeleteRollback',
+            data: { rollbackId: rollbackId },
+            cache: false,
+            success: function (data) {
+                loadInvoiceRollbacks();
+                calcInvoiceGrandTotal();
+            }
+        });
+    }
+
+    function calcInvoiceGrandTotal() {
+        var bg = 0;
+        var cv = 0;
+        var su = 0;
+        var pl = 0;
+
+        bg = $("#textBaseRent").igCurrencyEditor("value");
+        cv = $("#textCivic").igCurrencyEditor("value");
+        su = $("#textSupplemental").igCurrencyEditor("value");
+        pl = $("#textPILOT").igCurrencyEditor("value");
+
+        if (isNaN(bg)) { bg = 0; }
+        if (isNaN(cv)) { cv = 0; }
+        if (isNaN(su)) { su = 0; }
+        if (isNaN(pl)) { pl = 0; }
+
+        var cr = getCreditSum();
+        var ad = getAllocatedAdjustmentSum();
+
+        var invTotal = (bg + cv + su + pl);
+        $("#textInvoiceTotal").igCurrencyEditor("value", invTotal);
+
+        var grandTotal = invTotal + (cr + ad);
+        $("#textTotal").igCurrencyEditor("value", grandTotal);
+    }
+
+    function getCreditSum() {
+        if ($("#gridCreditAdjustments").data("igGrid") != null) {
+            var $grid = $("#gridCreditAdjustments");
+            var rows = $grid.igGrid("allRows");
+            var rowId;
+            var retVal = 0;
+            //	Loop through each row in the grid.
+            $.each(rows, function (index, row) {
+                rowId = $(row).attr("data-id");	//	This attribute stores the row's primary key.
+                retVal += $grid.igGrid("getCellValue", rowId, "Amount");
+            });
+            if (isNaN(retVal)) { retVal = 0; }
+            return retVal;
+        }
+        else {
+            return 0;
+        }
+    }
+
+    function getAllocatedAdjustmentSum() {
+        var $grid = $("#gridAllocatedAdjustments");
+        var rows = $grid.igGrid("allRows");
+        var rowId;
+        var retVal = 0;
+        //	Loop through each row in the grid.
+        $.each(rows, function (index, row) {
+            rowId = $(row).attr("data-id");	//	This attribute stores the row's primary key.
+            retVal += $grid.igGrid("getCellValue", rowId, "adjustmentAmount");
+        });
+        if (isNaN(retVal)) { retVal = 0; }
+        return retVal;
+    }
+
+    function saveInvoice() {
+        if (!validateInputs()) { return; }
+
+        var br = $("#textBaseRent").igCurrencyEditor("value");
+        var cv = $("#textCivic").igCurrencyEditor("value");
+        var sp = $("#textSupplemental").igCurrencyEditor("value");
+        var pl = $("#textPILOT").igCurrencyEditor("value");
+        var bg = $("#comboBuildings").igCombo("value");
+
+        var objDate = $("#dateTimeInvoiceDate").igDatePicker("value");
+        var idt;
+        if (objDate.getDate() !== "1") {
+            idt = (objDate.getMonth() + 1) + "/1/" + objDate.getFullYear();
+            $("#dateTimeInvoiceDate").igDatePicker("value", idt);
+        }
+        else {
+            idt = (objDate.getMonth() + 1) + "/1/" + objDate.getFullYear();
+        }
+        
+        $.ajax(
+            {
+                type: 'GET',
+                url: '/Home/SaveInvoice',
+                data: { invoiceGuid: invoiceGuid, invoiceDate: idt, baseRent: br, civic: cv, suppl: sp, pilot: pl, buildingGuid: bg },
+                cache: false,
+                async: false,
+                success: function (data) {
+                    data = jQuery.parseJSON(data);
+                    invoiceGuid = data[0].InvoiceGuid;
+                    $.post('/Home/ClearInvoiceCredits', { invoiceGuid: invoiceGuid })
+                        .done(function () {
+                            if ($("#gridCreditAdjustments").data("igGrid") != null) {
+
+                                var $grid = $("#gridCreditAdjustments");
+                                var rows = $grid.igGrid("allRows");
+                                var rowId;
+                                var df;
+                                var dt;
+                                var ud = "";
+                                var amt;
+                                var objDate;
+                                var ci;
+
+                                
+                                if (rows.length > 0) {
+                                    try {
+                                        //	Loop through each row in the grid.
+                                        $.each(rows, function (index, row) {
+                                            rowId = $(row).attr("data-id");
+
+                                            ci = $grid.igGrid("getCellValue", rowId, "CreditId");
+                                            if ($grid.igGrid("getCellValue", rowId, "UserDateFrom") != null) {
+                                                objDate = $grid.igGrid("getCellValue", rowId, "UserDateFrom");
+                                                df = (objDate.getMonth() + 1) + "/" + objDate.getDate() + "/" + objDate.getFullYear();
+                                            }
+                                            else {
+                                                df = null;
+                                            }
+                                            if ($grid.igGrid("getCellValue", rowId, "UserDateTo") != null) {
+                                                objDate = $grid.igGrid("getCellValue", rowId, "UserDateTo");
+                                                dt = (objDate.getMonth() + 1) + "/" + objDate.getDate() + "/" + objDate.getFullYear();
+                                            }
+                                            else {
+                                                dt = null;
+                                            }
+                                            ud = $grid.igGrid("getCellValue", rowId, "UserDescription");
+                                            amt = $grid.igGrid("getCellValue", rowId, "Amount");
+
+                                            try {
+                                                $.post('/Home/SaveInvoiceCredit', {
+                                                    invoiceGuid: invoiceGuid, creditId: ci,
+                                                    creditAmount: amt, userDesc: ud, dateFrom: df, dateTo: dt
+                                                });
+                                            }
+                                            catch (err) {
+                                                console.log(err);
+                                            }
+
+                                            if ((index + 1) == rows.length) {
+                                                crFin = true;
+                                                if (crFin && adFin) { goP.saveComplete = true; }
+                                            }
+                                        });
+                                    }
+                                    catch (err) {
+                                        console.log(err);
+                                    }
+                                }
+                                else {
+                                    crFin = true;
+                                    if (crFin && adFin) { goP.saveComplete = true; }
+                                }
+                            }
+                            else {
+                                crFin = true;
+                                if (crFin && adFin) { goP.saveComplete = true; }
+                            }
+                        });
+                    $.post('/Home/ClearInvoiceRollbacks', { invoiceGuid: invoiceGuid })
+                        .done(function () {
+                            if ($("#gridAllocatedAdjustments").data("igGrid") != null) {
+                                var bg = $("#comboBuildings").igCombo("value");
+                                var $grid = $("#gridAllocatedAdjustments");
+                                var rows = $grid.igGrid("allRows");
+                                var objDate;
+                                objDate = $("#dateTimeInvoiceDate").igDatePicker("value");
+                                var idt;
+                                if (objDate.getDate() !== "1") {
+                                    idt = (objDate.getMonth() + 1) + "/1/" + objDate.getFullYear();
+                                }
+                                else {
+                                    idt = (objDate.getMonth() + 1) + "/1/" + objDate.getFullYear();
+                                }
+                                var adjRowId;
+                                var adjDf;
+                                var adjDt;
+                                var invCompId;
+                                var adjAmt;
+
+                                if (rows.length > 0) {
+                                    try {
+                                        $.each(rows, function (index, row) {
+                                            adjRowId = $(row).attr("data-id");
+                                            invCompId = $grid.igGrid("getCellValue", adjRowId, "invoiceComponentId");
+
+                                            objDate = $grid.igGrid("getCellValue", adjRowId, "dateFrom");
+                                            adjDf = (objDate.getMonth() + 1) + "/" + objDate.getDate() + "/" + objDate.getFullYear();
+
+                                            objDate = $grid.igGrid("getCellValue", adjRowId, "dateTo");
+                                            adjDt = (objDate.getMonth() + 1) + "/" + objDate.getDate() + "/" + objDate.getFullYear();
+
+                                            adjAmt = $grid.igGrid("getCellValue", adjRowId, "rollbackAmount");
+                                            try {
+                                                $.post('/Home/SaveInvoiceRollbacks', {
+                                                    invoiceGuid: invoiceGuid, buildingGuid: bg, invoiceComponentId: invCompId,
+                                                    dateFrom: adjDf, dateTo: adjDt, amount: adjAmt, invoiceDate: idt
+                                                });
+                                            }
+                                            catch (err) {
+                                                console.log(err);
+                                            }
+
+                                            if ((index + 1) == rows.length) {
+                                                adFin = true;
+                                                if (crFin && adFin) { goP.saveComplete = true; }
+                                            }
+                                        });
+                                    }
+                                    catch (err) {
+                                        console.log(err);
+                                    }
+                                }
+                                else {
+                                    adFin = true;
+                                    if (crFin && adFin) { goP.saveComplete = true; }
+                                }
+                            }
+                            else {
+                                adFin = true;
+                                if (crFin && adFin) { goP.saveComplete = true; }
+                            }
+                        });
+                },
+                error: function () {
+                    console.log('error');
+                }
+            });
+    }
+
+    function printSavedInvoice(ig)
+    {
+        if (crFin && adFin) {
+            var url = reportPath + 'rt=i&ig=' + ig;
+            window.open(url, '_blank');
+        }
+    }
+
+    function submitInvoice() {
+        if (!validateInputs()) { return; }
+    }
+
+    function validateInputs() {
+        var objDate = $("#dateTimeInvoiceDate").igDatePicker("value");
+        var br = $("#textBaseRent").igCurrencyEditor("value");
+        var cv = $("#textCivic").igCurrencyEditor("value");
+        var sp = $("#textSupplemental").igCurrencyEditor("value");
+        var pl = $("#textPILOT").igCurrencyEditor("value");
+        var bg = $("#comboBuildings").igCombo("value");
+        
+        if (objDate == null || objDate == '' || objDate.length == 0) {
+            document.getElementById('alertMessage').innerHTML = 'You must specify the invoice date to continue!';
+            showErrorAlert('Required Field Missing!');
+            return false;
+        }
+        if (bg == null || bg == '00000000-0000-0000-0000-000000000000' || bg.length == 0) {
+            document.getElementById('alertMessage').innerHTML = 'You must select a building to continue!';
+            showErrorAlert('Required Field Missing!');
+            return false;
+        }
+        if (br == null || br == '' || br.length == 0) {
+            document.getElementById('alertMessage').innerHTML = 'You must specify the base rent to continue!';
+            showErrorAlert('Required Field Missing!');
+            return false;
+        }
+        return true;
+    }
+
+    function getTempKey() {
+        var key = 1;
+        var $grid = $("#gridCreditAdjustments");
+        var rows = $grid.igGrid("allRows");
+        var rowId;
+
+        $.each(rows, function (index, row) {
+            rowId = $(row).attr("data-id");	
+            if ($grid.igGrid("getCellValue", rowId, "RowId") > key)
+                key = $grid.igGrid("getCellValue", rowId, "RowId");
+            key += 1;
+        });
+        return key;
+    }
+
+</script>
+
+<script id="allocatedDialogTemplate" type="text/html">
+    <div style="float: left; width: 100%">
+        <strong>${Name}</strong><br />
+        <table style="width: 100%;">
+            <colgroup>
+                <col style="width: 30%;" />
+                <col style="width: 200%;" />
+            </colgroup>
+            <tbody data-render-tmpl="true"></tbody>
+        </table>
+    </div>
+</script>
+
+<script id="allocatedEditorsTemplate" type="text/html">
+    <tr>
+        <td valign="top" style="color: black;">${headerText}</td>
+        <td>
+            <input data-editor-for-${key}="true" style="color: black; width: 1000px;" />
+        </td>
+    </tr>
+</script>
+
+<script id="creditDialogTemplate" type="text/html">
+    <div style="float: left; width: 100%">
+        <strong>${Name}</strong><br />
+        <table style="width: 100%;">
+            <colgroup>
+                <col style="width: 30%;" />
+                <col style="width: 200%;" />
+            </colgroup>
+            <tbody data-render-tmpl="true"></tbody>
+        </table>
+    </div>
+</script>
+
+<script id="creditEditorsTemplate" type="text/html">
+    <tr>
+        <td valign="top" style="color: black;">${headerText}</td>
+        <td>
+            <input data-editor-for-${key}="true" style="color: black; width: 1000px;" />
+        </td>
+    </tr>
+</script>
+
+<script id="rollbackDialogTemplate" type="text/html">
+    <div style="float: left; width: 100%">
+        <strong>${Name}</strong><br />
+        <table style="width: 100%;">
+            <colgroup>
+                <col style="width: 30%;" />
+                <col style="width: 200%;" />
+            </colgroup>
+            <tbody data-render-tmpl="true"></tbody>
+        </table>
+    </div>
+</script>
+
+<script id="rollbackEditorsTemplate" type="text/html">
+    <tr>
+        <td valign="top" style="color: black;">${headerText}</td>
+        <td>
+            <input data-editor-for-${key}="true" style="color: black; width: 1000px;" />
+        </td>
+    </tr>
+</script>
+
+<meta name="viewport" content="width=device-width" />
+<title>Add/Edit Invoice</title>
+
+<style>
+    td.edge {
+        width: 17%;
+        vertical-align: top;
+    }
+
+    #gridAllocatedAdjustements tr td {
+        white-space: nowrap;
+    }
+
+    #gridCreditAdjustments tr td {
+        white-space: nowrap;
+    }
+    
+    input:hover {
+        color: initial;
+    }
+</style>
+
+<body>
+
+    <style type="text/css">
+        #gridCreditAdjustments tr td {
+            white-space: nowrap;
+        }
+
+        .deleteAlign {
+            text-align: right !important;
+        }
+    </style>
+
+    <table style="width: 100%">
+        <tr>
+            <td class="edge"><strong>Invoice Date:</strong></td>
+            <td>
+                <div id="dateTimeInvoiceDate"></div>
+            </td>
+            <td rowspan="7" valign="top">
+                <div id="invoiceOptions">
+                    <table>
+                        <tr>
+                            <td><img src="~/images/printer.png" /></td>
+                            <td style="padding-left: 5px"><a id="printInvoiceLink" href="" target="_blank">Print Invoice</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="~/images/arrow_undo.png" /></td>
+                            <td style="padding-left: 5px"><a href="">Reverse Invoice Approval</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="edge"><strong>Building:</strong></td>
+            <td colspan="2">
+                <div id="comboBuildings"></div>
+            </td>
+        </tr>
+        <tr>
+            <td class="edge"><strong>Base Rent:</strong></td>
+            <td colspan="2">
+                <div id="textBaseRent"></div>
+            </td>
+        </tr>
+        <tr>
+            <td class="edge"><strong>Civic Facility:</strong></td>
+            <td colspan="2">
+                <div id="textCivic"></div>
+            </td>
+        </tr>
+        <tr>
+            <td class="edge"><strong>Supplemental:</strong></td>
+            <td colspan="2">
+                <div id="textSupplemental"></div>
+            </td>
+        </tr>
+        <tr>
+            <td class="edge"><strong>PILOT:</strong></td>
+            <td colspan="2">
+                <div id="textPILOT"></div>
+            </td>
+        </tr>
+        <tr>
+            <td class="edge"><strong>Invoice Total:</strong></td>
+            <td colspan="2">
+                <div id="textInvoiceTotal"></div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" align="left"><strong>Adjustments Allocated to Units by this System</strong></td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <div id="gridAllocatedAdjustments"></div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" align="left"><strong>Adjustments not Allocated to Units by this System</strong></td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <div id="gridCreditAdjustments"></div>
+            </td>
+        </tr>
+        <tr>
+            <td class="edge"><strong>Invoice Total (Including Adjustments):</strong></td>
+            <td colspan="2">
+                <div id="textTotal"></div>
+            </td>
+        </tr>
+        <tr style="background-color: lightgray">
+            <td colspan="3">
+                <table width="100%">
+                    <tr>
+                        <td align="left" width="60%" style="color: red;padding-top: 20px;"><div id="approvedMessage">A worksheet for this invoice has already been approved. Changes cannot be made!</div></td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <div id="saveButton">
+                                <button id="buttonSave" type="submit" class="btn btn-default" onclick="saveInvoice()">
+                                    <span class="glyphicon glyphicon-save"></span>Save Invoice
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div id="errorMessage" style="display: none">
+        <p>
+            <div id="alertMessage"></div>
+        </p>
+    </div>
+    <div id="savedDialog" style="display: none">
+        <p>
+            <table>
+                <tr>
+                    <td align="center">The invoice has been saved successfully! Do you wish to print the invoice?</td>
+                </tr>
+                <tr>
+                    <td align="center" style="padding-top: 20px"><img src="~/images/saved.png" height="64" width="64" /></td>
+                </tr>
+            </table>
+        </p>
+    </div>
+</body>

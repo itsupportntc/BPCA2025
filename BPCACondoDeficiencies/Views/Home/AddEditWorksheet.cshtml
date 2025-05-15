@@ -1,0 +1,773 @@
+﻿@using Infragistics.Web.Mvc;
+@model WorksheetModel
+@{
+    ViewData["Title"] = "Add/Edit Worksheet";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style type="text/css">
+        .customTheme .ui-igedit-field {
+            outline: 0;
+            border: 0px;
+        }
+
+        #worksheetDetails tr td {
+            white-space: nowrap;
+        }
+       
+    </style>
+    <meta name="viewport" content="width=device-width" />
+    <title>AddEditWorksheet</title>
+    <script>
+        var bg;
+        var idt;
+
+        $(document).ready
+            (function () {
+                checkSession();
+
+                loadInvoiceData();
+            });
+        function loadInvoiceData() {
+            $.ajax(
+                {
+                    type: 'GET',
+                    url: '/Home/GetWorksheetInvoice',
+                    data: { invoiceGuid: '@Model.InvoiceGuid' },
+                    cache: false,
+                    async: true,
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: getInvoiceDataSuccess,
+                    error: getInvoiceDataFailure()
+                }
+            );
+        }
+        function getInvoiceDataSuccess(data) {
+            console.log(data);
+            var jres = JSON.parse(data);
+            bg = jres[0].buildingguid;
+            var bn = jres[0].buildingname;
+            idt = jres[0].invoicedate;
+            var br = jres[0].baserent;
+            var sup = jres[0].suppl;
+            var civ = jres[0].civic;
+            var pil = jres[0].pilot;
+            var cr = jres[0].credit;
+            var to = jres[0].total;
+
+            $(function () {
+                $("#buildingName").igTextEditor({
+                    width: 160,
+                    readOnly: true,
+                    theme: 'customTheme'
+                });
+            });
+            $(function () {
+                $("#invoiceDate").igDateEditor({
+                    width: 160,
+                    readOnly: true,
+                    theme: 'customTheme'
+                });
+            });
+            $(function () {
+                $("#baserent").igCurrencyEditor({
+                    width: 160,
+                    readOnly: true,
+                    theme: 'customTheme'
+                });
+            });
+            $(function () {
+                $("#supplemental").igCurrencyEditor({
+                    width: 160,
+                    readOnly: true,
+                    theme: 'customTheme'
+                });
+            });
+            $(function () {
+                $("#civic").igCurrencyEditor({
+                    width: 160,
+                    readOnly: true,
+                    theme: 'customTheme'
+                });
+            });
+            $(function () {
+                $("#pilot").igCurrencyEditor({
+                    width: 160,
+                    readOnly: true,
+                    theme: 'customTheme'
+                });
+            });
+            $(function () {
+                $("#total").igCurrencyEditor({
+                    width: 160,
+                    readOnly: true,
+                    theme: 'customTheme'
+                });
+            });
+            $("#buildingName").igTextEditor("value", bn);
+            $("#invoiceDate").igDateEditor("value", idt);
+            $("#baserent").igCurrencyEditor("value", br);
+            $("#civic").igCurrencyEditor("value", civ);
+            $("#supplemental").igCurrencyEditor("value", sup);
+            $("#pilot").igCurrencyEditor("value", pil);
+            $("#total").igCurrencyEditor("value", to);
+
+            getWorksheetDetails();
+        }
+
+        function getInvoiceDataFailure() {
+
+        }
+
+        function getWorksheetDetails() {
+            $.ajax(
+                {
+                    async: true,
+                    type: 'GET',
+                    url: '/Home/GetWorksheetDetails',
+                    data: { worksheetId: @Model.WorksheetId },
+                    cache: false,
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: getWorksheetDetailsSuccess,
+                    error: getWorksheetDetailsError()
+                }
+            );
+        }
+
+        function getWorksheetDetailsSuccess(data) {
+            $("#worksheetDetails").igGrid({
+
+                autoGenerateColumns: false,
+                renderCheckboxes: false,
+                primaryKey: "trxid",
+                caption: "Defaults/Payments",
+                columns:
+                    [
+                        { headerText: "trxid", key: "trxid", dataType: "number", width: "0%" },
+                        { headerText: "Type", key: "TransType", dataType: "string", width: "25%" },
+                        { headerText: "defpaid", key: "defpaid", dataType: "date", width: "0%" },
+                        { headerText: "UnitG", key: "UnitGUID", dataType: "string", width: "0%" },
+                        { headerText: "Unit", key: "Unit", dataType: "string", width: "20%" },
+                        { headerText: "ownerguid", key: "ownerguid", dataType: "string", width: "0%" },
+                        { headerText: "Unit Owner", key: "Owner", dataType: "string", width: "30%" },
+                        { headerText: "Base Rent", key: "BaseRent", dataType: "number", width: "15%", format: "currency", columnCssClass: "numericAlignment" },
+                        { headerText: "Civic Facility", key: "CivicFacility", dataType: "number", width: "15%", format: "currency", columnCssClass: "numericAlignment" },
+                        { headerText: "Supplemental", key: "Supplemental", dataType: "number", width: "15%", format: "currency", columnCssClass: "numericAlignment" },
+                        { headerText: "PILOT", key: "PILOT", dataType: "number", width: "15%", format: "currency", columnCssClass: "numericAlignment" },
+                        { headerText: "CommonInterest", key: "CommonInterest", dataType: "number", width: "0%" },
+                        {
+                            headerText: "",
+                            key: "Delete",
+                            unbound: true,
+                            template: "<input type='image' src='/images/delete.png' onclick='deleteRow(${trxid})' />",
+                            width: "5%",
+                            columnCssClass: "deleteAlign" 
+                        }
+                    ],
+                features: [
+                    {
+                        name: "Selection",
+                        mode: "row",
+                        multipleSelection: false
+                    },
+                    {
+                        name: "Sorting",
+                        type: "local",
+                        mode: "single",
+                        persist: false
+                    },
+                    {
+                        name: "Updating",
+                        locale: {
+                            addRowLabel: "Add default/payment...",
+                            rowEditDialogCaptionLabel: "Add Default/Payment"
+                        },
+                        enableAddRow: true,
+                        enableUpdateRow: false,
+                        enableDeleteRow: false,
+                        rowEditDialogBeforeClose: function (evt, ui) {
+                            if (evt.currentTarget.id != "worksheetDetails_updating_dialog_container_footer_buttonok") {
+                                return;
+                            }
+                            var unitGuid = $("#unit").igCombo("value");
+                            var ownerGuid = $("#owner").igCombo("value");
+                            var transType = $("#transactionType").igCombo("value");
+                            var numPayments = document.getElementById("numberOfPayments").value;
+
+                            
+                            if (transType == "D") {
+                                $.ajax(
+                                {
+                                    async: true,
+                                    type: 'POST',
+                                    url: '/Home/InsertDefault',
+                                    data: { unitGuid: unitGuid, ownerGuid: ownerGuid, worksheetId: @Model.WorksheetId },
+                                    cache: false,
+                                    success: function (data) {
+                                        getWorksheetDetails();
+                                    }
+                                });
+                            }
+                            else {
+                                $.ajax(
+                                {
+                                    async: true,
+                                    type: 'POST',
+                                    url: '/Home/InsertPayments',
+                                    data: { unitGuid: unitGuid, ownerGuid: ownerGuid, worksheetId: @Model.WorksheetId, numPayments: numPayments },
+                                    cache: false,
+                                    success: function (data) {
+                                        getWorksheetDetails();
+                                    }
+                                });
+                            }
+                        },
+                        startEditTriggers: "click",
+                        editMode: "dialog",
+                        columnSettings:
+                            [
+                                {
+                                    columnKey: 'UnitGUID',
+                                    editorType: "text",
+                                    readOnly: true,
+                                    defaultValue: -1,
+                                    hidden: true,
+                                    required: true
+                                },
+                                {
+                                    columnKey: 'trxid',
+                                    editorType: "text",
+                                    readOnly: true,
+                                    defaultValue: -1,
+                                    hidden: true,
+                                    required: false
+                                },
+                                {
+                                    columnKey: 'Unit',
+                                    editorType: "text",
+                                    readOnly: true,
+                                    defaultValue: -1,
+                                    hidden: true,
+                                    required: false
+                                },
+                                {
+                                    columnKey: 'Delete',
+                                    editorType: "text",
+                                    readOnly: true,
+                                    defaultValue: -1,
+                                    hidden: true,
+                                    required: false
+                                },
+                                {
+                                    columnKey: 'Owner',
+                                    editorType: "text",
+                                    readOnly: true,
+                                    defaultValue: -1,
+                                    hidden: true,
+                                    required: false
+                                },
+                                {
+                                    columnKey: 'TransType',
+                                    editorType: "text",
+                                    readOnly: true,
+                                    defaultValue: -1,
+                                    hidden: true,
+                                    required: false
+                                },
+                                {
+                                    columnKey: 'BaseRent',
+                                    hidden: true,
+                                    editorType: "text",
+                                    readOnly: true,
+                                    defaultValue: -1,
+                                    hidden: true,
+                                    required: false
+                                },
+                                {
+                                    columnKey: 'CivicFacility',
+                                    hidden: true,
+                                    editorType: "text",
+                                    readOnly: true,
+                                    defaultValue: -1,
+                                    hidden: true,
+                                    required: false
+                                },
+                                {
+                                    columnKey: 'Supplemental',
+                                    hidden: true,
+                                    editorType: "text",
+                                    readOnly: true,
+                                    defaultValue: -1,
+                                    hidden: true,
+                                    required: false
+                                },
+                                {
+                                    columnKey: 'PILOT',
+                                    hidden: true,
+                                    editorType: "text",
+                                    readOnly: true,
+                                    defaultValue: -1,
+                                    hidden: true,
+                                    required: false
+                                },
+                                {
+                                    columnKey: 'CommonInterest',
+                                    hidden: true,
+                                    editorType: "text",
+                                    readOnly: true,
+                                    defaultValue: -1,
+                                    hidden: true,
+                                    required: false
+                                }
+                            ],
+                        rowEditDialogOptions: {
+                            captionLabel: "CaptionLabel",
+                            width: 600,
+                            height: 500,
+                            dialogTemplateSelector: "#dialogTemplate",
+                            editorsTemplateSelector: "#editorsTemplate",
+                            containment: "ui",
+                            animationDuration: 400,
+                            showReadonlyEditors: false
+                        }
+                        
+                    },
+                    {
+                        name: 'Hiding',
+                        columnSettings:
+                            [
+                                {
+                                    columnKey: 'TransType',
+                                    allowHiding: false,
+                                    hidden: false
+                                },
+                                {
+                                    columnKey: 'defpaid',
+                                    allowHiding: false,
+                                    hidden: true
+                                },
+                                {
+                                    columnKey: 'Unit',
+                                    allowHiding: false,
+                                    hidden: false
+                                },
+                                {
+                                    columnKey: 'ownerguid',
+                                    allowHiding: false,
+                                    hidden: true
+                                },
+                                {
+                                    columnKey: 'Owner',
+                                    allowHiding: false,
+                                    hidden: false
+                                },
+                                {
+                                    columnKey: 'BaseRent',
+                                    allowHiding: false,
+                                    hidden: false
+                                },
+                                {
+                                    columnKey: 'CivicFacility',
+                                    allowHiding: false,
+                                    hidden: false
+                                },
+                                {
+                                    columnKey: 'Supplemental',
+                                    allowHiding: false,
+                                    hidden: false
+                                },
+                                {
+                                    columnKey: 'PILOT',
+                                    allowHiding: false,
+                                    hidden: false
+                                },
+                                {
+                                    columnKey: 'CommonInterest',
+                                    allowHiding: false,
+                                    hidden: false
+                                }, {
+                                    columnKey: 'Delete',
+                                    allowHiding: false,
+                                    hidden: false
+                                }
+                            ]
+                    }],
+                dataSource: data,
+                dataSourceType: "json",
+                responseDataKey: "results",
+                height: "1000",
+                width: "100%",
+                tabIndex: 1,
+
+            });
+            $("#worksheetDetails").on("iggridupdatingroweditdialogafteropen",
+                function (event, ui) {
+                    document.getElementById("labelNP").style.display = "none";
+                    document.getElementById("inputNP").style.display = "none";
+                    document.getElementById("labelCMD").style.display = "none";
+                    document.getElementById("inputCMD").style.display = "none";
+                    var diaElem = ui.dialogElement;
+                    $.ajax(
+                        {
+                            async: true,
+                            type: 'GET',
+                            url: '/Home/GetUnitList',
+                            data: { buildingGuid: "@Model.BuildingGuid" },
+                            cache: false,
+                            dataType: "json",
+                            contentType: "application/json; charset=utf-8",
+                            success: function (response) {
+                                  $("#unit").igCombo({
+                                      dataSource: jQuery.parseJSON(response),
+                                      valueKey: "unitguid",
+                                      textKey: "unitcode",
+                                      dataType: "json",
+                                      selectionChanged: function (evt, ui) {
+                                          var unitGuid = $("#unit").igCombo("value");
+                                          var unitCode = $("#unit").igCombo("text");
+                                          $.ajax(
+                                            {
+                                                async: true,
+                                                type: 'GET',
+                                                url: '/Home/GetUnitOwner',
+                                                data: { unitGuid: unitGuid },
+                                                cache: false,
+                                                dataType: "json",
+                                                contentType: "application/json; charset=utf-8",
+                                                  success: function (response) {
+                                                      var ownerJson = jQuery.parseJSON(response);
+                                                      $("#owner").igCombo({
+                                                          initialSelectedItems: [
+                                                              { value: ownerJson[0].ownerguid }
+                                                          ],
+                                                        dataSource: ownerJson,
+                                                        valueKey: "ownerguid",
+                                                        textKey: "titlename",
+                                                        dataType: "json",
+                                                          selectionChanged: function (evt, ui) {
+                                                              showMonthsInDefault();
+                                                          }
+                                                      });
+                                                      showMonthsInDefault();
+                                                },
+                                                error: function () { alert('error'); }
+                                            });
+                                      }
+                                  });
+                            },
+                            error: function () { alert('error'); }
+                        });
+
+                    var transactionTypes = [
+                        { "TransactionTypeId": "D", "TransactionType": "Default" },
+                        { "TransactionTypeId": "P", "TransactionType": "Payment" }
+                    ];
+
+                    $("#transactionType").igCombo({
+                        dataSource: transactionTypes,
+                        textKey: "TransactionType",
+                        valueKey: "TransactionTypeId",
+                        selectionChanged: function (evt, ui) {
+                            var val = $("#transactionType").igCombo("value");
+                            var lblDiv = document.getElementById("labelNP");
+                            var inputDiv = document.getElementById("inputNP");
+
+                            if (val == "P") {
+                                lblDiv.style.display = "block";
+                                inputDiv.style.display = "block";
+                            }
+                            else {
+                                lblDiv.style.display = "none";
+                                inputDiv.style.display = "none";
+                            }
+                        }
+                    });
+                  
+                });
+            
+        }
+        function getWorksheetDetailsError() {
+        }
+
+        function showMonthsInDefault(evt, ui) {
+            var ug = $("#unit").igCombo("value");
+            var og = $("#owner").igCombo("value");
+            $.ajax(
+                {
+                    async: true,
+                    type: 'GET',
+                    url: '/Home/GetNumberOfMonthsInDefault',
+                    data: { unitGuid: ug, ownerGuid: og },
+                    cache: false,
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        document.getElementById("monthsInDefault").value = 'hello';
+                        document.getElementById("labelCMD").style = block;
+                        document.getElementById("inputCMD").style = block;
+                    }
+                });
+
+        }
+
+        function showMonthsInDefault() {
+            var ug = $("#unit").igCombo("value");
+            var og = $("#owner").igCombo("value");
+            $.ajax(
+            {
+                async: true,
+                type: 'GET',
+                url: '/Home/GetNumberOfMonthsInDefault',
+                data: { unitGuid: ug, ownerGuid: og },
+                cache: false,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    document.getElementById("monthsInDefault").value = data;
+                    document.getElementById("labelCMD").style.display = "block";
+                    document.getElementById("inputCMD").style.display = "block";
+                }
+            });
+        }
+
+        function deleteRow(trxId) {
+            $.ajax(
+                {
+                    async: true,
+                    type: 'POST',
+                    url: '/Home/DeleteWorksheetTransaction',
+                    data: { trxId: trxId },
+                    cache: false,
+                    success: function (data) {
+                        getWorksheetDetails();
+                    }
+                });
+
+        }
+     
+        function submitWorksheet() {
+            //$("#modalpopup").dialog({
+            //    resizable: false,
+            //    height: 200,
+            //    width: 400,
+            //    show: { effect: 'drop', direction: "up" },
+            //    modal: true,
+            //    draggable: false,
+            //    open: function () {
+            //      Showtext();
+            //    },
+            //    buttons: {
+            //        "Yes": function () {
+                        $.ajax(
+                            {
+                                async: true,
+                                type: 'POST',
+                                url: '/Home/SubmitWorksheet',
+                                data: { worksheetId: @Model.WorksheetId},
+                                cache: false,
+                                success: function (data) {
+                                    printDeficiencyReport();
+                                    window.open('Home', '_self');
+                                }
+                            });
+                    @*},
+                    "No": function () {
+                        $.ajax(
+                            {
+                                async: true,
+                                type: 'POST',
+                                url: '/Home/SubmitWorksheet',
+                                data: { worksheetId: @Model.WorksheetId, IsDigitallySigned: false },
+                                cache: false,
+                                success: function (data) {
+                                    printDeficiencyReport();
+                                    window.open('Home', '_self');
+                                }
+                            });
+                    }
+                }
+            });*@
+        }
+      
+        function Showtext() {
+            $('#displaytext').show();
+         
+        }
+
+        function printDeficiencyReport() {
+            if (bg !== null && bg !== '00000000-0000-0000-0000-000000000000') {
+                var url = reportPath + 'rt=df&bg=' + bg + '&dt=' + idt;;
+                window.open(url, '_blank');
+            }
+        }
+
+       
+
+    </script>
+    <script id="dialogTemplate" type="text/html">
+        <div style="float: left; width: 100%">
+            <strong>${Name}</strong><br />
+            <table style="width: 100%;">
+                <colgroup>
+                    <col style="width: 30%;" />
+                    <col style="width: 200%;" />
+                </colgroup>
+                <tbody data-render-tmpl="true"></tbody>
+                <tr>
+                    <td>Unit:</td>
+                    <td><input id="unit" /></td>
+                </tr>
+                <tr>
+                    <td>Owner:</td>
+                    <td><input id="owner" /></td>
+                </tr>
+                <tr>
+                    <td>Transaction Type:</td>
+                    <td><input id="transactionType" /></td>
+
+                </tr>
+                <tr>
+                    <td><div id="labelNP">Number Of Payments:</div></td>
+                    <td><div id="inputNP"><input id="numberOfPayments" /></div></td>
+                </tr>
+                <tr>
+                    <td><div id="labelCMD"><b>Months In Default:</b></div></td>
+                    <td><div id="inputCMD"><b><input id="monthsInDefault" readonly="readonly"/></b></div></td>
+                </tr>
+            </table>
+        </div>
+    </script>
+
+    <script id="editorsTemplate" type="text/html">
+        <tr>
+            <td style="color: black;">${headerText}</td>
+            <td><input data-editor-for-${key}="true" style="color: black; width: 1000px;" /></td>
+        </tr>
+    </script>
+</head>
+<body>
+    <style type="text/css">
+        .deleteAlign {
+            text-align: right !important;
+        }
+
+        .imagePad {
+            padding-left: 5px;
+        }
+
+        .optionPad {
+            padding-top: 20px;
+        }
+    </style>
+    <table width="100%">
+        <tr>
+            <td align="left" valign="top">
+                <table>
+                    <tr>
+                        <td>
+                            <input id="buildingName" style="color: black;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="invoiceDate" style="color: black;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="bottom" class="optionPad">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="~/images/table_go.png" />
+                                    </td>
+                                    <td class="imagePad"><a onclick="submitWorksheet()">Submit Worksheet</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="~/images/printer.png" />
+                                    </td>
+                                    <td class="imagePad"><a onclick="printDeficiencyReport()">Print Deficiency Report</a></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+            <td align="right" valign="top">
+                <table width="50%">
+                    <tr>
+                        <td>
+                            <b>Base Rent:</b>
+                        </td>
+                        <td align="right">
+                            <input id="baserent" style="color: black;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Civic:</b>
+                        </td>
+                        <td align="right">
+                            <input id="civic" style="color: black;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Supplemental:</b>
+                        </td>
+                        <td align="right">
+                            <input id="supplemental" style="color: black;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>PILOT:</b>
+                        </td>
+                        <td align="right">
+                            <input id="pilot" style="color: black;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Invoice Total:</b>
+                        </td>
+                        <td align="right">
+                            <input id="total" style="color: black;font-weight: bold;">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><table id="worksheetDetails"></table></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="right">
+                <div id="submitButton">
+                    <button id="buttonSubmit" type="submit" class="btn btn-default" onclick="submitWorksheet()">
+                        <span class="glyphicon glyphicon-book"></span>Submit Worksheet
+                    </button>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div id="modalpopup" style="display: none">
+        <table>
+            <tr>
+                <td>
+                    <div id="displaytext">
+                        "Do you want to digitally signed your Signature to the Authority?",
+                    </div>
+                </td> 
+               
+            </tr>
+            </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,328 @@
+﻿@{
+    ViewData["Title"] = "Add/Edit Suspended Defaults";
+}
+<!DOCTYPE html>
+<script type="text/javascript">
+    var og = '00000000-0000-0000-0000-000000000000';
+    var opts = {
+        lines: 13, // The number of lines to draw
+        length: 20, // The length of each line
+        width: 10, // The line thickness
+        radius: 30, // The radius of the inner circle
+        corners: 1, // Corner roundness (0..1)
+        rotate: 0, // The rotation offset
+        direction: 1, // 1: clockwise, -1: counterclockwise
+        color: '#000', // #rgb or #rrggbb or array of colors
+        speed: 1, // Rounds per second
+        trail: 60, // Afterglow percentage
+        shadow: false, // Whether to render a shadow
+        hwaccel: false, // Whether to use hardware acceleration
+        className: 'spinner', // The CSS class to assign to the spinner
+        zIndex: 2e9, // The z-index (defaults to 2000000000)
+        top: 'auto', // Top position relative to parent in px
+        left: 'auto' // Left position relative to parent in px
+    };
+
+    $(document).ready
+        (function () {
+            checkSession();
+            checkAdmin();
+            $("#comboBuildings").igCombo();
+            $("#comboUnits").igCombo();
+            loadBuildings();
+        });
+
+    function loadBuildings() {
+        $.ajax(
+            {
+                type: 'GET',
+                url: '/Home/GetBuildingList',
+                cache: false,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: loadBuildingSuccess,
+                error: loadBuildingsError()
+            });
+    }
+
+    function loadBuildingsError() {
+
+    }
+
+    function loadBuildingSuccess(data) {
+        $("#comboBuildings").igCombo({
+            width: "270px",
+            textKey: "Name",
+            valueKey: "BuildingGuid",
+            dataSource: jQuery.parseJSON(data),
+            dataSourceType: "json",
+            filteringType: "local",
+            autoComplete: true,
+            placeHolder: "Select a building...",
+            dropDownOrientation: "bottom"
+        });
+        $("#comboBuildings").on("igcomboselectionchanged", function (evt, ui) {
+            var bg = $("#comboBuildings").igCombo("value");
+            loadBuildingSelection(bg, true);
+        });
+
+        $("#comboUnits").igCombo();
+    }
+
+    function loadBuildingSelection(bg, async) {
+        $.ajax(
+        {
+            type: 'GET',
+            async: true,
+            url: '/Home/GetUnitList',
+            data: { buildingGuid: bg },
+            dataType: "json",
+            success: function (response) {
+                getUnitList(response);
+            },
+            error: loadBuildingsError()
+        });
+    }
+    function getUnitList(data) {
+        $("#comboUnits").igCombo({
+            width: "270px",
+            textKey: "unitcode",
+            valueKey: "unitguid",
+            dataSource: jQuery.parseJSON(data),
+            dataSourceType: "json",
+            filteringType: "local",
+            autoComplete: true,
+            placeHolder: "Select a unit...",
+            dropDownOrientation: "bottom"
+        });
+        $("#comboUnits").on("igcomboselectionchanged", function (evt, ui) {
+            var ug = $("#comboUnits").igCombo("value");
+            loadUnitSelection(ug);
+        });
+    }
+    function loadUnitSelection(ug) {
+        $.ajax(
+        {
+            type: 'GET',
+            async: true,
+            url: '/Home/GetAddEditSuspenedDefaultList',
+            data: { unitGuid: ug },
+            dataType: "json",
+            success: function (response) {
+                setSuspendedDefaultList(response);
+                $('#modalSpinner').modal('hide');
+            },
+            error: loadBuildingsError()
+        });
+    }
+    function setSuspendedDefaultList(data) {
+        $.ig.checkboxMarkupClasses = "ui-state-default ui-corner-all ui-igcheckbox-small";
+        $("#gridOwners").igGrid({
+            key: "Table",
+            width: "100%",
+            dataSource: jQuery.parseJSON(data),
+            dataSourceType: "json",
+            responseDataKey: "Table",
+            autoGenerateColumns: false,
+            autofitLastColumn: false,
+            primaryKey: "Trxid",
+            renderCheckboxes: true,
+            autoCommit: true,
+            columns: [
+                { key: "Trxid", headerText: "Employee ID", dataType: "number", width: "0%", hidden: true },
+                { key: "OwnerGuid", headerText: "ownerGuid", dataType: "string", width: "0%", hidden: true },
+                { key: "TitleName", headerText: "Title Name", dataType: "string", width: "15%" },
+                { key: "TrxDate", headerText: "Date", dataType: "date", width: "20%" },
+                { key: "BaseRent", headerText: "Base Rent", dataType: "number", width: "15%", format: "currency" },
+                { key: "CivicFacility", headerText: "Civic", dataType: "number", width: "15%", format: "currency" },
+                { key: "Supplemental", headerText: "Supplemental", dataType: "number", width: "15%", format: "currency" },
+                { key: "PILOT", headerText: "PILOT", dataType: "number", width: "15%", format: "currency" },
+                { key: "Suspended", headerText: "Suspended", dataType: "bool", width: "12%" }
+            ],
+            features: [
+                {
+                    name: "Updating",
+                    editMode: "cell",
+                    startEditTriggers: "click",
+                    editCellStarting: function (evt, ui) {
+                        if (ui.columnKey === "Suspended" && $(evt.originalEvent.target).hasClass("ui-icon-check")) {
+                            ui.value = !ui.value;
+                        }
+                    },
+                    editCellEnded: function (evt, ui) {
+                        if (ui.update || ui.rowAdding) {
+                            $.ajax(
+                                {
+                                    type: 'POST',
+                                    async: true,
+                                    url: '/Home/SaveSuspendedTransactionState',
+                                    data: { trxId: ui.rowID, suspendedValue: ui.value },
+                                    dataType: "json",
+                                    success: function () {
+                                    },
+                                    error: function () { }
+                                });
+                        }
+                    },
+                    enableAddRow: false,
+                    enableUpdateRow: true,
+                    enableDeleteRow: false,
+                    columnSettings: [
+                        {
+                            columnKey: "OwnerGuid", editorOptions: { readOnly: true },
+                            columnKey: "Trxid", editorOptions: { readOnly: true },
+                            columnKey: "TitleName", editorOptions: { readOnly: true },
+                            columnKey: "TrxDate", editorOptions: { readOnly: true },
+                            columnKey: "CivicFacility", editorOptions: { readOnly: true },
+                            columnKey: "Supplemental", editorOptions: { readOnly: true },
+                            columnKey: "PILOT", editorOptions: { readOnly: true },
+                            columnKey: "Suspended", editorOptions: { readOnly: false, editorType: "checkbox"}
+                        }]
+                },
+                {
+                    name: "Sorting",
+                    type: "local",
+                    mode: "multi",
+                    persist: true
+                },
+                {
+                    name: "Filtering",
+                    type: "local",
+                    persist: true,
+                    columnSettings: [
+                        { columnKey: "OwnerGuid", allowFiltering: false },
+                        { columnKey: "Trxid", allowFiltering: false }
+                    ]
+                }
+            ]
+        });
+        $("#gridOwners").on("iggridcellclick", function (evt, ui) {
+            var val = $("#gridOwners").igGrid("getCellValue", ui.rowKey, "Suspended");
+            val = !val;
+            if (ui.colKey == "Suspended") {
+                $.ajax(
+                    {
+                        type: 'POST',
+                        async: true,
+                        url: '/Home/SaveSuspendedTransactionState',
+                        data: { trxId: ui.rowID, suspendedValue: val },
+                        dataType: "json",
+                        success: function () {
+                        },
+                        error: function () { }
+                    });
+            }
+        });
+
+    }
+
+    function selectAll() {
+        var rows = $("#gridOwners").igGrid("allRows");
+        var rowId;
+        var target = document.getElementById('searching_spinner_center');
+        var spinner = new Spinner(opts).spin(target);
+        $('#modalSpinner').modal('show');
+
+        $.each(rows, function (index, row) {
+            rowId = $(row).attr("data-id");
+            $.ajax(
+                {
+                    type: 'POST',
+                    async: true,
+                    url: '/Home/SaveSuspendedTransactionState',
+                    data: { trxId: rowId, suspendedValue: true },
+                    dataType: "json",
+                    success: function () {
+                    },
+                    error: function () { }
+                });
+        });
+        var ug = $("#comboUnits").igCombo("value");
+        loadUnitSelection(ug);
+        
+    }
+
+    function unselectAll() {
+        var rows = $("#gridOwners").igGrid("allRows");
+        var rowId;
+        var target = document.getElementById('searching_spinner_center');
+        var spinner = new Spinner(opts).spin(target);
+        $('#modalSpinner').modal('show');
+
+        $.each(rows, function (index, row) {
+            rowId = $(row).attr("data-id");
+            $.ajax(
+                {
+                    type: 'POST',
+                    async: true,
+                    url: '/Home/SaveSuspendedTransactionState',
+                    data: { trxId: rowId, suspendedValue: false },
+                    dataType: "json",
+                    success: function () {
+                    },
+                    error: function () { }
+                });
+        });
+        var ug = $("#comboUnits").igCombo("value");
+        loadUnitSelection(ug);
+    }
+</script>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Add/Edit Suspended Defaults</title>
+    </head>
+    <body>
+        <table style="width: 100%">
+            <tr>
+                <td><h4>Building:</h4></td>
+                <td rowspan="4" align="right">
+                    <div id="selectOptions">
+                        <table>
+                            <tr><td><img src="~/images/book_next.png" /> <a href="#" onclick="selectAll();">Select All</a></td></tr>
+                            <tr><td><img src="~/images/book_previous.png" /> <a href="#" onclick="unselectAll();">Un-Select All </a></td></tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1">
+                    <div id="comboBuildings"></div>
+                </td>
+            </tr>
+            <tr><td colspan="1"><h4>Unit:</h4></td></tr>
+            <tr>
+                <td colspan="1">
+                    <div id="comboUnits"></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div id="gridOwners"></div>
+                </td>
+            </tr>
+        </table>
+        <div id="modalSpinner" class="modal fade" tabindex="-1" role="dialog" data-keyboard="false" data-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    @*<div class="modal-header" style="text-align: center">
+                        <h3>Processing...</h3>
+                    </div>*@
+                    <div class="modal-body">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <span id="searching_spinner_center" style="position:fixed; left:50%;top:50%;"></span>
+                    </div>
+                    <div class="modal-footer" style="text-align: center"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+
+</html>

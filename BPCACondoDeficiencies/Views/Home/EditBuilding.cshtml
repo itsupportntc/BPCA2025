@@ -1,0 +1,322 @@
+﻿@using System
+@using BPCACondoDeficiencies.Models
+
+@model Building
+
+@{
+    ViewData["Title"] = "Add/Edit Building";
+}
+<style>
+    fieldset {
+        margin: 4px;
+        border: 1.5px solid steelblue;
+        padding: 2px;
+        width: 50%;
+        border-radius: 4px;
+    }
+
+    legend {
+        padding: 0px;
+        font-family: Tahoma;
+        font-size: 14px;
+        width: auto;
+        margin-bottom: 0px;
+    }
+
+    #content {
+        width: 1000px;
+        margin: 0 auto;
+        padding-top: 100px;
+    }
+
+    #content_inner {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    #app_name_header {
+        text-align: center;
+    }
+
+    #row_div_header {
+        display: table-row;
+        width: auto;
+        white-space: nowrap;
+        background-image: url('/images/divtable_bghdr.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 15px;
+    }
+
+    #row_div_footer {
+        display: table-row;
+        width: inherit;
+        white-space: nowrap;
+        background-image: url('/images/divtable_bgftr.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 50px;
+    }
+
+    #row_div_content {
+        display: table-row;
+        width: auto;
+        padding-right: 1px;
+        white-space: nowrap;
+        background-image: url('/images/divtable_bgcontent.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
+    }
+
+    .table {
+        display: table;
+        width: 100%;
+    }
+
+    .divrow {
+        display: table-row;
+        border: solid;
+        border-width: 1px;
+        border-radius: 25px;
+        height: 4px;
+    }
+
+    .row {
+        display: table-row;
+        max-width: 100%;
+        white-space: nowrap;
+    }
+
+    .cell {
+        font-family: Tahoma;
+        display: table-cell;
+        height: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .hiddenCell {
+        font-family: Tahoma;
+        display: table-cell;
+        width: 0px;
+        visibility: hidden;
+    }
+</style>
+
+<html>
+<head>
+    <title>Add/Edit Building</title>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('#commonCharges').value = parseCurrency($('#commonCharges').value);
+        });
+        $(function () {
+            $('#managedSince').datepicker();
+            $('#commonCharges').value = parseCurrency($('#commonCharges').value);
+        });
+        $(document).on('blur', '#commonCharges', function () {
+            this.value = parseCurrency(this.value);
+        });
+
+        function parseCurrency(value) {
+            var cc = 0;
+            if (isNaN(value))
+                cc = 0.00;
+            else
+                cc = parseFloat(value.replace(",", ""))
+                    .toFixed(2)
+                    .toString()
+                    .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            return cc;//"$" + parseFloat(cc).toFixed(2).toString().replace(/,/g, "")
+
+        }
+    </script>
+</head>
+<body>
+    @using (Html.BeginForm("SaveEditBuilding", "Home", FormMethod.Post))
+    {
+
+        <!--<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+        <script src="~/Scripts/jquery.validate.min.js"></script>
+        <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>-->
+
+        @Html.ValidationSummary()
+        <div class="table" id="content" style="width: 500px;">
+            <div @*id="row_div_header" *@ class="row">
+                <div class="cell">
+                    <label hidden>spacer</label>
+                </div>
+                <div class="cell">
+                    @Html.Hidden("buildingGuid", Model.BuildingGUID)
+                </div>
+            </div>
+            <div class="row" @*id="row_div_content" *@>
+                <div class="cell">
+                    <label style="text-align: left; vertical-align: top;">Building Name:</label>
+                </div>
+                <div class="cell">
+                    @Html.TextBox("name", Model.Name, new { @class = "form-control valid", required = "required" })
+                </div>
+            </div>
+            <div class="row" @*id="row_div_content" *@>
+                <div class="cell">
+                    <label style="text-align: left; vertical-align: top;">Site Id:</label>
+                </div>
+                <div class="cell">
+                    @Html.TextBox("siteId", Model.SiteID, new { @class = "form-control valid", required = "required" })
+                </div>
+            </div>
+            <div class="row" @*id="row_div_content" *@>
+                <div class="cell">
+                    <label style="text-align: left; vertical-align: top;">Address 1:</label>
+                </div>
+                <div class="cell">
+                    @Html.TextBox("address1", Model.Address1, new { @class = "form-control valid", required = "required" })
+                </div>
+            </div>
+            <div class="row" @*id="row_div_content" *@>
+                <div class="cell">
+                    <label style="text-align: left; vertical-align: top;">Address 2:</label>
+                </div>
+                <div class="cell">
+                    @Html.TextBox("address2", Model.Address2, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="row" @*id="row_div_content" *@>
+                <div class="cell">
+                    <label style="text-align: left; vertical-align: top;">City:</label>
+                </div>
+                <div class="cell">
+                    @Html.TextBox("city", Model.City, new { @class = "form-control valid", required = "required" })
+                </div>
+            </div>
+            <div class="row" @*id="row_div_content" *@>
+                <div class="cell">
+                    <label style="text-align: left; vertical-align: top;">State:</label>
+                </div>
+                <div class="cell">
+                    @Html.TextBox("state", Model.State, new { @class = "form-control valid", required = "required" })
+                </div>
+            </div>
+            <div class="row" @*id="row_div_content" *@>
+                <div class="cell">
+                    <label style="text-align: left; vertical-align: top;">Zip Code:</label>
+                </div>
+                <div class="cell">
+                    @Html.TextBox("zipCode", Model.ZipCode, new { @class = "form-control valid", required = "required" })
+                </div>
+            </div>
+            <div class="row" @*id="row_div_content" *@>
+                <div class="cell">
+                    <label style="text-align: left; vertical-align: top;">Pilot Period:</label>
+                </div>
+                <div class="cell">
+                    @Html.TextBox("pilotPeriod", Model.PilotPeriod.ToString(), new { @class = "form-control valid", required = "required" })
+                </div>
+            </div>
+            <div class="row" @*id="row_div_content" *@>
+                <div class="cell">
+                    <label style="text-align: left; vertical-align: top;">Common Charges:</label>
+                </div>
+                <div class="cell">
+                    @Html.TextBox("commonCharges", Model.CommonCharges, new { @class = "form-control valid", required = "required numeric" })
+                </div>
+            </div>
+            <div class="row" @*id="row_div_content" *@>
+                <div class="cell">
+                    <label style="text-align: left; vertical-align: top;">Managed Since:</label>
+                </div>
+                <div class="cell">
+                    @Html.TextBox("managedSince", Model.ManagedSince.ToShortDateString(), new { @class = "form-control", style = "color: black;border: solid;", required = "required date" })
+                </div>
+            </div>
+            <div class="row" @*id="row_div_content" *@>
+                <div class="cell" style="color: black;">
+                    <label style="text-align: left; vertical-align: top;">Managing Agency:</label>
+                </div>
+                <div class="cell">
+                    @Html.DropDownList("agencyGuid", (SelectList)ViewData["AgencyList"], new { @class = "form-control valid", required = "required" })
+                </div>
+            </div>
+            <div @*id="row_div_footer" *@ class="row">
+                <div class="cell">
+
+                </div>
+                <div class="cell" style="float: right">
+                    <button id="buttonSave" type="submit" class="btn btn-default">
+                        <span class="glyphicon glyphicon-floppy-save"></span> Save Changes
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(function () {
+                var commonWidth = 300;
+                $("#commonCharges").igCurrencyEditor({
+                    width: 200,
+                    textAlign: "left"
+                });
+                $("#managedSince").igDatePicker({
+                    width: 200,
+                    dateInputFormat: "date",
+                    regional: "en-US",
+                    required: true,
+                    nullText: "Specify the date managed since...",
+                    datepickerOptions: {
+                        showWeek: true
+                    }
+                });
+                $("#agencyGuid").igCombo({
+                    textKey: "AgencyName",
+                    valueKey: "AgencyGuid",
+                    width: commonWidth,
+                    autoComplete: true,
+                    dropDownWidth: 300
+                });
+                var pilotPeriods = [
+                    { "pilotPeriod": 3 },
+                    { "pilotPeriod": 6 }
+                ];
+                $("#pilotPeriod").igCombo({
+                    dataSource: pilotPeriods,
+                    width: 200
+                });
+                $("#name").igTextEditor({
+                    width: commonWidth,
+                    nullText: "Enter a building name..."
+                });
+                $("#siteId").igTextEditor({
+                    width: commonWidth,
+                    nullText: "Enter a site Id..."
+                });
+                $("#address1").igTextEditor({
+                    width: commonWidth,
+                    nullText: "Enter an address..."
+                });
+                $("#address2").igTextEditor({
+                    width: commonWidth,
+                    nullText: "Enter an address..."
+                });
+                $("#city").igTextEditor({
+                    width: commonWidth,
+                    nullText: "Enter an city..."
+                });
+                $("#state").igTextEditor({
+                    width: commonWidth,
+                    nullText: "Enter an state..."
+                });
+                $("#zipCode").igTextEditor({
+                    width: commonWidth,
+                    nullText: "Enter an zip code..."
+                });
+            });
+        </script>
+    }
+</body>
+</html>
+
+
+
+

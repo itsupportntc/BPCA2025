@@ -1,0 +1,305 @@
+﻿@{
+    ViewData["Title"] = "User Management";
+}
+
+<script>
+    var agencies;
+    $(document).ready
+        (
+    function () {
+        checkSession();
+        checkAdmin();
+            $.ajax({
+                type: "GET",
+                url: '/Home/GetAgencies',
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    agencies = data;
+                    loadUserManagement();
+                },
+                error: function () {
+                }
+            });
+        });
+        
+
+    function loadUserManagement() {
+        $.ajax(
+            {
+                type: 'GET',
+                url: '/Home/GetUserManagement',
+                cache: false,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: getUserManagementSuccess,
+                error: getUserManagementError
+            });
+    };
+
+    function getUserManagementSuccess(data) {
+
+        $("#userGrid").igGrid({
+            renderCheckboxes: true,
+            primaryKey: "userGuid",
+            caption: "User Management",
+            autoGenerateColumns: false,
+            columns:
+                [
+                    { headerText: "userGuid", key: "userGuid", dataType: "string", width: "0%" },
+                    { headerText: "Agency", key: "agencyGuid", dataType: "string", width: "0%" },
+                    { headerText: "Agency", key: "agencyName", dataType: "string", width: "20%" },
+                    { headerText: "First Name", key: "firstName", dataType: "string", width: "20%" },
+                    { headerText: "Last Name", key: "lastName", dataType: "string", width: "20%" },
+                    { headerText: "Email Address", key: "emailAddress", dataType: "string", width: "20%" },
+                    { headerText: "User Name", key: "userName", dataType: "string", width: "0%" },
+                    { headerText: "Password", key: "password", dataType: "string", width: "0%" },
+                    { headerText: "Active", key: "IsActive", dataType: "bool", width: "10%" },
+                    {
+                        headerText: "",
+                        key: "Delete",
+                        unbound: true,
+                        template: "<input type='image' src='/images/delete.png' onclick='deleteUser(${userGuid})' />",
+                        width: "5%",
+                        columnCssClass: "deleteAlign"
+                    }
+                ],
+            dataSource: data,
+            autofitLastColumn: false,
+            dataSourceType: "json",
+            responseDataKey: "results",
+            width: "100%",
+            tabIndex: 1,
+            features: [
+                {
+                    name: "Filtering",
+                    mode: "advanced"
+                }, {
+                    name: "Sorting"
+                },
+                {
+                    name: "Updating",
+                    locale: {
+                        addRowLabel: "Add new user...",
+                        rowEditDialogCaptionLabel: "Add/Edit User"
+                    },
+                    enableAddRow: true,
+                    enableUpdateRow: true,
+                    enableDeleteRow: false,
+                    startEditTriggers: "dblclick",
+                    editMode: "dialog",
+                    columnSettings: [
+                        {
+                            columnKey: "firstName",
+                            editorType: "text",
+                            editorOptions: {
+                                width: 300
+                            }
+                        },
+                        {
+                            columnKey: "lastName",
+                            editorType: "text",
+                            editorOptions: {
+                                width: 300
+                            }
+                        },
+                        {
+                            columnKey: "agencyGuid",
+                            required: true,
+                            editorType: "combo",
+                            editorOptions: {
+                                mode: "dropdown",
+                                dataSource: jQuery.parseJSON(agencies),
+                                textKey: "AgencyName",
+                                valueKey: "AgencyGuid",
+                                dropDownOnReadOnly: true
+                            },
+                            validation: true
+                        },
+                        {
+                            columnKey: "agencyName",
+                            editorType: "text",
+                            readOnly: true
+                        },
+                        {
+                            columnKey: "emailAddress",
+                            editorType: "text",
+                            required: true,
+                            validation: true,
+                            editorOptions: {
+                                width: 300
+                            }
+                        },
+                        {
+                            columnKey: "userName",
+                            editorType: "text",
+                            required: true,
+                            validation: true,
+                            editorOptions: {
+                                width: 300
+                            }
+                        },
+                        {
+                            columnKey: "password",
+                            editorType: "password",
+                            required: true,
+                            validation: true,
+                            editorOptions: {
+                                width: 300
+                            }
+                        },
+                        {
+                            columnKey: "IsActive",
+                            required: false,
+                            validation: false
+                        },
+                        {
+                            columnKey: "Delete",
+                            readOnly: true
+                        }
+                    ],
+                    rowEditDialogOptions: {
+                        captionLabel: "Add/Edit User",
+                        width: 600,
+                        height: 500,
+                        dialogTemplateSelector: "#dialogTemplate",
+                        editorsTemplateSelector: "#editorsTemplate",
+                        containment: "ui",
+                        animationDuration: 400,
+                        showReadonlyEditors: false
+                    },
+                    editRowEnding: function (evt, ui) {
+                        var ug = ui.oldValues['userGuid'];
+                        if (ug === null) {
+                            ug = '00000000-0000-0000-0000-000000000000';
+                        }
+                        var fn = ui.values['firstName'];
+                        var ln = ui.values['lastName'];
+                        var ag = ui.values['agencyGuid'];
+                        var em = ui.values['emailAddress'];
+                        var un = ui.values['userName'];
+                        var pw = ui.values['password'];
+                        var ac = ui.values['IsActive'];
+
+                        if ((ui.update == true && ui.rowAdding == false) ||
+                            (ui.update == true && ui.rowAdding == true)) {
+                            $.ajax(
+                                {
+                                    async: true,
+                                    type: 'POST',
+                                    url: '/Home/SaveUser',
+                                    cache: true,
+                                    data: {
+                                        userGuid: ug, agencyGuid: ag, userName: un, password: pw,
+                                        firstName: fn, lastName: ln, emailAddress: em, isActive: ac
+                                    },
+                                    responseDataKey: "response",
+                                    success: function () {
+                                        loadUserManagement();
+                                    },
+                                    error: function (jqXHR, exception) {
+                                        console.log(jqXHR);
+                                        console.log(exception);
+                                    }
+                                });
+                        }
+                    },
+                },
+                {
+                    name: 'Hiding',
+                    columnSettings:
+                        [
+                            {
+                                columnKey: 'userGuid',
+                                allowHiding: false,
+                                hidden: true
+                            },
+                            {
+                                columnKey: 'agencyGuid',
+                                allowHiding: false,
+                                hidden: false
+                            },
+                            {
+                                columnKey: 'agencyName',
+                                allowHiding: false,
+                                hidden: false
+                            },
+                            {
+                                columnKey: 'firstName',
+                                allowHiding: false,
+                                hidden: false
+                            },
+                            {
+                                columnKey: 'lastName',
+                                allowHiding: false,
+                                hidden: false
+                            },
+                            {
+                                columnKey: 'emailAddress',
+                                allowHiding: false,
+                                hidden: false
+                            },
+                            {
+                                columnKey: 'userName',
+                                allowHiding: false,
+                                hidden: false
+                            },
+                            {
+                                columnKey: 'password',
+                                allowHiding: false,
+                                hidden: false
+                            }
+                        ]
+                }]
+
+        });
+    };
+
+    function getUserManagementError() {
+    };
+
+
+    function deleteUser(userGuid) {
+        $.ajax(
+            {
+                async: true,
+                type: 'POST',
+                url: '/Home/DeleteUser',
+                data: { userGuid: userGuid },
+                cache: false,
+                success: function () {
+                    loadUserManagement();
+                }
+            });
+    }
+</script>
+<style type="text/css">
+    #userGrid tr td {
+        white-space: nowrap;
+    }
+    .deleteAlign {
+        text-align: right !important;
+    }
+</style>
+<script id="dialogTemplate" type="text/html">
+    <div style="float: left; width: 100%">
+        <strong>${Name}</strong><br />
+        <table style="width: 100%;">
+            <colgroup>
+                <col style="width: 30%;" />
+                <col style="width: 200%;" />
+            </colgroup>
+            <tbody data-render-tmpl="true"></tbody>
+        </table>
+    </div>
+</script>
+
+<script id="editorsTemplate" type="text/html">
+    <tr>
+        <td style="color: black;">${headerText}</td>
+        <td><input data-editor-for-${key}="true" style="color: black; width: 1000px;" /></td>
+    </tr>
+</script>
+<div class="page-content" style="padding-top:40px;">
+    <table id="userGrid"></table>
+</div>

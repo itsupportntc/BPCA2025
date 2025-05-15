@@ -1,0 +1,477 @@
+﻿
+@{
+    ViewData["Title"] = "Unit Inquiry"; 
+}
+
+<!DOCTYPE html>
+<style id="historyGrid">
+    .headerCss {
+        text-align: right !important;
+    }
+
+    .colCss {
+        text-align: right !important;
+    }
+    
+</style>
+<script type="text/javascript">
+    var ug = '00000000-0000-0000-0000-000000000000';
+    var agencyCode;
+    var isAdminUser;
+
+    $(document).ready
+        (function () {
+            checkSession();
+            loadUserSettings();
+            loadBuildings();
+            $(function () {
+                $("#dateTimeWorksheetDate").igDatePicker({
+                    width: "270px",
+                    dateInputFormat: "date",
+                    regional: "en-US",
+                    required: true,
+                    nullText: "Please select an invoice date...",
+                    datepickerOptions: {
+                        showWeek: false,
+                        numberOfMonths: [1, 2]
+                    }
+                });
+            });
+        });
+
+    function loadUserSettings() {
+        $.ajax(
+            {
+                async: true,
+                type: 'GET',
+                url: '/Home/GetUserAgencyCode',
+                contentType: "text/html",
+                cache: false,
+                success: function (data) {
+                    agencyCode = data;
+                },
+                error: function (jqXHR, exception) {
+                    console.log(jqXHR);
+                    console.log(exception);
+                    return false;
+                }
+            }
+        );
+    }
+
+    function loadBuildings() {
+        $.ajax(
+            {
+                type: 'GET',
+                url: '/Home/GetBuildingList',
+                cache: false,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: loadBuildingSuccess,
+                error: loadBuildingsError()
+            });
+    }
+
+    function loadBuildingsError() {
+
+
+    }
+
+    function loadBuildingSuccess(data) {
+        $("#comboBuildings").igCombo({
+            width: "270px",
+            textKey: "Name",
+            valueKey: "BuildingGuid",
+            dataSource: data,
+            dataSourceType: "json",
+            filteringType: "local",
+            autoComplete: true,
+            placeHolder: "Select a building...",
+            dropDownOrientation: "bottom"
+        });
+        $("#comboBuildings").on("igcomboselectionchanged", function (evt, ui) {
+            var bg = $("#comboBuildings").igCombo("value");
+            loadBuildingSelection(bg, true);
+        });
+    }
+
+    function loadBuildingSelection(bg, async) {
+        $.ajax(
+        {
+            type: 'GET',
+            async: async,
+            url: '/Home/GetBuildingHeaderData',
+            data: { buildingGuid: bg },
+            dataType: "json",
+            success: function (response) {
+                $.ajax(
+                    {
+                        type: 'GET',
+                        async: true,
+                        url: '/Home/GetUnitList',
+                        data: { buildingGuid: bg },
+                        dataType: "json",
+                        success: function (response) {
+                            getUnitList(response);
+                        },
+                        error: loadBuildingsError()
+                    });
+            },
+            error: loadBuildingsError()
+        });
+    }
+
+    function getUnitList(data) {
+        $("#comboUnits").igCombo({
+            width: "270px",
+            textKey: "unitcode",
+            valueKey: "unitguid",
+            dataSource: jQuery.parseJSON(data),
+            dataSourceType: "json",
+            filteringType: "local",
+            autoComplete: true,
+            placeHolder: "Select a unit...",
+            dropDownOrientation: "bottom"
+        });
+        $("#comboUnits").on("igcomboselectionchanged", function (evt, ui) {
+            loadUnitInquiry();
+        });
+    }
+
+    function loadUnitInquiry() {
+        var ug = $("#comboUnits").igCombo("value");
+
+        $.ajax(
+            {
+                type: 'GET',
+                async: true,
+                url: '/Home/GetUnitInquiry',
+                data: { unitGuid: ug },
+                dataType: "json",
+                success: function (response) {
+                    displayCurrentDefaults(jQuery.parseJSON(response).Table);
+                    displayCurrentDefaultTotals(jQuery.parseJSON(response).Table1);
+                    displayTransactionHistory(jQuery.parseJSON(response).Table2);
+                    displayPaymentHistory(jQuery.parseJSON(response).Table3);
+                    
+                },
+                error: loadUnitInquiryError()
+            });
+    }
+
+    function loadUnitInquiryError() { }
+
+    function displayCurrentDefaults(data) {
+        $("#gridCurrentDefaults").igGrid({
+            autoGenerateColumns: false,
+            renderCheckboxes: true,
+            primaryKey: "Default Date",
+            caption: "",
+            columns:
+                [
+                    { headerText: "Default Date", key: "Default Date", dataType: "string", width: "20%" },
+                    { headerText: "Base Rent", key: "baserent", dataType: "string", width: "20%", format: "currency", headerCssClass: "headerCss", columnCssClass: "colCss" },
+                    { headerText: "Civic Facilities", key: "civic", dataType: "string", width: "20%", format: "currency", headerCssClass: "headerCss", columnCssClass: "colCss" },
+                    { headerText: "Supplemental Rent", key: "supplemental", dataType: "string", width: "20%", format: "currency", headerCssClass: "headerCss", columnCssClass: "colCss" },
+                    { headerText: "PILOT", key: "pilot", dataType: "string", width: "20%", format: "currency", headerCssClass: "headerCss", columnCssClass: "colCss" }
+                ],
+            dataSource: data,
+            autofitLastColumn: false,
+            dataSourceType: "json",
+            responseDataKey: "results",
+            width: "100%",
+            tabIndex: 1
+        });
+    }
+
+    function displayCurrentDefaultTotals(data) {
+        $("#gridCurrentDefaultTotals").igGrid({
+            autoGenerateColumns: false,
+            renderCheckboxes: true,
+            primaryKey: "Totals",
+            caption: "",
+            columns:
+                [
+                    { headerText: "Totals", key: "totals", dataType: "string", width: "20%" },
+                    { headerText: "Base Rent", key: "baserent", dataType: "string", width: "20%", format: "currency", headerCssClass: "headerCss", columnCssClass: "colCss" },
+                    { headerText: "Civic Facilities", key: "civic", dataType: "string", width: "20%", format: "currency", headerCssClass: "headerCss", columnCssClass: "colCss" },
+                    { headerText: "Supplemental Rent", key: "supplemental", dataType: "string", width: "20%", format: "currency", headerCssClass: "headerCss", columnCssClass: "colCss" },
+                    { headerText: "PILOT", key: "pilot", dataType: "string", width: "20%", format: "currency", headerCssClass: "headerCss", columnCssClass: "colCss" }
+                ],
+            dataSource: data,
+            autofitLastColumn: false,
+            dataSourceType: "json",
+            responseDataKey: "results",
+            width: "100%",
+            tabIndex: 1
+        });
+    }
+
+    function displayTransactionHistory(data) {
+        $("#gridTransactionHistory").igGrid({
+            autoGenerateColumns: false,
+            renderCheckboxes: true,
+            primaryKey: "Totals",
+            columns:
+                [
+                    { headerText: "trxid", key: "trxid", dataType: "string", width: "0%" },
+                    { headerText: "Type", key: "Transaction Type", dataType: "string", width: "20%" },
+                    { headerText: "Date", key: "Transaction Date", dataType: "string", width: "10%", format: "date" },
+                    { headerText: "Base Rent", key: "Base Rent", dataType: "string", width: "15%", format: "currency", headerCssClass: "headerCss", columnCssClass: "colCss" },
+                    { headerText: "Supplemental Rent", key: "Supplemental Rent", dataType: "string", width: "15%", format: "currency", headerCssClass: "headerCss", columnCssClass: "colCss" },
+                    { headerText: "Civic Facilities", key: "Civic Facilities", dataType: "string", width: "10%", format: "currency", headerCssClass: "headerCss", columnCssClass: "colCss" },
+                    { headerText: "PILOT", key: "PILOT", dataType: "string", width: "10%", format: "currency", headerCssClass: "headerCss", columnCssClass: "colCss" },
+                    { headerText: "Total", key: "Total", dataType: "string", width: "20%", format: "currency", headerCssClass: "headerCss", columnCssClass: "colCss" }
+                ],
+            dataSource: data,
+            autofitLastColumn: false,
+            dataSourceType: "json",
+            responseDataKey: "results",
+            width: "100%",
+            tabIndex: 1
+        });
+    }
+
+    function displayPaymentHistory(data) {
+        if (agencyCode.toString() === "RED" || agencyCode.toString() === "AUTH") {
+            $("#gridPaymentHistory").igGrid({
+                autoGenerateColumns: false,
+                renderCheckboxes: true,
+                primaryKey: "Totals",
+                columns:
+                    [
+                        { headerText: "trxid", key: "trxid", dataType: "string", width: "0%" },
+                        { headerText: "Default Date", key: "DefaultDate", dataType: "string", width: "10%", format: "date" },
+                        { headerText: "Base Rent", key: "baserent", dataType: "string", width: "15%", format: "currency", headerCssClass: "headerCss", columnCssClass: "colCss" },
+                        { headerText: "Civic Facilities", key: "civic", dataType: "string", width: "20%", format: "currency", headerCssClass: "headerCss", columnCssClass: "colCss" },
+                        { headerText: "Supplemental Rent", key: "supplemental", dataType: "string", width: "15%", format: "currency", headerCssClass: "headerCss", columnCssClass: "colCss" },
+                        { headerText: "PILOT", key: "pilot", dataType: "string", width: "20%", format: "currency", headerCssClass: "headerCss", columnCssClass: "colCss" },
+                        { headerText: "Date Paid", key: "paiddate", dataType: "string", width: "15%", format: "date" },
+                        { headerText: "", key: "paydeleteimage", dataType: "string", width: "0%" },
+                        { headerText: "", key: "paymentdeleted", dataType: "string", width: "0%" },
+                        { headerText: "", key: "totalpaid", dataType: "string", width: "0%" },
+                        { headerText: "", key: "paymenttrxid", dataType: "string", width: "0%" },
+                        {
+                            headerText: "",
+                            key: "Delete",
+                            unbound: true,
+                            template: "<input type='image' src='${paydeleteimage}' onclick='deletePayment(${paymenttrxid}, ${paymentdeleted}, ${totalpaid})' />",
+                            width: "5%",
+                            columnCssClass: "deleteAlign"
+                        }
+                    ],
+                dataSource: data,
+                autofitLastColumn: false,
+                dataSourceType: "json",
+                responseDataKey: "results",
+                width: "100%",
+                tabIndex: 1
+            });
+        }
+        else {
+            $("#gridPaymentHistory").igGrid({
+                autoGenerateColumns: false,
+                renderCheckboxes: true,
+                primaryKey: "Totals",
+                columns:
+                    [
+                        { headerText: "trxid", key: "trxid", dataType: "string", width: "0%" },
+                        { headerText: "Default Date", key: "DefaultDate", dataType: "string", width: "10%", format: "date" },
+                        { headerText: "Base Rent", key: "baserent", dataType: "string", width: "15%", format: "currency", headerCssClass: "headerCss", columnCssClass: "colCss" },
+                        { headerText: "Civic Facilities", key: "civic", dataType: "string", width: "20%", format: "currency", headerCssClass: "headerCss", columnCssClass: "colCss" },
+                        { headerText: "Supplemental Rent", key: "supplemental", dataType: "string", width: "15%", format: "currency", headerCssClass: "headerCss", columnCssClass: "colCss" },
+                        { headerText: "PILOT", key: "pilot", dataType: "string", width: "20%", format: "currency", headerCssClass: "headerCss", columnCssClass: "colCss" },
+                        { headerText: "Date Paid", key: "paiddate", dataType: "string", width: "15%", format: "date" },
+                        { headerText: "", key: "paydeleteimage", dataType: "string", width: "0%" },
+                        { headerText: "", key: "paymentdeleted", dataType: "string", width: "0%" },
+                        { headerText: "", key: "totalpaid", dataType: "string", width: "0%" },
+                        { headerText: "", key: "paymenttrxid", dataType: "string", width: "0%" }
+                    ],
+                dataSource: data,
+                autofitLastColumn: false,
+                dataSourceType: "json",
+                responseDataKey: "results",
+                width: "100%",
+                tabIndex: 1
+            });
+        }
+    }
+
+    function deletePayment(trxId, del, pd) {
+        if (del === false) {
+            showSelectWorksheetDate(trxId, pd);
+        }
+        else {
+            $.ajax(
+            {
+                async: true,
+                type: 'POST',
+                url: '/Home/ReinstatePayment',
+                data: { trxId: trxId },
+                cache: false,
+                success: function () {
+                    loadUnitInquiry();
+                }
+            });
+        }
+    }
+
+    function showSelectWorksheetDate(trxId, pd) {
+        var idt;
+        $("#selectWorksheetDateDialog").dialog({
+            title: 'Select Worksheet Date',
+            resizable: false,
+            height: 300,
+            width: 350,
+            show: { effect: 'drop', direction: "up" },
+            modal: true,
+            draggable: true,
+            open: function (event, ui) {
+                $(".ui-dialog-titlebar-close").hide();
+            },
+            buttons: {
+                "Yes": function () {
+                    var objDate = $("#dateTimeWorksheetDate").igDatePicker("value");
+                    if (objDate.getDate() !== "1") {
+                        idt = (objDate.getMonth() + 1) + "/1/" + objDate.getFullYear();
+                        $("#dateTimeWorksheetDate").igDatePicker("value", idt);
+                    }
+                    else {
+                        idt = (objDate.getMonth() + 1) + "/1/" + objDate.getFullYear();
+                    }
+                    $.ajax(
+                        {
+                            async: true,
+                            type: 'POST',
+                            url: '/Home/DeletePayment',
+                            data: { trxId: trxId, worksheetDate: idt, paidAmt: pd },
+                            cache: false,
+                            success: function () {
+                                loadUnitInquiry();
+                            },
+                            error: function (jqXHR, exception) {
+                                if (jqXHR.responseText.includes('value NULL')) {
+                                    document.getElementById('alertMessage').innerHTML = 'A worksheet with the specified date could not be found!';
+                                    showErrorAlert('Worksheet Not Found!');
+                                }
+                            }
+                        });
+                    $(this).dialog("close");
+                },
+                "No": function () {
+                    $(this).dialog("close");
+                }
+            }
+        });
+    }
+
+    function showErrorAlert(title) {
+        $("#errorMessage").dialog({
+            title: title,
+            resizable: false,
+            height: 250,
+            width: 350,
+            show: { effect: 'drop', direction: "up" },
+            modal: true,
+            draggable: false,
+            open: function (event, ui) {
+                $(".ui-dialog-titlebar-close").hide();
+            },
+            buttons: {
+                "OK": function () {
+                    $(this).dialog("close");
+
+                }
+            }
+        });
+
+    }
+</script>
+
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>UnitInquiry</title>
+</head>
+<body>
+    <style type="text/css">
+        .deleteAlign {
+            text-align: right !important;
+        }
+
+        .imagePad {
+            padding-left: 5px;
+        }
+
+        .optionPad {
+            padding-top: 20px;
+        }
+    </style>
+    <table style="width: 100%">
+        <tr><td><h4>Building:</h4></td></tr>
+        <tr>
+            <td>
+                <div id="comboBuildings"></div>
+            </td>
+        </tr>
+        <tr><td><h4>Unit:</h4></td></tr>
+        <tr>
+            <td>
+                <div id="comboUnits"></div>
+            </td>
+        </tr>
+    </table>
+    <table style="width: 100%">
+        <tr><td><h4>Current Defaults</h4></td></tr>
+        <tr>
+            <td>
+                <div id="gridCurrentDefaults"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="gridCurrentDefaultTotals"></div>
+            </td>
+        </tr>
+    </table>
+    <table style="width: 100%">
+        <tr><td><h4>Transaction History</h4></td></tr>
+        <tr>
+            <td>
+                <div id="gridTransactionHistory"></div>
+            </td>
+        </tr>
+    </table>
+    <table style="width: 100%">
+        <tr><td><h4>Payment History</h4></td></tr>
+        <tr>
+            <td>
+                <div id="gridPaymentHistory"></div>
+            </td>
+        </tr>
+    </table>
+    <table style="padding-bottom: 155px;">
+        <tr><td></td></tr>
+    </table>
+    <div id="errorMessage" style="display: none">
+        <p>
+            <div id="alertMessage"></div>
+        </p>
+    </div>
+    <div id="selectWorksheetDateDialog" style="display: none">
+        <p>
+            <table>
+                <tr>
+                    <td align="center">Please specify the worksheet date to apply this payment reversal to.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="dateTimeWorksheetDate"></div>
+                    </td>
+                </tr>
+            </table>
+        </p>
+    </div>
+</body>
+</html>
